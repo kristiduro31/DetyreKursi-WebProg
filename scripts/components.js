@@ -29,4 +29,15 @@ class Navbar extends HTMLElement{
     }
 }
 
+class Footer extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML=
+        `<footer>
+            Copyright @2022
+        </footer>
+        `
+    }
+}
+
 customElements.define('app-navbar', Navbar);
+customElements.define('app-footer', Footer);
