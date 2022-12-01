@@ -92,9 +92,10 @@ nav ul ul li a i{
 }
 
 main{
-    flex-grow: 1 ;
+    flex-grow: 1;
+    width: 90%;
+    padding: 30px;
 }
-
 /*footer{*/
 /*    background: #063247;*/
 /*    font-size: 15px;*/
