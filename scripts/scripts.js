@@ -16,3 +16,7 @@ function realtimeClock(){
     document.getElementById('clk').innerHTML = hours+":"+mins+":"+sec+" "+amPm;
     var t = setTimeout(realtimeClock,500);
 }
+
+function register(){
+
+}

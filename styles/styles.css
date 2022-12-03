@@ -191,3 +191,16 @@ ul{
         width: 100%;
     }
 }
+
+/*sign-up styling*/
+.reg-container{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 700px;
+    background-color: #ffffff;
+    margin: auto;
+    border: solid #063247 ;
+    border-radius: 2%;
+    padding:2rem;
+}
