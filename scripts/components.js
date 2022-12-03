@@ -21,7 +21,7 @@ class Navbar extends HTMLElement{
 <!-- afishimi ores --> <li id="clk" style="float: right; color: white; text-align: center; margin-right: 20px; margin-top:23px; font-size: 20px;"><a href="#"></a></li> 
                     <li style="float: right;margin-right: 55px;"><a href="#"><i class="fa fa-user-circle" style="font-size:150%; margin-top: 10px; margin-left: 40px"></i></a>
                         <ul>
-                            <li><a href="sign-up.php" target="_self">Login</a></li>
+                            <li><a href="../templates/sign-up.php" target="_self">Login</a></li>
                         </ul>
                     </li>           
                  </ul>
@@ -57,10 +57,10 @@ class Footer extends HTMLElement{
         <div class="footer-col">
            <br><br><br>
             <ul>
-                <li><a href="../templates/FAQS.php">FAQs</a></li>
+                <li><a href="../templates/faqs.php">FAQs</a></li>
                 <li><a href="../templates/customs.php">Customs</a></li>
                 <li><a href="../templates/luggage.php">Luggages</a></li>
-                <li><a href="../templates/PrivPolicy.php">Privacy Policy</a></li>
+                <li><a href="../templates/privacy-policy.php">Privacy Policy</a></li>
             </ul>
         </div>
         <div class="footer-col" style="padding-left: 5px">

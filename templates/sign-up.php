@@ -47,7 +47,7 @@
                 <select id="role" name="role" class="form-input" required="">
                     <option value="admin">Administrator</option>
                     <option value="agency-admin">Agency Administrator</option>
-                    <option value="business-owner">Busines Owner</option>
+                    <option value="business-owner">Business Owner</option>
                     <option value="client">Client</option>
                 </select>
             </div>
