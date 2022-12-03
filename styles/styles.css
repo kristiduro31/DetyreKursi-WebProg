@@ -2,13 +2,15 @@ html {
     overflow-y: auto;
     overflow-x: hidden;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
-body{
+
+body {
     font-family: sans-serif;
     overflow: inherit;
     user-select: none;
@@ -20,24 +22,26 @@ body{
     background-image: url('../images/terminal.png');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0; padding:0;
+    margin: 0;
+    padding: 0;
     background-attachment: fixed;
     width: 100%;
     background-position: center;
 
 }
-nav{
+
+nav {
     margin-top: 0;
     height: 70px;
     background: #063247;
-    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     display: block;
     padding: 0 20px;
@@ -49,53 +53,62 @@ nav ul li a{
 }
 
 nav ul li a:hover,
-nav ul li a.active{
+nav ul li a.active {
     color: #23dbdb;
 }
-nav ul ul{
+
+nav ul ul {
     position: absolute;
     top: 85px;
     border-top: 3px solid #23dbdb;
     opacity: 0;
     visibility: hidden;
 }
-nav ul li:hover > ul{
+
+nav ul li:hover > ul {
     top: 70px;
     opacity: 1;
     visibility: visible;
     transition: .3s linear;
 }
-nav ul ul li{
+
+nav ul ul li {
     width: 150px;
     display: list-item;
     position: relative;
     border: 1px solid #042331;
     border-top: none;
 }
-nav ul ul li a{
+
+nav ul ul li a {
     line-height: 50px;
     font-size: 14px;
 }
-nav ul ul ul{
+
+nav ul ul ul {
     border-top: none;
 }
-nav ul li ul li{
+
+nav ul li ul li {
     width: 150px
 }
-nav ul ul ul li{
+
+nav ul ul ul li {
     position: relative;
     top: -70px;
     left: 150px;
 }
-nav ul ul li a i{
+
+nav ul ul li a i {
     margin-left: 45px;
 }
 
-main{
+main {
     flex-grow: 1;
     width: 90%;
     padding: 50px;
 }
+
 /*footer{*/
 /*    background: #063247;*/
 /*    font-size: 15px;*/
@@ -106,28 +119,33 @@ main{
 /*    bottom: 0;*/
 /*    width: 100vw;*/
 /*}*/
-.container{
+.container {
     max-width: 100%;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.footer{
+
+.footer {
     background-color: #063247;
     padding: 20px 0;
     margin-top: auto;
     bottom: 0;
     width: 100vw;
 }
-.footer-col{
+
+.footer-col {
     width: 15%;
     padding: 10px 70px;
 }
-.footer-col h4{
+
+.footer-col h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -135,20 +153,23 @@ ul{
     font-weight: 500;
     position: relative;
 }
-.footer-col h4::before{
+
+.footer-col h4::before {
     content: '';
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -10px;
     background-color: #e91e63;
     height: 2px;
     box-sizing: border-box;
     width: 75px;
 }
-.footer-col ul li:not(:last-child){
+
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
-.footer-col ul li a{
+
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     color: #ffffff;
@@ -158,49 +179,134 @@ ul{
     display: block;
     transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+
+.footer-col ul li a:hover {
     color: #ffffff;
     padding-left: 8px;
 }
-.footer-col .social-links a{
+
+.footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+
+.footer-col .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
 }
 
 /*responsive*/
-@media(max-width: 767px){
-    .footer-col{
+@media (max-width: 767px) {
+    .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
 }
-@media(max-width: 574px){
-    .footer-col{
+
+@media (max-width: 574px) {
+    .footer-col {
         width: 100%;
     }
 }
 
 /*sign-up styling*/
-.reg-container{
-    display: flex;
+.reg-container {
+    display: block;
     justify-content: center;
-    width: 400px;
+    width: 300px;
     height: 700px;
     background-color: #ffffff;
     margin: auto;
-    border: solid #063247 ;
-    border-radius: 2%;
-    padding:2rem;
+    border: solid #063247;
+    border-radius: 1%;
+    text-align: center;
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+.sign-up-form {
+    margin-top: 2rem;
+}
+
+.form-field {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.form-field label {
+    background-color: #042331;
+    padding: 0.7rem;
+    width: 20px;
+}
+
+.form-field .form-input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.form-field input:focus {
+    background-color: #042331;
+    color: white;
+    transition: color .2s, background-color .2s;
+}
+
+.form-field input:hover {
+    background-color: #042331;
+    color: white;
+    transition: color .2s, background-color .2s;
+}
+
+.form-field select:focus {
+    background-color: #042331;
+    color: white;
+    transition: color .2s, background-color .2s;
+}
+
+.form-field select:hover {
+    background-color: #042331;
+    color: white;
+    transition: color .2s, background-color .2s;
+}
+
+.login-button {
+    background-color: #042331;
+    margin: 2rem auto auto;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button:hover {
+    background-color: #e91e63;
+    transition: background-color .2s;
+}
+
+.login-button span {
+    color: white;
+}
+
+.reg-container a {
+    color: #042331;
+}
+
+.reg-container .login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 1.5rem;
+    color: #6f6f6f;
+    margin-top: 50px;
 }
