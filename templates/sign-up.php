@@ -47,32 +47,31 @@ if(isset($_POST['submit'])){
         <div>
             <h1>Sign Up</h1>
         </div>
-        <form class="sign-up-form">
+        <form name="sign-up" class="sign-up-form" method="post" action="sign-up.php" onsubmit="validate()">
             <div class="form-field column">
                 <label for="username"><i class="fas fa-user"></i><span style="display: none">Username</span></label>
-                <input id="username" type="text" name="username" class="form-input" placeholder="Username" required="">
+                <input id="username" type="text" name="username" class="form-input" placeholder="Username">
             </div>
             <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
                             style="display: none">First Name</span></label>
-                <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name"
-                       required="">
+                <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name">
             </div>
             <div class="form-field column">
                 <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Surname</span></label>
-                <input id="surname" type="text" name="surname" class="form-input" placeholder="Surname" required="">
+                <input id="surname" type="text" name="surname" class="form-input" placeholder="Surname">
             </div>
             <div class="form-field column">
                 <label for="email"><i class="fas fa-paper-plane"></i><span style="display: none">Email</span></label>
-                <input id="email" type="email" name="email" class="form-input" placeholder="Email" required="">
+                <input id="email" type="email" name="email" class="form-input" placeholder="Email" >
             </div>
             <div class="form-field column">
                 <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
-                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" required="">
+                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday">
             </div>
             <div class="form-field column">
                 <label for="role"><i class="fas fa-users"></i><span style="display: none">Role</span></label>
-                <select id="role" name="role" class="form-input" required="">
+                <select id="role" name="role" class="form-input" >
                     <option value="admin">Administrator</option>
                     <option value="agency-admin">Agency Administrator</option>
                     <option value="business-owner">Business Owner</option>
@@ -81,13 +80,11 @@ if(isset($_POST['submit'])){
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
-                <input id="password" type="password" name="password" class="form-input" placeholder="Password"
-                       required="">
+                <input id="password" type="password" name="password" class="form-input" placeholder="Password">
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
-                <input id="password" type="password" name="password" class="form-input" placeholder="Confirm Password"
-                       required="">
+                <input id="password" type="password" name="password" class="form-input" placeholder="Confirm Password">
             </div>
             <button type="submit" class="login-button">
                 <span>Register</span>
@@ -96,7 +93,6 @@ if(isset($_POST['submit'])){
         <div class="login-link">
             <p>Already have an account? <a href="login.php">Login</a></p>
         </div>
-
     </div>
 </main>
 <app-footer></app-footer>

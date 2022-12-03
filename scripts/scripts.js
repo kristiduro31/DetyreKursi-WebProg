@@ -20,3 +20,26 @@ function realtimeClock(){
 function register(){
 
 }
+
+function validate(){
+    validateUsername();
+}
+function validateUsername(){
+    var usrn = document.forms["sign-up"]["username"].value;
+    // var usrn_field = document.getElementById("username")
+    if(usrn===""){
+        document.getElementById("username").placeholder="This Should not be empty";
+    }
+    else if(usrn.length<8){
+        document.getElementById("username").placeholder="This Should Contain more than 8 characters";
+    }
+    else if(usrn.length>20){
+        document.getElementById("username").placeholder="This Should Contain less than 20 characters";
+    }
+    else if(/\d/.test(usrn)){
+        document.getElementById("username").placeholder="This Should NOT Contain Numbers";
+    }
+    else if(/^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/.test(usrn)){
+        document.getElementById("username").placeholder="This Should NOT Contain Special Characters";
+    }
+}
