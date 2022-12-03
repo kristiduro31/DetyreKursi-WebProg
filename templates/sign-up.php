@@ -1,3 +1,31 @@
+<?php
+
+global $conn;
+include "db-config.php";
+
+if(isset($_POST['submit'])){
+
+    $username = $_POST["username"];
+    $name = $_POST["first_name"];
+    $surname  = $_POST["surname"];
+    $email = $_POST["email"];
+    $birthday = $_POST["birthday"];
+    $role = $_POST["role"];
+    $password = $_POST['password'];
+
+    $sql = "INSERT INTO Users (username, first_name, surname, email, birthday, role, password)
+             VALUES ('$username', '$name','$surname', '$email', '$birthday', '$role','$password')";
+
+    if(mysqli_query($conn, $sql)){
+        header("location: login.php"); // te ben redirect per tek login.php
+        exit();
+    } else{
+        echo "Something went wrong. Please try again later.";
+    }
+}
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
