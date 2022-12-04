@@ -221,14 +221,14 @@ ul {
 .reg-container {
     display: block;
     justify-content: center;
-    width: 300px;
+    width: 390px;
     height: 700px;
     background-color: #ffffff;
     margin: auto;
     border: solid #063247;
     border-radius: 1%;
     text-align: center;
-    padding: 2rem 5rem;
+    padding: 2rem 6rem;
     position: relative;
 }
 
@@ -246,12 +246,19 @@ ul {
 .form-field label {
     background-color: #042331;
     padding: 0.7rem;
-    width: 20px;
+    width: 25px;
 }
 
 .form-field .form-input {
     flex: 1;
+    width: 99%;
     padding: 0.5rem;
+}
+
+.form-field span {
+    size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .form-field input:focus {
@@ -306,7 +313,6 @@ ul {
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin-bottom: 1.5rem;
     color: #6f6f6f;
     margin-top: 50px;
 }
