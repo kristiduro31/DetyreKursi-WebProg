@@ -90,7 +90,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="form-field column">
                 <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
-                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" onkeyup="validateBirthday()">
+                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" onchange="validateBirthday()">
                 <span id="birthday-error">
                      <i title="Date of Birth"
                         style='color: gray;font-size:100%;' class="fas fa-circle-info"></i>

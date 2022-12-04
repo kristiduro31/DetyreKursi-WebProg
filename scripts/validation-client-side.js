@@ -17,6 +17,7 @@ function validateUsername(){
 
     if(un.length==0){
         usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not be empty' style='color: red'></i>";
+        document.getElementById('username').placeholder = "USERNAME MUST NOT BE BLANK";
         return false;
     }
     if(un.length<10){
@@ -46,6 +47,7 @@ function validateFirstname(){
 
     if(nameFiltered.length==0){
         firstnameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='First name MUST not be empty' style='color: red'></i>";
+        document.getElementById('first_name').placeholder = "FIRST NAME MUST NOT BE BLANK";
         return false;
     }
     if(nameFiltered.length>10){
@@ -71,6 +73,7 @@ function validateSurname(){
 
     if (surname.length==0){
         surnameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Surname MUST not be empty' style='color: red'></i>";
+        document.getElementById('surname').placeholder = "SURNAME MUST NOT BE BLANK";
         return false;
     }
     if(surnameFiltered.length>10){
@@ -94,6 +97,7 @@ function validateEmail(){
 
     if(email.length==0){
         emailStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Email MUST not be empty' style='color: red'></i>";
+        document.getElementById('email').placeholder = "EMAIL MUST NOT BE BLANK";
         return false;
     }
     if(email.length<15){
@@ -114,7 +118,7 @@ function validateEmail(){
 
 function validateBirthday(){
     var birthday = document.getElementById('birthday').value;
-    if(birthday==null){
+    if(birthday==""){
         birthdayStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Birthday MUST not be empty' style='color: red'></i>";
         return false;
     }
@@ -137,6 +141,7 @@ function validatePassword(){
     var password = document.getElementById('password').value;
     if(password.length==0){
         passwordStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Password MUST not be empty' style='color: red'></i>";
+        document.getElementById('password').placeholder = "PASSWORD MUST NOT BE BLANK";
         return false;
     }
     if(password.length<8){
@@ -173,6 +178,7 @@ function validateConfirmPassword(){
 
     if(confirmPassword.length==0){
         cfrPassStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Password MUST not be empty' style='color: red'></i>";
+        document.getElementById('cfr-password').placeholder = "CONFIRM PASSWORD";
         return false;
     }
 
