@@ -19,12 +19,12 @@ function validateUsername(){
         usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not be empty' style='color: red'></i>";
         return false;
     }
-    if(un.length<8){
-        usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain less than 8 characters' style='color: red'></i>";
+    if(un.length<10){
+        usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain less than 10 characters' style='color: red'></i>";
         return false;
     }
-    if(un.length>20){
-        usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain more than 20 characters' style='color: red'></i>";
+    if(un.length>25){
+        usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain more than 25 characters' style='color: red'></i>";
         return false;
     }
     if(/\d/.test(un)){
@@ -96,12 +96,12 @@ function validateEmail(){
         emailStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Email MUST not be empty' style='color: red'></i>";
         return false;
     }
-    if(email.length<8){
-        emailStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Email MUST not contain less than 8 characters' style='color: red'></i>";
+    if(email.length<15){
+        emailStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Email MUST not contain less than 15 characters' style='color: red'></i>";
         return false;
     }
-    if(email.length>35){
-        emailStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Email MUST not contain more than 35 characters' style='color: red'></i>";
+    if(email.length>40){
+        emailStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Email MUST not contain more than 40 characters' style='color: red'></i>";
         return false;
     }
     if(formatSpecial.test(email.charAt(0))){

@@ -52,28 +52,43 @@ if(isset($_POST['submit'])){
             <div class="form-field column">
                 <label for="username"><i class="fas fa-user"></i><span style="display: none">Username</span></label>
                 <input id="username" type="text" class="form-input" placeholder="Username" onkeyup="validateUsername()">
-                <span id="username-error"></span>
+                <span id="username-error">
+                    <i title="Username MUST not contain less than 10 characters&#10;Username MUST not contain more than 25 characters&#10;Username MUST not contain Numbers&#10;Username MUST not contain Special Characters"
+                       style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
                             style="display: none">First Name</span></label>
                 <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name" onkeyup="validateFirstname()">
-                <span id="first_name-error"></span>
+                <span id="first_name-error">
+                     <i title="First name MUST not contain more than 20 characters&#10;First name MUST not contain Numbers&#10;First name MUST not contain Special Characters"
+                        style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <div class="form-field column">
                 <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Surname</span></label>
                 <input id="surname" type="text" name="surname" class="form-input" placeholder="Surname" onkeyup="validateSurname()">
-                <span id="surname-error"></span>
+                <span id="surname-error">
+                    <i title="Surname MUST not contain more than 20 characters&#10;Surname MUST not contain Numbers&#10;Surname MUST not contain Special Characters"
+                       style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <div class="form-field column">
                 <label for="email"><i class="fas fa-paper-plane"></i><span style="display: none">Email</span></label>
                 <input id="email" type="email" name="email" class="form-input" placeholder="Email" onkeyup="validateEmail()">
-                <span id="email-error"></span>
+                <span id="email-error">
+                    <i title="Email MUST not contain less than 10 characters&#10;Email MUST not contain Numbers&#10;Surname MUST not contain Special Characters"
+                       style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <div class="form-field column">
                 <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
                 <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" onkeyup="validateBirthday()">
-                <span id="birthday-error"></span>
+                <span id="birthday-error">
+                     <i title="Date of Birth"
+                        style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <div class="form-field column">
                 <label for="role"><i class="fas fa-users"></i><span style="display: none">Role</span></label>
@@ -84,17 +99,26 @@ if(isset($_POST['submit'])){
                     <option value="business-owner">Business Owner</option>
                     <option value="client">Client</option>
                 </select>
-                <span id="role-error"></span>
+                <span id="role-error">
+                    <i title="Role for the new User"
+                       style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
                 <input id="password" type="password" name="password" class="form-input" placeholder="Password" onkeyup="validatePassword()">
-                <span id="password-error"></span>
+                <span id="password-error">
+                    <i title="Password MUST not contain less than 8 characters&#10;Password MUST not contain more than 20 characters&#10;Password MUST contain at least 1 Number&#10;Password MUST contain at least 1 Special Character&#10;Password MUST contain at least 1 UPPER CASE letter&#10;Password MUST contain at least 1 LOWER CASE letter"
+                       style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
                 <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Confirm Password" onkeyup="validateConfirmPassword()">
-                <span id="confirm-password-error"></span>
+                <span id="confirm-password-error">
+                    <i title="Confirm inputed password"
+                       style='color: #063247;font-size:120%;' class="fas fa-circle-info"></i>
+                </span>
             </div>
             <button type="submit" class="login-button">
                 <span>Register</span>
