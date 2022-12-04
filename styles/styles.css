@@ -266,25 +266,25 @@ ul {
 }
 
 .form-field input:focus {
-    background-color: #042331;
+    background-color: #063247;
     color: white;
     transition: color .2s, background-color .2s;
 }
 
 .form-field input:hover {
-    background-color: #042331;
+    background-color: #063247;
     color: white;
     transition: color .2s, background-color .2s;
 }
 
 .form-field select:focus {
-    background-color: #042331;
+    background-color: #063247;
     color: white;
     transition: color .2s, background-color .2s;
 }
 
 .form-field select:hover {
-    background-color: #042331;
+    background-color: #063247;
     color: white;
     transition: color .2s, background-color .2s;
 }

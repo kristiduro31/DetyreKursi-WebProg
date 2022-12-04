@@ -1,29 +1,29 @@
 <?php
-
-global $conn;
-include "db-config.php";
-
-if(isset($_POST['submit'])){
-
-    $username = $_POST["username"];
-    $name = $_POST["first_name"];
-    $surname  = $_POST["surname"];
-    $email = $_POST["email"];
-    $birthday = $_POST["birthday"];
-    $role = $_POST["role"];
-    $password = $_POST['password'];
-
-    $sql = "INSERT INTO Users (username, first_name, surname, email, birthday, role, password)
-             VALUES ('$username', '$name','$surname', '$email', '$birthday', '$role','$password')";
-
-    if(mysqli_query($conn, $sql)){
-        header("location: login.php"); // te ben redirect per tek login.php
-        exit();
-    } else{
-        echo "Something went wrong. Please try again later.";
-    }
-}
-?>
+//
+//global $conn;
+//include "db-config.php";
+//
+//if(isset($_POST['submit'])){
+//
+//    $username = $_POST["username"];
+//    $name = $_POST["first_name"];
+//    $surname  = $_POST["surname"];
+//    $email = $_POST["email"];
+//    $birthday = $_POST["birthday"];
+//    $role = $_POST["role"];
+//    $password = $_POST['password'];
+//
+//    $sql = "INSERT INTO Users (username, first_name, surname, email, birthday, role, password)
+//             VALUES ('$username', '$name','$surname', '$email', '$birthday', '$role','$password')";
+//
+//    if(mysqli_query($conn, $sql)){
+//        header("location: login.php"); // te ben redirect per tek login.php
+//        exit();
+//    } else{
+//        echo "Something went wrong. Please try again later.";
+//    }
+//}
+//?>
 
 <!Doctype html>
 <html lang="en">
@@ -59,7 +59,7 @@ if(isset($_POST['submit'])){
                 <label for="username"><i class="fas fa-user"></i><span style="display: none">Username</span></label>
                 <input id="username" type="text" class="form-input" placeholder="Username" onkeyup="validateUsername()">
                 <span id="username-error">
-                    <i title="Username MUST not contain less than 10 characters&#10;Username MUST not contain more than 25 characters&#10;Username MUST not contain Numbers&#10;Username MUST not contain Special Characters"
+                    <i title="Username MUST not contain less than 8 characters&#10;Username MUST not contain more than 25 characters&#10;Username MUST not contain Special Characters(except '.' and '_')"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
@@ -122,7 +122,7 @@ if(isset($_POST['submit'])){
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
                 <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Confirm Password" onkeyup="validateConfirmPassword()">
                 <span id="confirm-password-error">
-                    <i title="Confirm inputed password"
+                    <i title="Confirm inputted password"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>

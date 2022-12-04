@@ -7,7 +7,7 @@ var roleStat = document.getElementById('role-error');
 var passwordStat = document.getElementById('password-error');
 var cfrPassStat = document.getElementById('confirm-password-error');
 
-var formatSpecial = /[!@#$ %^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+var formatSpecial = /[!@#$ %^&*()+\-=\[\]{};':"\\|,<>\/?]+/;  // pervec '_' dhe '.'
 var formatNumbers = /(.*\d.*)/;
 var formatCapitals = /(.*[A-Z].*)/;
 var formatLower = /(.*[a-z].*)/;
@@ -20,18 +20,18 @@ function validateUsername(){
         document.getElementById('username').placeholder = "USERNAME MUST NOT BE BLANK";
         return false;
     }
-    if(un.length<10){
-        usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain less than 10 characters' style='color: red'></i>";
+    if(un.length<8){
+        usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain less than 8 characters' style='color: red'></i>";
         return false;
     }
     if(un.length>25){
         usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain more than 25 characters' style='color: red'></i>";
         return false;
     }
-    if(/\d/.test(un)){
-        usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain Numbers' style='color: red'></i>";
-        return false;
-    }
+    // if(/\d/.test(un)){
+    //     usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain Numbers' style='color: red'></i>";
+    //     return false;
+    // }
     if(formatSpecial.test(un)){
         usernameStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not contain Special Characters' style='color: red'></i>";
         return false;
