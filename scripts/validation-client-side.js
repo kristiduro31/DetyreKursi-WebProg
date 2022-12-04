@@ -123,13 +123,14 @@ function validateBirthday(){
 }
 
 function validateRole(){
-    var role = document.getElementById('birthday').value;
-    if(role==null){
+    var role = document.getElementById('role').valueOf().value;
+    if(role==""){
         roleStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Role MUST not be empty' style='color: red'></i>";
         return false;
+    }else{
+        roleStat.innerHTML = "<i class='fas fa-check-circle' title='CORRECT' style='color: green'</i>";
+        return true;
     }
-    roleStat.innerHTML = "<i class='fas fa-check-circle' title='CORRECT' style='color: green'</i>";
-    return true;
 }
 
 function validatePassword(){
@@ -170,6 +171,11 @@ function validateConfirmPassword(){
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('cfr-password').value;
 
+    if(confirmPassword.length==0){
+        cfrPassStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Password MUST not be empty' style='color: red'></i>";
+        return false;
+    }
+
     if(password!=confirmPassword){
         cfrPassStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='PASSWORD DO NOT MATCH' style='color: red'></i>";
         return false;
@@ -177,5 +183,16 @@ function validateConfirmPassword(){
     cfrPassStat.innerHTML = "<i class='fas fa-check-circle' title='PASSWORDS MATCH' style='color: green'</i>";
     return true;
 }
+function validate(){
+     var x1 = validateUsername();
+     var x2 = validateFirstname();
+     var x3 = validateSurname();
+     var x4 = validateEmail();
+     var x5 = validateBirthday();
+     var x6 = validateRole();
+     var x7 = validatePassword();
+     var x8 = validateConfirmPassword();
 
+     return ((x1 && x2 && x3 && x4 && x5 && x6 && x7 && x8));
+}
 

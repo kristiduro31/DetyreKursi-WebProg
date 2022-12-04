@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
             <h1>Sign Up</h1>
         </div>
 
-        <form>
+        <form class="sign-up-form" method="post" action="sign-up.php" onsubmit="return validate()">
 
             <div class="form-field column">
                 <label for="username"><i class="fas fa-user"></i><span style="display: none">Username</span></label>
@@ -77,7 +77,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="form-field column">
                 <label for="role"><i class="fas fa-users"></i><span style="display: none">Role</span></label>
-                <select id="role" name="role" class="form-input" onkeyup="validateRole()">
+                <select id="role" name="role" class="form-input" onchange="validateRole()" ">
                     <option disabled selected hidden value="">Select your role</option>
                     <option value="admin">Administrator</option>
                     <option value="agency-admin">Agency Administrator</option>
