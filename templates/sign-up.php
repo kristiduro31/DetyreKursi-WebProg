@@ -57,7 +57,7 @@
         <form class="sign-up-form" method="post" action="sign-up.php" onsubmit="return validate()">
             <div class="form-field column">
                 <label for="username"><i class="fas fa-user"></i><span style="display: none">Username</span></label>
-                <input id="username" type="text" class="form-input" placeholder="Username" onkeyup="validateUsername()">
+                <input id="username" name="username" type="text" class="form-input" placeholder="Username" onkeyup="validateUsername()">
                 <span id="username-error">
                     <i title="Username MUST not contain less than 8 characters&#10;Username MUST not contain more than 25 characters&#10;Username MUST not contain Special Characters(except '.' and '_')"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
