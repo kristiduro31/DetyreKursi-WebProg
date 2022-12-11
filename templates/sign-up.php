@@ -47,7 +47,7 @@
         }
     </style>
 </head>
-<body onload="realtimeClock()">
+<body onload="realtimeClock(),getRouting()">
 <app-navbar></app-navbar>
 <main>
     <div class="reg-container">

@@ -74,7 +74,7 @@ class Footer extends HTMLElement{
             <br>
             <h4>Address</h4>
             <ul>
-                <li><a href="https://www.google.com/maps/dir/41.320448,19.808256/tia+address/@41.3703798,19.6917256,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x13502d0712c5607f:0x5254c1f62d5286db!2m2!1d19.714428!2d41.4191706">
+                <li><a id="pathToTIA" href="https://www.google.com/maps/dir//tia+address/@41.3703798,19.6917256,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x13502d0712c5607f:0x5254c1f62d5286db!2m2!1d19.714428!2d41.4191706">
                 <i class="fas fa-map-marker-alt"></i> Rr. Nene Tereza, Rinas 1504, Albania</span></a></li>
             </ul>
         </div>
