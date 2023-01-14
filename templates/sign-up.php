@@ -1,29 +1,31 @@
 <?php
-//
-//global $conn;
-//include "db-config.php";
-//
-//if(isset($_POST['submit'])){
-//
-//    $username = $_POST["username"];
-//    $name = $_POST["first_name"];
-//    $surname  = $_POST["surname"];
-//    $email = $_POST["email"];
-//    $birthday = $_POST["birthday"];
-//    $role = $_POST["role"];
-//    $password = $_POST['password'];
-//
-//    $sql = "INSERT INTO Users (username, first_name, surname, email, birthday, role, password)
-//             VALUES ('$username', '$name','$surname', '$email', '$birthday', '$role','$password')";
-//
-//    if(mysqli_query($conn, $sql)){
-//        header("location: login.php"); // te ben redirect per tek login.php
-//        exit();
-//    } else{
-//        echo "Something went wrong. Please try again later.";
-//    }
-//}
-//?>
+
+global $conn;
+include "../db-config.php";
+
+if(isset($_POST['submit'])){
+
+    $username = $_POST["username"];
+    $nm = $_POST["first_name"];
+    $surname  = $_POST["surname"];
+    $email = $_POST["email"];
+    $birthday = $_POST["birthday"];
+    $re = $_POST["role"];
+    $pas = $_POST["password"];
+    $passw = password_hash($pas,PASSWORD_BCRYPT);
+
+    $sql = "INSERT INTO Users (username, first_name, surname, email, birthday, role, password)
+             VALUES ('$username', '$nm','$surname', '$email', '$birthday', '$re','$passw')";
+
+    if(mysqli_query($conn, $sql)){
+       // header("location: ../index.php");
+        echo "New User record";
+        exit();
+    } else{
+        echo "Something went wrong. Please try again later.";
+    }
+}
+?>
 
 <!Doctype html>
 <html lang="en">
@@ -126,7 +128,7 @@
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
-            <button type="submit" class="login-button">
+            <button type="submit" class="login-button" name="submit">
                 <span>Register</span>
             </button>
         </form>
