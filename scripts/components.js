@@ -4,24 +4,24 @@ class Navbar extends HTMLElement{
         this.innerHTML=
             `<nav>
                  <ul>          
-                    <li><a class="active" href="../templates/landing-page.php">Flights <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
+                    <li><a class="active" href="../front-end/landing-page.php">Flights <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
                     <li>
                        <a href="#">Services <i class="fa fa-cogs" style="font-size:100%"></i></a>
                        <ul>
-                          <li><a href="../templates/transport.php">Transport <i class="fa fa-taxi" style="margin-left: 0"></i></a></li>
-                          <li><a href="../templates/restaurant.php">Restaurant <i class="fa-solid fa-utensils" style="margin-left: 0; font-size:100%"></i></a></li>
-                          <li><a href="../templates/customs.php">Customs <i class="fa-solid fa-person-military-to-person" style="margin-left: 0"></i></a></li>
-                          <li><a href="../templates/shops.php">Shops <i class="fa-solid fa-cart-shopping" style="margin-left: 0"></i></a></li>
-                          <li><a href="../templates/health.php">Health <i class="fa fa-medkit" style="margin-left: 0"></i></a></li>
-                          <li><a href="../templates/luggage.php">Luggage <i class="fa-solid fa-suitcase-rolling" style="margin-left: 0"></i></a></li>
+                          <li><a href="../front-end/transport.php">Transport <i class="fa fa-taxi" style="margin-left: 0"></i></a></li>
+                          <li><a href="../front-end/restaurant.php">Restaurant <i class="fa-solid fa-utensils" style="margin-left: 0; font-size:100%"></i></a></li>
+                          <li><a href="../front-end/customs.php">Customs <i class="fa-solid fa-person-military-to-person" style="margin-left: 0"></i></a></li>
+                          <li><a href="../front-end/shops.php">Shops <i class="fa-solid fa-cart-shopping" style="margin-left: 0"></i></a></li>
+                          <li><a href="../front-end/health.php">Health <i class="fa fa-medkit" style="margin-left: 0"></i></a></li>
+                          <li><a href="../front-end/luggage.php">Luggage <i class="fa-solid fa-suitcase-rolling" style="margin-left: 0"></i></a></li>
                        </ul>
                     </li>
-                    <li><a href="../templates/car-renting.php">Car Rentals <i class="fa fa-automobile" style="font-size:100%;"></i></a></li>
-                    <li><a href="../templates/hotels.php">Stays <i class="fa-solid fa-bed" style="font-size:100%;"></i></a></li>  
+                    <li><a href="../front-end/car-renting.php">Car Rentals <i class="fa fa-automobile" style="font-size:100%;"></i></a></li>
+                    <li><a href="../front-end/hotels.php">Stays <i class="fa-solid fa-bed" style="font-size:100%;"></i></a></li>  
 <!-- afishimi ores --> <li id="clk" style="float: right; color: white; text-align: center; margin-right: 20px; margin-top:23px; font-size: 20px;"><a href="#"></a></li> 
                     <li style="float: right;margin-right: 55px;"><a href="#"><i class="fa fa-user-circle" style="font-size:150%; margin-top: 10px; margin-left: 40px"></i></a>
                         <ul>
-                            <li><a href="../templates/sign-up.php" target="_self">Login</a></li>
+                            <li><a href="../front-end/sign-up.php" target="_self">Login</a></li>
                         </ul>
                     </li>           
                  </ul>
@@ -46,21 +46,21 @@ class Footer extends HTMLElement{
         <div class="footer-col">
             <h4> Services </h4>
             <ul>
-                <li><a href="../templates/transport.php">Transport</a></li>
-                <li><a href="../templates/restaurant.php">Restaurants and Cafes</a></li>
-                <li><a href="../templates/shops.php">Shops</a></li>
-                <li><a href="../templates/health.php">Health</a></li>
-                <li><a href="../templates/car-renting.php">Car Rentals</a></li>
-                <li><a href="../templates/hotels.php">Hotels and accommodation</a></li>
+                <li><a href="../front-end/transport.php">Transport</a></li>
+                <li><a href="../front-end/restaurant.php">Restaurants and Cafes</a></li>
+                <li><a href="../front-end/shops.php">Shops</a></li>
+                <li><a href="../front-end/health.php">Health</a></li>
+                <li><a href="../front-end/car-renting.php">Car Rentals</a></li>
+                <li><a href="../front-end/hotels.php">Hotels and accommodation</a></li>
             </ul>
         </div>
         <div class="footer-col">
            <br><br><br>
             <ul>
-                <li><a href="../templates/faqs.php">FAQs</a></li>
-                <li><a href="../templates/customs.php">Customs</a></li>
-                <li><a href="../templates/luggage.php">Luggages</a></li>
-                <li><a href="../templates/privacy-policy.php">Privacy Policy</a></li>
+                <li><a href="../front-end/faqs.php">FAQs</a></li>
+                <li><a href="../front-end/customs.php">Customs</a></li>
+                <li><a href="../front-end/luggage.php">Luggages</a></li>
+                <li><a href="../front-end/privacy-policy.php">Privacy Policy</a></li>
             </ul>
         </div>
         <div class="footer-col" style="padding-left: 5px">

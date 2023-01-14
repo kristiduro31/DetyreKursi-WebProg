@@ -17,10 +17,6 @@ function realtimeClock(){
     var t = setTimeout(realtimeClock,500);
 }
 
-function register(){
-
-}
-
 async function getRouting(){
     const ip_info = "http://ip-api.com/json";
     const response = await fetch(ip_info);
