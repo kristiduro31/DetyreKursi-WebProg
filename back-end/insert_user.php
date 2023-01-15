@@ -1,3 +1,4 @@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
 
 global $conn;
@@ -18,11 +19,19 @@ if(isset($_POST['submit'])){
              VALUES ('$username', '$nm','$surname', '$email', '$birthday', '$re','$passw')";
 
     if(mysqli_query($conn, $sql)){
-        // header("location: ../index.php");
-        echo "New User record";
+//        //header("location: ../front-end/sign-up.html");
+//        echo "<script>alert('New user added');</script>";
+//        //header("location: ../front-end/landing-page.html");
+        echo "<script>alert('New User created'); window.location = '../front-end/sign-up.html';</script>";
+//        ?>
+<!--        <script type="text/javascript">-->
+<!--            //alert("review your answer");-->
+<!--            window.location.href = "../front-end/sign-up.html";-->
+<!--        </script>-->
+<!--        --><?php
+
         exit();
     } else{
         echo "Something went wrong. Please try again later.";
     }
 }
-?>
