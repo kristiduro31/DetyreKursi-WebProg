@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     $pas = $_POST["password"];
     $passw = password_hash($pas,PASSWORD_BCRYPT);
 
-    $sql = "INSERT INTO Users (username, first_name, surname, email, birthday, role, password)
+    $sql = "INSERT INTO TestU (username, first_name, surname, email, birthday, role, password)
              VALUES ('$username', '$nm','$surname', '$email', '$birthday', '$re','$passw')";
 
     if(mysqli_query($conn, $sql)){
