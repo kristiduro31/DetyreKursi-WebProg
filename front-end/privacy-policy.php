@@ -14,8 +14,8 @@
         }
 	</style>
 </head>
-<body onload="realtimeClock()">
-<app-navbar></app-navbar>
+<body onload="realtimeClock(),getRouting()">
+<?php include "../components/navbar.php" ?>
 <main>
 	<h1>Privacy Policy</h1>
 	<br>
@@ -63,6 +63,6 @@
 		you use to access the service. This includes collecting unique online identifiers such as IP addresses,
 		which are numbers that uniquely identify a specific computer or other network device on the internet. </p>
 </main>
-<app-footer></app-footer>
+<?php include "../components/footer-bar.php" ?>
 </body>
 </html>
