@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Server side validation if email is already used">
-      <change afterPath="$PROJECT_DIR$/back-end/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer-bar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Full sign-up and login functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/insert_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/car-renting.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/car-renting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/customs.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/customs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/faqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/faqs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/health.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/health.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/hotels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/landing-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/luggage.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/luggage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/privacy-policy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/restaurant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/shops.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/shops.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/sign-up.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/transport.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/transport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/sms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/landing-page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +75,7 @@
       <workItem from="1673885979304" duration="192000" />
       <workItem from="1673886177470" duration="592000" />
       <workItem from="1673886899225" duration="597000" />
-      <workItem from="1673888757437" duration="13493000" />
+      <workItem from="1673888757437" duration="16186000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -110,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673892434739</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Full sign-up and login functionality">
+      <created>1673903306394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673903306394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="No idea what I am doing" />
     <MESSAGE value="Server side validation if email is already used" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server side validation if email is already used" />
+    <MESSAGE value="Full sign-up and login functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full sign-up and login functionality" />
   </component>
 </project>

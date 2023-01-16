@@ -1,8 +1,10 @@
 <?php
 session_start();
 if(!empty($_SESSION["user_id"])) {
-    // ketu supozohet qe mqs useri eshte ruajtur ne session atehere
-    // permbajtja e butonit (login) duhet te kthehet ne logout
+//    echo "<script>
+//                const link = document.getElementById('loggedUser').href='../back-end/logout.php';
+//                const label = document.getElementById('loggedUser').value = 'Logout';
+//          </script>"; -->> this is not working
     echo "logged in";
 } else echo"logged out";
 ?>
@@ -25,7 +27,7 @@ if(!empty($_SESSION["user_id"])) {
         <!-- afishimi ores --> <li id="clk" style="float: right; color: white; text-align: center; margin-right: 20px; margin-top:23px; font-size: 20px;"><a href="#"></a></li>
         <li style="float: right;margin-right: 55px;"><a href="#"><i class="fa fa-user-circle" style="font-size:150%; margin-top: 10px; margin-left: 40px"></i></a>
             <ul>
-                <li><a id="loggedUser" href="../front-end/sign-up.php" target="_self">Login</a></li>
+                <li><a id="loggedUser" href="../front-end/login.php" target="_self">Login</a></li>
             </ul>
         </li>
     </ul>

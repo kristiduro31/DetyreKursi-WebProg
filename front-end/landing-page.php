@@ -1,3 +1,18 @@
+<?php
+session_start();
+global $conn;
+include '../db-config.php';
+
+global $loggedUser;
+if (isset($_SESSION["user_id"])) {
+    $useroo = $_SESSION["user_id"];
+    $sql = "SELECT * FROM TestU WHERE `id` = '$useroo';";
+    $result = mysqli_query($conn, $sql);
+    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $loggedUser = $user["first_name"];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +27,7 @@
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-	<h1>Hello</h1>
+	<h1>Hello <?php echo $loggedUser?></h1>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>
