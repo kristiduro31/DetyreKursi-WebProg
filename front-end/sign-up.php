@@ -1,30 +1,3 @@
-<?php
-global $conn;
-include "../db-config.php";
-
-if(isset($_POST['submit'])){
-
-    $username = $_POST["username"];
-    $nm = $_POST["first_name"];
-    $surname  = $_POST["surname"];
-    $email = $_POST["email"];
-    $birthday = $_POST["birthday"];
-    $re = $_POST["role"];
-    $pas = $_POST["password"];
-    $passw = password_hash($pas,PASSWORD_BCRYPT);
-
-    $sql = "INSERT INTO Users (username, first_name, surname, email, birthday, role, password)
-             VALUES ('$username', '$nm','$surname', '$email', '$birthday', '$re','$passw')";
-
-    if(mysqli_query($conn, $sql)){
-        echo "<script>alert('New User created'); window.location = 'landing-page.html';</script>";
-        exit();
-    } else{
-        echo "Something went wrong. Please try again later.";
-    }
-}
-?>
-
 <!Doctype html>
 <html lang="en">
 <head>
@@ -34,8 +7,7 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
     <script src="../scripts/components.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="https://kit.fontawesome.com/1e579789f0.js" crossorigin="anonymous"></script>
@@ -50,13 +22,13 @@ if(isset($_POST['submit'])){
     </style>
 </head>
 <body onload="realtimeClock(),getRouting()">
-<app-navbar></app-navbar>
+<?php include "../components/navbar.php" ?>
 <main>
     <div class="reg-container">
         <div>
             <h1>Sign Up</h1>
         </div>
-        <form class="sign-up-form" method="post" action="test.php" onsubmit="return validate()">
+        <form class="sign-up-form" method="post" action="../back-end/insert_user.php" onsubmit="return validate()">
             <div class="form-field column">
                 <label for="username"><i class="fas fa-user"></i><span style="display: none">Username</span></label>
                 <input id="username" name="username" type="text" class="form-input" placeholder="Username" onkeyup="validateUsername()">
@@ -67,7 +39,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
-                        style="display: none">First Name</span></label>
+                            style="display: none">First Name</span></label>
                 <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name" onkeyup="validateFirstname()">
                 <span id="first_name-error">
                      <i title="First name MUST not contain more than 20 characters&#10;First name MUST not contain Numbers&#10;First name MUST not contain Special Characters"
@@ -137,7 +109,7 @@ if(isset($_POST['submit'])){
         </div>
     </div>
 </main>
-<app-footer></app-footer>
+<?php include "../components/footer-bar.php" ?>
 <script src="../scripts/validation-client-side.js"></script>
 </body>
 </html>
