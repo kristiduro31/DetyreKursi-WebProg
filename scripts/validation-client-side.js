@@ -6,6 +6,8 @@ var birthdayStat = document.getElementById('birthday-error');
 var roleStat = document.getElementById('role-error');
 var passwordStat = document.getElementById('password-error');
 var cfrPassStat = document.getElementById('confirm-password-error');
+var phoneStat = document.getElementById('phone-error');
+var addStat = document.getElementById('address-error');
 
 var formatSpecial = /[!@#$ %^&*()+\-=\[\]{};':"\\|,<>\/?]+/;  // pervec '_' dhe '.'
 var formatNumbers = /(.*\d.*)/;
@@ -189,13 +191,38 @@ function validateConfirmPassword(){
     cfrPassStat.innerHTML = "<i class='fas fa-check-circle' title='PASSWORDS MATCH' style='color: green'</i>";
     return true;
 }
+
+function validatePhone(){
+    var tel = document.getElementById('telephone').value;
+
+    if(tel.length==0){
+        phoneStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Username MUST not be empty' style='color: red'></i>";
+        document.getElementById('telephone').placeholder = "PHONE NUMBER MUST NOT BE BLANK";
+        return false;
+    }
+    phoneStat.innerHTML = "<i class='fas fa-check-circle' title='CORRECT' style='color: green'</i>";
+    return true;
+}
+
+function validateAddress(){
+    var addr = document.getElementById('address').value;
+
+    if(addr.length==0){
+        addStat.innerHTML = "<i class='fas fa-exclamation-triangle' title='Address MUST not be empty' style='color: red'></i>";
+        document.getElementById('address').placeholder = "ADDRESS MUST NOT BE BLANK";
+        return false;
+    }
+    addStat.innerHTML = "<i class='fas fa-check-circle' title='CORRECT' style='color: green'</i>";
+    return true;
+}
+
 function validate(){
-     var x1 = validateUsername();
+     var x1 = validateAddress();
      var x2 = validateFirstname();
      var x3 = validateSurname();
      var x4 = validateEmail();
      var x5 = validateBirthday();
-     var x6 = validateRole();
+     var x6 = validatePhone();
      var x7 = validatePassword();
      var x8 = validateConfirmPassword();
 

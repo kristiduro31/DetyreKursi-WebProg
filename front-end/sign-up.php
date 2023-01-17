@@ -30,14 +30,6 @@
         </div>
         <form class="sign-up-form" method="post" action="../back-end/insert_user.php" onsubmit="return validate()">
             <div class="form-field column">
-                <label for="username"><i class="fas fa-user"></i><span style="display: none">Username</span></label>
-                <input id="username" name="username" type="text" class="form-input" placeholder="Username" onkeyup="validateUsername()">
-                <span id="username-error">
-                    <i title="Username MUST not contain less than 8 characters&#10;Username MUST not contain more than 25 characters&#10;Username MUST not contain Special Characters(except '.' and '_')"
-                       style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
-                </span>
-            </div>
-            <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
                             style="display: none">First Name</span></label>
                 <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name" onkeyup="validateFirstname()">
@@ -63,6 +55,14 @@
                 </span>
             </div>
             <div class="form-field column">
+                <label for="telephone"><i class="fa-solid fa-phone-volume"></i><span style="display: none">Phone Number</span></label>
+                <input id="telephone" name="telephone" type="text" class="form-input" placeholder="Phone Number" onkeyup="validatePhone()">
+                <span id="phone-error">
+                    <i title="Phone Number MUST not be empty"
+                       style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
+                </span>
+            </div>
+            <div class="form-field column">
                 <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
                 <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" onchange="validateBirthday()">
                 <span id="birthday-error">
@@ -71,16 +71,10 @@
                 </span>
             </div>
             <div class="form-field column">
-                <label for="role"><i class="fas fa-users"></i><span style="display: none">Role</span></label>
-                <select id="role" name="role" class="form-input" onchange="validateRole()">
-                    <option disabled selected hidden value="">Select your role</option>
-                    <option value="admin">Administrator</option>
-                    <option value="agency-admin">Agency Administrator</option>
-                    <option value="business-owner">Business Owner</option>
-                    <option value="client">Client</option>
-                </select>
-                <span id="role-error">
-                    <i title="Role for the new User"
+                <label for="address"><i class="fa-regular fa-location-dot"></i><span style="display: none">Address</span></label>
+                <input id="address" name="address" type="text" class="form-input" placeholder="Address" onkeyup="validateAddress()">
+                <span id="address-error">
+                    <i title="Address MUST not be empty"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>

@@ -5,12 +5,13 @@ include "../db-config.php";
 
 if(isset($_POST['submit'])){
 
-    $username = $_POST["username"];
     $nm = $_POST["first_name"];
     $surname  = $_POST["surname"];
     $email = $_POST["email"];
+    $tel = $_POST["telephone"];
     $birthday = $_POST["birthday"];
-    $re = $_POST["role"];
+    $re = "admin"; //--> to be turnt to user "default role"
+    $address = $_POST["address"];
     $pas = $_POST["password"];
     $passw = password_hash($pas,PASSWORD_BCRYPT);
 
@@ -22,8 +23,8 @@ if(isset($_POST['submit'])){
         exit();
     }
 
-    $sql1 = "INSERT INTO TestU (username, first_name, surname, email, birthday, role, password)
-             VALUES ('$username', '$nm','$surname', '$email', '$birthday', '$re','$passw')";
+    $sql1 = "INSERT INTO TestU (first_name, surname, email, telephone, birthday, role, address, password) 
+             VALUES ('$nm','$surname', '$email', '$tel', '$birthday', '$re', '$address', '$passw');";
 
     if(mysqli_query($conn, $sql1)){
         echo "<script>alert('New User created'); window.location = '../front-end/login.php';</script>";

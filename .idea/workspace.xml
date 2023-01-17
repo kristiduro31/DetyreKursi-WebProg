@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Small fix on redirection page if user is already logged in, depending on his user role.">
-      <change afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="MyProfile button redirection in the navbar if the user is already logged in and saved in session, else he is redirected to login page .">
+      <change afterPath="$PROJECT_DIR$/back-end/insert-Test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/insert_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/db-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validation-client-side.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validation-client-side.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
