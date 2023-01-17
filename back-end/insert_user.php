@@ -5,14 +5,14 @@ include "../db-config.php";
 
 if(isset($_POST['submit'])){
 
-    $nm = $_POST["first_name"];
-    $surname  = $_POST["surname"];
-    $email = $_POST["email"];
-    $tel = $_POST["telephone"];
-    $birthday = $_POST["birthday"];
-    $re = "admin"; //--> to be turnt to user "default role"
-    $address = $_POST["address"];
-    $pas = $_POST["password"];
+    $nm = mysqli_real_escape_string($conn, $_POST["first_name"]);
+    $surname  = mysqli_real_escape_string($conn, $_POST["surname"]);
+    $email = mysqli_real_escape_string($conn, $_POST["email"]);
+    $tel = mysqli_real_escape_string($conn, $_POST["telephone"]);
+    $birthday = mysqli_real_escape_string($conn, $_POST["birthday"]);
+    $re = "admin";                                                      //--> to be turnt to user "default role"
+    $address = mysqli_real_escape_string($conn, $_POST["address"]);
+    $pas = mysqli_real_escape_string($conn, $_POST["password"]);
     $passw = password_hash($pas,PASSWORD_BCRYPT);
 
     $sql2 = "SELECT * FROM TestU where email='$email';";
