@@ -11,6 +11,10 @@ if (isset($_SESSION["user_id"])) {
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $loggedUser = $user["first_name"];
 }
+if(!isset($_SESSION["user_id"])){
+    header("location: landing-page.php");
+    die();
+}
 ?>
 
 <!DOCTYPE html>

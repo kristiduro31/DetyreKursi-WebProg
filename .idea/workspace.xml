@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Adapting signup form to user table.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/insert_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/insert-Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/admin-landing-page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
