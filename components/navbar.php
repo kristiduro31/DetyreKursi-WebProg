@@ -1,13 +1,3 @@
-<?php
-session_start();
-if(!empty($_SESSION["user_id"])) {
-//    echo "<script>
-//                const link = document.getElementById('loggedUser').href='../back-end/logout.php';
-//                const label = document.getElementById('loggedUser').value = 'Logout';
-//          </script>"; -->> this is not working
-    echo "logged in";
-} else echo"logged out";
-?>
 <nav>
     <ul>
         <li><a class="active" href="../front-end/landing-page.php">Flights <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
@@ -32,3 +22,13 @@ if(!empty($_SESSION["user_id"])) {
         </li>
     </ul>
 </nav>
+<?php
+session_start();
+if(!empty($_SESSION["user_id"])) {
+    echo "<script>
+                const link = document.getElementById('loggedUser').href='../back-end/logout.php';
+                const label = document.getElementById('loggedUser').innerHTML = 'Logout';
+          </script>";
+    echo "logged in";
+} else echo"logged out";
+?>
