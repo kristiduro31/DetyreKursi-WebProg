@@ -17,6 +17,7 @@
         <!-- afishimi ores --> <li id="clk" style="float: right; color: white; text-align: center; margin-right: 20px; margin-top:23px; font-size: 20px;"><a href="#"></a></li>
         <li style="float: right;margin-right: 55px;"><a href="#"><i class="fa fa-user-circle" style="font-size:150%; margin-top: 10px; margin-left: 40px"></i></a>
             <ul>
+                <li><a id="profile" href="../front-end/myProfile.php" target="_self">My Profile</a></li>
                 <li><a id="loggedUser" href="../front-end/login.php" target="_self">Login</a></li>
             </ul>
         </li>
@@ -24,6 +25,11 @@
 </nav>
 <?php
 session_start();
+if(empty($_SESSION["user_id"])){
+    echo "<script>
+                const profile = document.getElementById('profile').style.display='none';
+         </script>";
+}
 if(!empty($_SESSION["user_id"])) {
     echo "<script>
                 const link = document.getElementById('loggedUser').href='../back-end/logout.php';

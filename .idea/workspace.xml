@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Small fix on redirection page if user is already logged in, depending on his user role.">
+      <change afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
     </list>
@@ -183,6 +184,7 @@
     <MESSAGE value="Full sign-up and login functionality" />
     <MESSAGE value="Small tweaks" />
     <MESSAGE value="Small fix on redirection page if user is already logged in, depending on his user role." />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fix on redirection page if user is already logged in, depending on his user role." />
+    <MESSAGE value="login/logout button dynamic change if user is logged or not" />
+    <option name="LAST_COMMIT_MESSAGE" value="login/logout button dynamic change if user is logged or not" />
   </component>
 </project>
