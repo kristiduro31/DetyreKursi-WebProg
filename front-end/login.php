@@ -7,8 +7,19 @@ global $pass_error;
 global $email_error;
 
 session_start();
-if (isset($_SESSION["user"])) {
-    header("Location: landing-page.php");
+if (isset($_SESSION["user_id"])) {
+    $sessionUser=$_SESSION["user_id"];
+    $sql1="SELECT * FROM TestU WHERE id='$sessionUser'";
+    $result = mysqli_query($conn, $sql1);
+    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $loggedUser = $user["role"];
+    if($loggedUser==="admin"){
+        header("Location: admin-landing-page.php");
+        die();
+    }else{
+        header("Location: landing-page.php");
+        die();
+    }
 }
 if (isset($_POST["login"])) {
     $email = $_POST["email"];

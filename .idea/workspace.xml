@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Full sign-up and login functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Small tweaks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
     </list>
@@ -87,6 +86,7 @@
       <workItem from="1673886177470" duration="592000" />
       <workItem from="1673886899225" duration="597000" />
       <workItem from="1673888757437" duration="16186000" />
+      <workItem from="1673981791001" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673903306394</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Small tweaks">
+      <created>1673945458979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673945458979</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +125,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="401b6d4c-37de-44ce-958e-d0495d011799">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -125,11 +157,17 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="401b6d4c-37de-44ce-958e-d0495d011799" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="No idea what I am doing" />
     <MESSAGE value="Server side validation if email is already used" />
     <MESSAGE value="Full sign-up and login functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full sign-up and login functionality" />
+    <MESSAGE value="Small tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small tweaks" />
   </component>
 </project>
