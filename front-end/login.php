@@ -21,8 +21,12 @@ if (isset($_POST["login"])) {
         if (password_verify($password, $user["password"])) {
             session_start();
             $_SESSION["user_id"] = $user["id"];
-            header("Location: landing-page.php");
-            die();
+            if($user['role']==='admin'){
+                header("Location: admin-landing-page.php");
+            }else{
+                header("Location: landing-page.php");
+                die();
+            }
         } else {
             $pass_error = "<p style='margin-top: 7px'>Invalid password  <i class='fas fa-exclamation-triangle' style='color: red'></i></p";
         }
