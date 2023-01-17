@@ -24,10 +24,10 @@ if (isset($_POST["login"])) {
             header("Location: landing-page.php");
             die();
         } else {
-            $pass_error = "Invalid password";
+            $pass_error = "<p style='margin-top: 7px'>Invalid password  <i class='fas fa-exclamation-triangle' style='color: red'></i></p";
         }
     } else {
-        $email_error = "Invalid email";
+        $email_error = "<p style='margin-top: 7px'>Invalid email  <i class='fas fa-exclamation-triangle' style='color: red'></i></p";
     }
 }
 ?>
@@ -59,19 +59,19 @@ if (isset($_POST["login"])) {
 <main>
     <div class="reg-container-login">
         <div>
-            <h1 style="margin-top: 30px">Login</h1>
+            <h1 style="margin-top: 25px">Login</h1>
         </div>
-        <form class="sign-up-form" method="post" style="margin-top: 50px">
+        <form class="sign-up-form" method="post" style="margin-top: 40px">
             <div class="form-field column" >
                 <label for="email"><i class="fas fa-user"></i><span style="display: none">Email</span></label>
                 <input id="email" name="email" type="text" class="form-input" placeholder="Email">
             </div>
-            <div><?php echo "<p style='color: red'>$email_error</p>" ?></div>
+            <div><?php echo $email_error?></div>
             <div class="form-field column" style="margin-top: 40px" >
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
                 <input id="password" type="password" name="password" class="form-input" placeholder="Password">
             </div>
-           <div><?php echo "<p style='color: red'>$pass_error</p>" ?></div>
+            <div><?php echo $pass_error?></div>
             <button type="submit" class="login-button" name="login" id="login" style="margin-top: 40px">
                 <span>Login</span>
             </button>

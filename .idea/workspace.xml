@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Full sign-up and login functionality">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +25,26 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sign-up-markII" />
+        <entry key="$PROJECT_DIR$" value="login-modification" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1.11" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1.11">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../../../../xampp/php/PEAR" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="2KNYATBmATBWKdbSK8pIZPAM2Mh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
