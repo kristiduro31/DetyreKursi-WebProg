@@ -3,13 +3,11 @@ session_start();
 global $conn;
 include '../db-config.php';
 
-global $loggedUser;
 if (isset($_SESSION["user_id"])) {
     $useroo = $_SESSION["user_id"];
     $sql = "SELECT * FROM `Users` WHERE `user_id` = '$useroo';";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-    $loggedUser = $user["first_name"];
 }
 if(!isset($_SESSION["user_id"])){
     header("location: landing-page.php");

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="small changes on table fields">
-      <change afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar-admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/new-admin-signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/insert_admin.php" afterDir="false" />
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="ADMIN user capabilities to add new admins and a custom navbar for admin user privileges only.">
+      <change afterPath="$PROJECT_DIR$/admin/updateAdminsProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back-end/deleteAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back-end/deleteUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/insert_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/navbar-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/new-admin-signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/new-admin-signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/insert_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/myProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
       <workItem from="1673888757437" duration="16186000" />
       <workItem from="1673981791001" duration="1039000" />
       <workItem from="1673995662832" duration="3578000" />
-      <workItem from="1674023919939" duration="7856000" />
+      <workItem from="1674023919939" duration="15908000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -198,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674033002841</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ADMIN user capabilities to add new admins and a custom navbar for admin user privileges only.">
+      <created>1674038231078</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674038231078</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +299,7 @@
     <MESSAGE value="Removing username from old User table and adding telephone, address as new table fields. Renaming id fields for every table.&#10;Changing db diagram to correspond the upwards changes.&#10;Adapting table names and user_id fields on login, signup, My Profile, landing pages." />
     <MESSAGE value="small change on inserting cities sql script" />
     <MESSAGE value="small changes on table fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes on table fields" />
+    <MESSAGE value="ADMIN user capabilities to add new admins and a custom navbar for admin user privileges only." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADMIN user capabilities to add new admins and a custom navbar for admin user privileges only." />
   </component>
 </project>

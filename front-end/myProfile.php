@@ -4,14 +4,12 @@ global $conn;
 include '../db-config.php';
 
 global $loggedUser;
-global $role;
+
 if (isset($_SESSION["user_id"])) {
     $useroo = $_SESSION["user_id"];
     $sql = "SELECT * FROM `Users` WHERE `user_id` = '$useroo';";
     $result = mysqli_query($conn, $sql);
-    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-    $loggedUser = $user["first_name"];
-    $role = $user["role"];
+    $loggedUser = mysqli_fetch_array($result, MYSQLI_ASSOC);
 } else {
     header("location: login.php");
     die();
@@ -31,12 +29,12 @@ if (isset($_SESSION["user_id"])) {
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php
-    if($role==="admin"){
+    if($loggedUser["role"]==="admin"){
         include "../admin/navbar-admin.php";
     }else include "../components/navbar.php";
 ?>
 <main>
-    <h1>Hello <?php echo $loggedUser?></h1>
+    <h1>Hello <?php echo $loggedUser["first_name"]?></h1>
     <h4>Here you can update your data.</h4>
 </main>
 <?php include "../components/footer-bar.php" ?>

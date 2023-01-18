@@ -5,7 +5,7 @@
             <a href="#">Services <i class="fa fa-cogs" style="font-size:100%"></i></a>
             <ul>
                 <li><a href="admin-manage.php">Administrators <i class="fa-sharp fa-solid fa-user-tie" style="margin-left: 0"></i></a></li>
-                <li><a href="new-admin-signup.php">New Admin <i class="fa-sharp fa-solid fa-user-tie" style="margin-left: 0"></i></a></li>
+                <li><a href="user-manage.php">Users <i class="fa-solid fa-user" style="margin-left: 0"></i></a></li>
             </ul>
         </li>
         <!-- afishimi ores --> <li id="clk" style="float: right; color: white; text-align: center; margin-right: 20px; margin-top:23px; font-size: 20px;"><a href="#"></a></li>

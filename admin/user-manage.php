@@ -36,7 +36,7 @@ if(!isset($_SESSION["user_id"])){
 <body onload="realtimeClock(),getRouting()">
 <?php include "navbar-admin.php" ?>
 <main>
-    <h1 style="text-align: center">Hello <?php echo $loggedUser?>! Here you can find all administrators of the application.</h1>
+    <h1 style="text-align: center">Hello <?php echo $loggedUser?>! Here you can find all Users of the application.</h1>
     <br>
     <div class="reg-container-main">
         <table class="styled-table">
@@ -52,7 +52,7 @@ if(!isset($_SESSION["user_id"])){
             </thead>
             <tbody>
             <?php
-            $sql = "select * from `Users` WHERE `role`='admin'";
+            $sql = "select * from `Users` WHERE `role`='user'";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
@@ -69,7 +69,7 @@ if(!isset($_SESSION["user_id"])){
                            <a style='margin: 0 5px; color: darkgreen' href='updateAdminsProfile.php?id=$row[user_id]'>Edit</a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteAdmin.php?id=$row[user_id]'>Delete</a>
+                            <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'>Delete</a>
                         </td>
                       </tr>
                      ";
@@ -77,13 +77,6 @@ if(!isset($_SESSION["user_id"])){
             ?>
             </tbody>
         </table>
-        <div>
-            <button class="login-button" style="padding: 4px; width: 150px; margin-bottom: 20px; margin-top: 20px">
-                <a href="new-admin-signup.php">
-                    <i class="fa-solid fa-plus" style="color: white"></i>  <b>ADD NEW ADMIN</b>
-                </a>
-            </button>
-        </div>
     </div>
 </main>
 <?php include "../components/footer-bar.php" ?>
