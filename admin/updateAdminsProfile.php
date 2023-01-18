@@ -3,12 +3,6 @@ session_start();
 global $conn;
 include '../db-config.php';
 
-if (isset($_SESSION["user_id"])) {
-    $useroo = $_SESSION["user_id"];
-    $sql = "SELECT * FROM `Users` WHERE `user_id` = '$useroo';";
-    $result = mysqli_query($conn, $sql);
-    $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-}
 if(!isset($_SESSION["user_id"])){
     header("location: landing-page.php");
     die();
@@ -43,57 +37,43 @@ if(!isset($_SESSION["user_id"])){
 <main>
     <div class="reg-container">
         <div>
-            <h1>New Admin</h1>
+            <h1>Update Admin</h1>
         </div>
-        <form class="sign-up-form" method="post" action="../back-end/insert_admin.php" onsubmit="return validate()">
+        <form class="sign-up-form" method="post" action="../back-end/update.php">
+            <?php
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $sql = "SELECT * FROM `Users` WHERE user_id='$id'";
+                    $result = mysqli_query($conn,$sql);
+                    $row = mysqli_fetch_array($result);
+            ?>
+
+                    <input type="hidden" value="<?php echo $row["user_id"]; ?>" name="user_id">
+                    <input type="hidden" value="<?php echo $row["role"]; ?>" name="role">
             <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
                             style="display: none">First Name</span></label>
-                <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name" onkeyup="validateFirstname()">
-                <span id="first_name-error">
-                     <i title="First name MUST not contain more than 20 characters&#10;First name MUST not contain Numbers&#10;First name MUST not contain Special Characters"
-                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
-                </span>
+                <input id="first_name" type="text" name="first_name" class="form-input" value="<?php echo $row["first_name"]?>" onkeyup="validateFirstname()">
             </div>
             <div class="form-field column">
                 <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Surname</span></label>
-                <input id="surname" type="text" name="surname" class="form-input" placeholder="Surname" onkeyup="validateSurname()">
-                <span id="surname-error">
-                    <i title="Surname MUST not contain more than 20 characters&#10;Surname MUST not contain Numbers&#10;Surname MUST not contain Special Characters"
-                       style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
-                </span>
+                <input id="surname" type="text" name="surname" class="form-input" value="<?php echo $row["surname"]?>" onkeyup="validateSurname()">
             </div>
             <div class="form-field column">
                 <label for="email"><i class="fas fa-paper-plane"></i><span style="display: none">Email</span></label>
-                <input id="email" type="email" name="email" class="form-input" placeholder="Email" onkeyup="validateEmail()">
-                <span id="email-error">
-                    <i title="Email MUST not contain less than 10 characters&#10;Email MUST not contain Numbers&#10;Surname MUST not contain Special Characters"
-                       style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
-                </span>
+                <input id="email" type="email" name="email" class="form-input" value="<?php echo $row["email"]?>" onkeyup="validateEmail()">
             </div>
             <div class="form-field column">
                 <label for="telephone"><i class="fa-solid fa-phone-volume"></i><span style="display: none">Phone Number</span></label>
-                <input id="telephone" name="telephone" type="text" class="form-input" placeholder="Phone Number" onkeyup="validatePhone()">
-                <span id="phone-error">
-                    <i title="Phone Number MUST not be empty"
-                       style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
-                </span>
+                <input id="telephone" name="telephone" type="text" class="form-input" value="<?php echo $row["telephone"]?>" onkeyup="validatePhone()">
             </div>
             <div class="form-field column">
                 <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
-                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" onchange="validateBirthday()">
-                <span id="birthday-error">
-                     <i title="Date of Birth"
-                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
-                </span>
+                <input id="birthday" type="date" name="birthday" class="form-input" value="<?php echo $row["birthday"]?>" onchange="validateBirthday()">
             </div>
             <div class="form-field column">
                 <label for="address"><i class="fa-regular fa-location-dot"></i><span style="display: none">Address</span></label>
-                <input id="address" name="address" type="text" class="form-input" placeholder="Address" onkeyup="validateAddress()">
-                <span id="address-error">
-                    <i title="Address MUST not be empty"
-                       style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
-                </span>
+                <input id="address" name="address" type="text" class="form-input" value="<?php echo $row["address"]?>" onkeyup="validateAddress()">
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
@@ -111,9 +91,12 @@ if(!isset($_SESSION["user_id"])){
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
-            <button type="submit" class="login-button" name="submit">
-                <span>Register</span>
+            <button type="submit" class="login-button" name="updateAdmin">
+                <span>Update</span>
             </button>
+            <?php
+                }
+            ?>
         </form>
     </div>
 </main>

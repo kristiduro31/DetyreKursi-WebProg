@@ -335,3 +335,48 @@ ul {
     position: relative;
 }
 
+.reg-container-main {
+    display: block;
+    justify-content: center;
+    width: 90%;
+    height: 150%;
+    background-color: #ffffff;
+    margin: 30px 50px 40px auto;
+    border: solid #063247;
+    border-radius: 1.5%;
+    text-align: center;
+
+    position: relative;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 1000px;
+    margin: 30px auto;
+}
+.styled-table thead tr {
+    background-color: #063247;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,td {
+    padding: 12px 15px;
+    text-align: center;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #063247;
+}
+
+

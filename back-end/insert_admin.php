@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn,$sql2);
     $row_count = mysqli_num_rows($result);
     if($row_count>0){
-        echo "<script>alert('Email already used'); window.location = '../front-end/sign-up.php';</script>";
+        echo "<script>alert('Email already used'); window.location = '../admin/new-admin-signup.php';</script>";
         exit();
     }
 
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
              VALUES ('$nm','$surname', '$email', '$tel', '$birthday', '$re', '$address', '$passw');";
 
     if(mysqli_query($conn, $sql1)){
-        echo "<script>alert('New User created'); window.location = '../front-end/login.php';</script>";
+        echo "<script>alert('New Admin created'); window.location = '../admin/admin-manage.php';</script>";
         exit();
     } else{
         echo "Something went wrong. Please try again later.";
