@@ -35,7 +35,7 @@ if (isset($_SESSION["user_id"])) {
 <body onload="realtimeClock(),getRouting()">
 <?php
     if($loggedUser["role"]==="admin"){
-        include "../admin/navbar-admin.php";
+        include "../components/navbar-admin.php";
     }else include "../components/navbar.php";
 ?>
 <main>

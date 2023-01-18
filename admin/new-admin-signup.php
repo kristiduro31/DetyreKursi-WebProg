@@ -39,7 +39,7 @@ if(!isset($_SESSION["user_id"])){
     </style>
 </head>
 <body onload="realtimeClock(),getRouting()">
-<?php include "navbar-admin.php" ?>
+<?php include "../components/navbar-admin.php" ?>
 <main>
     <div class="reg-container">
         <div>
