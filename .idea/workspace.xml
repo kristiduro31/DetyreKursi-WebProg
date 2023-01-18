@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Read all Admins and it's data&#10;Delete Admin by id&#10;Read all Users and it's data&#10;Delete User by id">
-      <change afterPath="$PROJECT_DIR$/back-end/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Update other admin accounts if you have admin privileges. You can update your own profile data">
       <change beforePath="$PROJECT_DIR$/admin/updateAdminsProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/updateAdminsProfile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/myProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
       <workItem from="1673888757437" duration="16186000" />
       <workItem from="1673981791001" duration="1039000" />
       <workItem from="1673995662832" duration="3578000" />
-      <workItem from="1674023919939" duration="23295000" />
+      <workItem from="1674023919939" duration="23657000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -207,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674058345986</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update other admin accounts if you have admin privileges. You can update your own profile data">
+      <created>1674069210804</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674069210804</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +305,7 @@
     <MESSAGE value="small changes on table fields" />
     <MESSAGE value="ADMIN user capabilities to add new admins and a custom navbar for admin user privileges only." />
     <MESSAGE value="Read all Admins and it's data&#10;Delete Admin by id&#10;Read all Users and it's data&#10;Delete User by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read all Admins and it's data&#10;Delete Admin by id&#10;Read all Users and it's data&#10;Delete User by id" />
+    <MESSAGE value="Update other admin accounts if you have admin privileges. You can update your own profile data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update other admin accounts if you have admin privileges. You can update your own profile data" />
   </component>
 </project>
