@@ -1,13 +1,13 @@
 CREATE TABLE Users (
   user_id int NOT NULL AUTO_INCREMENT,
-  first_name varchar(20) NOT NULL,
-  surname varchar(20) NOT NULL,
-  `password` varchar(60) NOT NULL,
-  email varchar(30) NOT NULL,
+  first_name varchar(30) NOT NULL,
+  surname varchar(30) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  email varchar(40) NOT NULL,
   birthday date DEFAULT NULL,
   `role` varchar(20) NOT NULL,
-  telephone varchar(13),
-  address varchar(30),
+  telephone varchar(20),
+  address varchar(40),
   PRIMARY KEY (`user_id`), UNIQUE `email_user` (`email`)) ENGINE = InnoDB;
 
 CREATE TABLE Flight_Company(
@@ -15,10 +15,10 @@ CREATE TABLE Flight_Company(
     label varchar(30) NOT NULL,
     logo longblob NOT NULL,
     company_description varchar(100),
-    address varchar(30),
-    telephone varchar(13),
-    PRIMARY KEY (flight_Company_id)
-);
+    telephone varchar(20),
+    address varchar(40),
+    email_company varchar(40) NOT NULL,
+    PRIMARY KEY (flight_Company_id), UNIQUE `email_company` (`email_company`)) ENGINE = InnoDB;
 
 CREATE TABLE Country(
 	country_id int NOT NULL AUTO_INCREMENT,
@@ -28,7 +28,7 @@ CREATE TABLE Country(
 
 CREATE TABLE City(
 	city_id int NOT NULL AUTO_INCREMENT,
-    city_name varchar(20) NOT NULL,
+    city_name varchar(30) NOT NULL,
     country int NOT NULL,
     FOREIGN KEY (country) REFERENCES Country(country_id),
     PRIMARY KEY (city_id)
@@ -37,7 +37,7 @@ CREATE TABLE City(
 CREATE TABLE Airport(
 	airport_id int NOT NULL AUTO_INCREMENT,
     label varchar(40) NOT NULL,
-    website varchar(20),
+    website varchar(40),
     tel varchar(13),
     city int NOT NULL,
     FOREIGN KEY (city) REFERENCES City(city_id),
