@@ -29,9 +29,9 @@ if(!isset($_SESSION["user_id"])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body onload="realtimeClock(),getRouting()">
-<?php include "../components/navbar.php" ?>
+<?php include "navbar-admin.php" ?>
 <main>
-    <h1>Hello <?php echo $loggedUser?>! You are ADMIN.</h1>
+    <h1>Hello <?php echo $loggedUser?>! Here you can find all administrators of the page.</h1>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>

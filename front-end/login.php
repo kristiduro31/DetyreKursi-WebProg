@@ -14,7 +14,7 @@ if (isset($_SESSION["user_id"])) {
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $loggedUser = $user["role"];
     if($loggedUser==="admin"){
-        header("Location: admin-landing-page.php");
+        header("Location: ../admin/admin-landing-page.php");
         die();
     }else{
         header("Location: landing-page.php");
@@ -33,7 +33,8 @@ if (isset($_POST["login"])) {
             session_start();
             $_SESSION["user_id"] = $user["user_id"];
             if($user['role']==='admin'){
-                header("Location: admin-landing-page.php");
+                header("Location: ../admin/admin-landing-page.php");
+                die();
             }else{
                 header("Location: landing-page.php");
                 die();

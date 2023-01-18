@@ -4,16 +4,15 @@ global $conn;
 include '../db-config.php';
 
 global $loggedUser;
-global $role;
 if (isset($_SESSION["user_id"])) {
     $useroo = $_SESSION["user_id"];
     $sql = "SELECT * FROM `Users` WHERE `user_id` = '$useroo';";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $loggedUser = $user["first_name"];
-    $role = $user["role"];
-} else {
-    header("location: login.php");
+}
+if(!isset($_SESSION["user_id"])){
+    header("location: landing-page.php");
     die();
 }
 ?>
@@ -22,7 +21,7 @@ if (isset($_SESSION["user_id"])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tirana Internation Airport</title>
+    <title>Tirana Internation Airport-Admin Panel</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -30,14 +29,9 @@ if (isset($_SESSION["user_id"])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body onload="realtimeClock(),getRouting()">
-<?php
-    if($role==="admin"){
-        include "../admin/navbar-admin.php";
-    }else include "../components/navbar.php";
-?>
+<?php include "navbar-admin.php" ?>
 <main>
-    <h1>Hello <?php echo $loggedUser?></h1>
-    <h4>Here you can update your data.</h4>
+    <h1>Hello <?php echo $loggedUser?>! You are ADMIN.</h1>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>

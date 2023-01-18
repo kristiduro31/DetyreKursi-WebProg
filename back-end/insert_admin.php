@@ -10,8 +10,7 @@ if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $tel = mysqli_real_escape_string($conn, $_POST["telephone"]);
     $birthday = mysqli_real_escape_string($conn, $_POST["birthday"]);
-    $re = "user";                                                   //--->>> make sure the first time you run the application
-                                                                    // $re must be set to admin
+    $re = "admin";                                                      //--> to be turnt to user "default role"
     $address = mysqli_real_escape_string($conn, $_POST["address"]);
     $pas = mysqli_real_escape_string($conn, $_POST["password"]);
     $passw = password_hash($pas,PASSWORD_BCRYPT);
