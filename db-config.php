@@ -3,8 +3,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-//$db = "airportDBMS";
-$db = "TEMPS"; // --->> testing purposes
+$db = "airportDBMS";
+//$db = "TEMPS"; // --->> testing purposes
 
 $conn = mysqli_connect($servername,$username,$password,$db);
 

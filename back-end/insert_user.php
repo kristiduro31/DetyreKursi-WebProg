@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     $pas = mysqli_real_escape_string($conn, $_POST["password"]);
     $passw = password_hash($pas,PASSWORD_BCRYPT);
 
-    $sql2 = "SELECT * FROM TestU where email='$email';";
+    $sql2 = "SELECT * FROM `Users` where email='$email';";
     $result = mysqli_query($conn,$sql2);
     $row_count = mysqli_num_rows($result);
     if($row_count>0){
@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
         exit();
     }
 
-    $sql1 = "INSERT INTO TestU (first_name, surname, email, telephone, birthday, role, address, password) 
+    $sql1 = "INSERT INTO `Users` (first_name, surname, email, telephone, birthday, role, address, password) 
              VALUES ('$nm','$surname', '$email', '$tel', '$birthday', '$re', '$address', '$passw');";
 
     if(mysqli_query($conn, $sql1)){

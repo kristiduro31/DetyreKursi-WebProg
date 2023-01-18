@@ -9,7 +9,7 @@ global $email_error;
 session_start();
 if (isset($_SESSION["user_id"])) {
     $sessionUser=$_SESSION["user_id"];
-    $sql1="SELECT * FROM TestU WHERE id='$sessionUser'";
+    $sql1="SELECT * FROM `Users` WHERE `user_id`='$sessionUser'";
     $result = mysqli_query($conn, $sql1);
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $loggedUser = $user["role"];
@@ -25,13 +25,13 @@ if (isset($_POST["login"])) {
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $password = mysqli_real_escape_string($conn, $_POST["password"]);
 
-    $sql = "SELECT * FROM TestU WHERE email = '$email'";
+    $sql = "SELECT * FROM `Users` WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
     if ($user) {
         if (password_verify($password, $user["password"])) {
             session_start();
-            $_SESSION["user_id"] = $user["id"];
+            $_SESSION["user_id"] = $user["user_id"];
             if($user['role']==='admin'){
                 header("Location: admin-landing-page.php");
             }else{
