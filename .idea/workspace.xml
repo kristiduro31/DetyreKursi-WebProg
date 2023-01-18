@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Adding TestU table sql script to test user signup and login features.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/insert-Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert-Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/insert_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/db-config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db-diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/db-diagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/admin-landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/myProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Removing username from old User table and adding telephone, address as new table fields. Renaming id fields for every table.&#10;Changing db diagram to correspond the upwards changes.&#10;Adapting table names and user_id fields on login, signup, My Profile, landing pages.">
+      <change beforePath="$PROJECT_DIR$/database-queries/cities.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/cities.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +89,7 @@
       <workItem from="1673888757437" duration="16186000" />
       <workItem from="1673981791001" duration="1039000" />
       <workItem from="1673995662832" duration="3578000" />
-      <workItem from="1674023919939" duration="3257000" />
+      <workItem from="1674023919939" duration="3650000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -177,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674029298439</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Removing username from old User table and adding telephone, address as new table fields. Renaming id fields for every table.&#10;Changing db diagram to correspond the upwards changes.&#10;Adapting table names and user_id fields on login, signup, My Profile, landing pages.">
+      <created>1674031821220</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674031821220</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +264,7 @@
     <MESSAGE value="Adding countries and cities insertion sql commands." />
     <MESSAGE value="Refactoring code" />
     <MESSAGE value="Adding TestU table sql script to test user signup and login features." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding TestU table sql script to test user signup and login features." />
+    <MESSAGE value="Removing username from old User table and adding telephone, address as new table fields. Renaming id fields for every table.&#10;Changing db diagram to correspond the upwards changes.&#10;Adapting table names and user_id fields on login, signup, My Profile, landing pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing username from old User table and adding telephone, address as new table fields. Renaming id fields for every table.&#10;Changing db diagram to correspond the upwards changes.&#10;Adapting table names and user_id fields on login, signup, My Profile, landing pages." />
   </component>
 </project>
