@@ -47,7 +47,7 @@ if(!isset($_SESSION["user_id"])){
                 <th>Email</th>
                 <th>Phone Number</th>
                 <th>Address</th>
-                <th colspan="2">ACTIONS</th>
+                <th>ACTIONS</th>
             </tr>
             </thead>
             <tbody>
@@ -65,9 +65,6 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[email]</td>
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
-                        <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='updateAdminsProfile.php?id=$row[user_id]'>Edit</a>
-                        </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'>Delete</a>
                         </td>

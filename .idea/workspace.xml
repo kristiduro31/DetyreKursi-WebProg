@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Removing unnecessary code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/new-admin-signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/new-admin-signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/updateAdminsProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/updateAdminsProfile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/myProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="manage-admins" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,16 +49,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
