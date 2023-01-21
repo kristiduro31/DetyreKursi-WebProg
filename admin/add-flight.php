@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Luggage</title>
+	<title>Shto Fluturim</title>
 	<script src="../scripts/components.js"></script>
 	<script src="../scripts/scripts.js"></script>
 	<link rel="stylesheet" href="../styles/styles.css">
@@ -10,9 +10,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body onload="realtimeClock(),getRouting()">
-<?php include "../components/navbar.php" ?>
+<?php include "../components/navbar-admin.php" ?>
 <main>
-	<h1>Luggage</h1>
+	<h1>Shto Fluturim</h1>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>

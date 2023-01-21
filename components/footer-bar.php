@@ -24,8 +24,8 @@
                 <br><br><br>
                 <ul>
                     <li><a href="../front-end/faqs.php">FAQs</a></li>
-                    <li><a href="../front-end/customs.php">Customs</a></li>
-                    <li><a href="../front-end/luggage.php">Luggages</a></li>
+                    <li><a href="../admin/add-airport.php">Customs</a></li>
+                    <li><a href="../admin/add-flight.php">Luggages</a></li>
                     <li><a href="../front-end/privacy-policy.php">Privacy Policy</a></li>
                 </ul>
             </div>

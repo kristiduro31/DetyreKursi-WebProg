@@ -11,7 +11,7 @@ if (isset($_SESSION["user_id"])) {
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $loggedUser = $user["first_name"];
 }
-if(!isset($_SESSION["user_id"])){
+if (!isset($_SESSION["user_id"])) {
     header("location: landing-page.php");
     die();
 }
@@ -30,8 +30,28 @@ if(!isset($_SESSION["user_id"])){
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
-<main>
-    <h1>Hello <?php echo $loggedUser?>! You are ADMIN.</h1>
+<main class="landing-container">
+    <h1>Pershendetje <?php echo $loggedUser ?>!</h1>
+    <div class="admin-panel">
+        <a href="airports.php">
+            <div class="admin-option">
+                <img src="../images/add-airport.PNG" alt="">
+                <h2>Aeroporte</h2>
+            </div>
+        </a>
+        <a href="add-flight.php">
+            <div class="admin-option">
+                <img src="../images/add-flight.PNG" alt="">
+                <h2>Fluturime</h2>
+            </div>
+        </a>
+        <a href="">
+            <div class="admin-option">
+                <img src="../images/add-space.PNG" alt="">
+                <h2>Hapsira Aeroporti</h2>
+            </div>
+        </a>
+    </div>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>

@@ -358,15 +358,18 @@ ul {
     width: 1000px;
     margin: 30px auto;
 }
+
 .styled-table thead tr {
     background-color: #063247;
     color: #ffffff;
     text-align: left;
 }
-.styled-table th,td {
+
+.styled-table th, td {
     padding: 12px 15px;
     text-align: center;
 }
+
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
@@ -379,4 +382,105 @@ ul {
     border-bottom: 2px solid #063247;
 }
 
+/* admin landing page*/
+.landing-container {
+    text-align: center;
+}
 
+.admin-panel {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.admin-panel .admin-option {
+    width: 300px;
+    background-color: white;
+    margin: 2rem;
+    border: solid #063247;
+    border-radius: 1%;
+    padding: 2rem;
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.admin-panel .admin-option:hover{
+    transform: scale(1.1);
+}
+
+.admin-panel img {
+    margin: 1rem;
+    height: 230px;
+}
+
+.admin-panel h2 {
+    color: #063247;
+}
+
+.admin-panel .container input {
+    margin: 1rem;
+}
+
+.admin-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff;
+    margin: 2rem auto auto;
+    border: solid #063247;
+    border-radius: 1%;
+    text-align: center;
+    padding: 3rem 3rem;
+    position: relative;
+}
+
+.admin-container .form-input {
+    flex: 1;
+    width: 300px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px #063247 inset;
+}
+
+.admin-container .field-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.admin-container .image-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-container .image-right img{
+    height: 280px;
+}
+
+#add-airport-button{
+    width: 200px;
+}
+
+.table-title{
+    display: flex;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.table-title button{
+    background-color: #042331;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+.table-title button:hover{
+    background-color: #e91e63;
+    transition: background-color .2s;
+}
