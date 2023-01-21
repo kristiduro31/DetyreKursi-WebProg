@@ -3,7 +3,7 @@
 global $conn;
 require '../db-config.php';
 
-$sql = "select * from city ";
+$sql = "select * from `city` ";
 $cities = mysqli_query($conn, $sql);
 
 if (isset($_POST["add-airport"])) {
@@ -21,7 +21,7 @@ if (isset($_POST["add-airport"])) {
         }
     }
 
-    $insert = "INSERT INTO airport (label, website, tel, city) 
+    $insert = "INSERT INTO `airport` (`label`, `website`, `tel`, `city`) 
                 VALUES ( '$label', '$web', '$phone', '$cityId')";
 
     if (mysqli_query($conn, $insert)) {
@@ -46,7 +46,7 @@ if (isset($_POST["add-airport"])) {
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main class="admin-panel">
-    <h1>Aeroport I Ri</h1>
+    <h1>Aeroport i Ri</h1>
 
 
     <div class="admin-container">

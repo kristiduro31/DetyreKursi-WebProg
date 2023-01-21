@@ -48,7 +48,7 @@ if(!isset($_SESSION["user_id"])){
         <a href="">
             <div class="admin-option">
                 <img src="../images/add-space.PNG" alt="">
-                <h2>Hapsira Aeroporti</h2>
+                <h2>Hapesira Aeroporti</h2>
             </div>
         </a>
     </div>
