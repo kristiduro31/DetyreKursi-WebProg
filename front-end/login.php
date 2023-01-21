@@ -54,7 +54,7 @@ if (isset($_POST["login"])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up</title>
+    <title>Login</title>
     <script src="../scripts/components.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../scripts/scripts.js"></script>
@@ -93,7 +93,7 @@ if (isset($_POST["login"])) {
             </button>
         </form>
         <div class="login-link" style="margin-top: 45px">
-            <p>Not registered yet? <a href="sign-up.php">Sign up</a></p>
+            <p>Nuk keni ende nje llogari? <a href="sign-up.php">Regjistrohu</a></p>
         </div>
     </div>
 </main>

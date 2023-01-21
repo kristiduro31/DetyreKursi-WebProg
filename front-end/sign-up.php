@@ -26,21 +26,21 @@
 <main>
     <div class="reg-container">
         <div>
-            <h1>Sign Up</h1>
+            <h1>Krijoni llogarine tuaj</h1>
         </div>
         <form class="sign-up-form" method="post" action="../back-end/insert_user.php" onsubmit="return validate()">
             <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
-                            style="display: none">First Name</span></label>
-                <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name" onkeyup="validateFirstname()">
+                            style="display: none">Emri</span></label>
+                <input id="first_name" type="text" name="first_name" class="form-input" placeholder="Emri" onkeyup="validateFirstname()">
                 <span id="first_name-error">
                      <i title="First name MUST not contain more than 20 characters&#10;First name MUST not contain Numbers&#10;First name MUST not contain Special Characters"
                         style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
-                <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Surname</span></label>
-                <input id="surname" type="text" name="surname" class="form-input" placeholder="Surname" onkeyup="validateSurname()">
+                <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Mbiemri</span></label>
+                <input id="surname" type="text" name="surname" class="form-input" placeholder="Mbiemri" onkeyup="validateSurname()">
                 <span id="surname-error">
                     <i title="Surname MUST not contain more than 20 characters&#10;Surname MUST not contain Numbers&#10;Surname MUST not contain Special Characters"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
@@ -55,24 +55,24 @@
                 </span>
             </div>
             <div class="form-field column">
-                <label for="telephone"><i class="fa-solid fa-phone-volume"></i><span style="display: none">Phone Number</span></label>
-                <input id="telephone" name="telephone" type="text" class="form-input" placeholder="Phone Number" onkeyup="validatePhone()">
+                <label for="telephone"><i class="fa-solid fa-phone-volume"></i><span style="display: none">Numri i telefonit</span></label>
+                <input id="telephone" name="telephone" type="text" class="form-input" placeholder="Numri i telefonit" onkeyup="validatePhone()">
                 <span id="phone-error">
                     <i title="Phone Number MUST not be empty"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
-                <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
-                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" onchange="validateBirthday()">
+                <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Ditelindja</span></label>
+                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Ditelindja" onchange="validateBirthday()">
                 <span id="birthday-error">
                      <i title="Date of Birth"
                         style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
-                <label for="address"><i class="fa-regular fa-location-dot"></i><span style="display: none">Address</span></label>
-                <input id="address" name="address" type="text" class="form-input" placeholder="Address" onkeyup="validateAddress()">
+                <label for="address"><i class="fa-regular fa-location-dot"></i><span style="display: none">Adresa</span></label>
+                <input id="address" name="address" type="text" class="form-input" placeholder="Adresa juaj" onkeyup="validateAddress()">
                 <span id="address-error">
                     <i title="Address MUST not be empty"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
@@ -88,18 +88,18 @@
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
-                <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Confirm Password" onkeyup="validateConfirmPassword()">
+                <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Konfirmo Password-in" onkeyup="validateConfirmPassword()">
                 <span id="confirm-password-error">
-                    <i title="Confirm inputted password"
+                    <i title="Konfirmo password-in e dhene me lart"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <button type="submit" class="login-button" name="submit">
-                <span>Register</span>
+                <span>Regjistrohu</span>
             </button>
         </form>
         <div class="login-link">
-            <p>Already have an account? <a href="login.php">Login</a></p>
+            <p>Keni nje llogari? <a href="login.php">Login</a></p>
         </div>
     </div>
 </main>

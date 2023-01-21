@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Car Rentals</title>
+	<title>Makina me qera</title>
 	<script src="../scripts/components.js"></script>
 	<script src="../scripts/scripts.js"></script>
 	<link rel="stylesheet" href="../styles/styles.css">
@@ -12,7 +12,7 @@
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-	<h1>Car Rentals</h1>
+	<h1>Makina me qera</h1>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>
