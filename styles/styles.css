@@ -31,6 +31,8 @@ body {
 }
 
 nav {
+    z-index: 1;
+    position: relative;
     margin-top: 0;
     height: 70px;
     background: #063247;
