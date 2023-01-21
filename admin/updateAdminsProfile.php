@@ -4,7 +4,7 @@ global $conn;
 include '../db-config.php';
 
 if(!isset($_SESSION["user_id"])){
-    header("location: landing-page.php");
+    header("location: ../front-end/landing-page.php");
     die();
 }
 ?>

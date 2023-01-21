@@ -24,7 +24,9 @@
     </ul>
 </nav>
 <?php
-session_start();
+if(!isset($_SESSION)) {
+    session_start();
+}
 if(empty($_SESSION["user_id"])){
     echo "<script>
                 const profile = document.getElementById('profile').style.display='none';

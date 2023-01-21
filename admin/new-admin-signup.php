@@ -10,7 +10,7 @@ if (isset($_SESSION["user_id"])) {
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 }
 if(!isset($_SESSION["user_id"])){
-    header("location: landing-page.php");
+    header("location: ../front-end/landing-page.php");
     die();
 }
 ?>

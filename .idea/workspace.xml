@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Removing unnecessary code">
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Small change.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/new-admin-signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/new-admin-signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/updateAdminsProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/updateAdminsProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer-bar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

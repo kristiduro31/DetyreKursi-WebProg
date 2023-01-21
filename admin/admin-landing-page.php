@@ -12,7 +12,7 @@ if (isset($_SESSION["user_id"])) {
     $loggedUser = $user["first_name"];
 }
 if(!isset($_SESSION["user_id"])){
-    header("location: landing-page.php");
+    header("location: ../front-end/landing-page.php");
     die();
 }
 ?>
