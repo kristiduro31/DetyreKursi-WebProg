@@ -41,58 +41,59 @@ if (isset($_SESSION["user_id"])) {
 <main>
     <div class="reg-container">
         <div>
-            <h1>View and Edit your account</h1>
+            <h1>Shikoni dhe Modifikoni të dhënat tuaja</h1>
         </div>
-        <form class="sign-up-form" method="post" action="../back-end/update.php" onsubmit="validate()">
+        <form class="sign-up-form" method="post" action="../back-end/update.php" onsubmit="return (checkPasswordUpdate() && validateConfirmPassword())">
             <input type="hidden" value="<?php echo $loggedUser["user_id"]; ?>" name="user_id">
             <input type="hidden" value="<?php echo $loggedUser["role"]; ?>" name="role">
             <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
                             style="display: none">First Name</span></label>
-                <input id="first_name" type="text" name="first_name" class="form-input" value="<?php echo $loggedUser["first_name"]?>" onkeyup="validateFirstname()">
+                <input id="first_name" type="text" name="first_name" class="form-input" value="<?php echo $loggedUser["first_name"]?>">
             </div>
             <div class="form-field column">
                 <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Surname</span></label>
-                <input id="surname" type="text" name="surname" class="form-input" value="<?php echo $loggedUser["surname"]?>" onkeyup="validateSurname()">
+                <input id="surname" type="text" name="surname" class="form-input" value="<?php echo $loggedUser["surname"]?>">
             </div>
             <div class="form-field column">
                 <label for="email"><i class="fas fa-paper-plane"></i><span style="display: none">Email</span></label>
-                <input id="email" type="email" name="email" class="form-input" value="<?php echo $loggedUser["email"]?>" onkeyup="validateEmail()">
+                <input id="email" type="email" name="email" class="form-input" value="<?php echo $loggedUser["email"]?>">
             </div>
             <div class="form-field column">
                 <label for="telephone"><i class="fa-solid fa-phone-volume"></i><span style="display: none">Phone Number</span></label>
-                <input id="telephone" name="telephone" type="text" class="form-input" value="<?php echo $loggedUser["telephone"]?>" onkeyup="validatePhone()">
+                <input id="telephone" name="telephone" type="text" class="form-input" value="<?php echo $loggedUser["telephone"]?>">
             </div>
             <div class="form-field column">
                 <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
-                <input id="birthday" type="date" name="birthday" class="form-input" value="<?php echo $loggedUser["birthday"]?>" onchange="validateBirthday()">
+                <input id="birthday" type="date" name="birthday" class="form-input" value="<?php echo $loggedUser["birthday"]?>">
             </div>
             <div class="form-field column">
                 <label for="address"><i class="fa-regular fa-location-dot"></i><span style="display: none">Address</span></label>
-                <input id="address" name="address" type="text" class="form-input" value="<?php echo $loggedUser["address"]?>" onkeyup="validateAddress()">
+                <input id="address" name="address" type="text" class="form-input" value="<?php echo $loggedUser["address"]?>">
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
-                <input id="password" type="password" name="password" class="form-input" placeholder="Password" onkeyup="validatePassword()">
+                <input id="password" type="password" name="password" class="form-input" placeholder="Password" onkeyup="checkPasswordUpdate()">
                 <span id="password-error">
-                    <i title="Password MUST not contain less than 8 characters&#10;Password MUST not contain more than 20 characters&#10;Password MUST contain at least 1 Number&#10;Password MUST contain at least 1 Special Character&#10;Password MUST contain at least 1 UPPER CASE letter&#10;Password MUST contain at least 1 LOWER CASE letter"
+                    <i title="Password NUK duhet te permbaje me pak se 8 karaktere&#10;Password NUK duhet te permbaje me shume se 20 karaktere&#10;Password DUHET te permbaje te pakten 1 Numer&#10;Password DUHET te permbaje te pakten 1 Karakter Special&#10;Password DUHET te permbaje te pakten 1 shkronje KAPITALE&#10;Password DUHET te permbaje te pakten 1 shkronje te vogel"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
-                <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Confirm Password" onkeyup="validateConfirmPassword()">
+                <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Konfirmo password-in serish" onkeyup="validateConfirmPassword()">
                 <span id="confirm-password-error">
                     <i title="Confirm inputted password"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <button type="submit" class="login-button" name="updateProfile">
-                <span>Update</span>
+                <span>Perditeso</span>
             </button>
         </form>
     </div>
 </main>
 <?php include "../components/footer-bar.php" ?>
+<script src="../scripts/validation-client-side.js"></script>
 </body>
 </html>

@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Small change.">
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Fixing $_Session var on the default navbar. Issue on Google Chrome. -&gt; Mostly due to main loaded page has the session_start() function already. &#10;Removing unnecessary &lt;/span&gt; at footer.&#10;Fixing redirection locations at admin pages (when session hasn't started).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/new-admin-signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/new-admin-signup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/updateAdminsProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/updateAdminsProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/footer-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer-bar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar-admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/car-renting.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/car-renting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/customs.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/customs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/faqs.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/faqs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/health.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/health.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/hotels.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/hotels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/luggage.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/luggage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/myProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/shops.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/shops.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validation-client-side.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validation-client-side.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="manage-admins" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Luggage</title>
+	<title>Bagazhe</title>
 	<script src="../scripts/components.js"></script>
 	<script src="../scripts/scripts.js"></script>
 	<link rel="stylesheet" href="../styles/styles.css">
@@ -12,7 +12,7 @@
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-	<h1>Luggage</h1>
+	<h1>Bagazhe</h1>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>

@@ -10,7 +10,7 @@ if(isset($_POST["updateAdmin"])){
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $tel = mysqli_real_escape_string($conn, $_POST["telephone"]);
     $birthday = mysqli_real_escape_string($conn, $_POST["birthday"]);
-    $re = mysqli_real_escape_string($conn, $_POST["role"]);                                                   //--->>> make sure the first time you run the application
+    $re = mysqli_real_escape_string($conn, $_POST["role"]);
     $address = mysqli_real_escape_string($conn, $_POST["address"]);
     $pass = mysqli_real_escape_string($conn, $_POST["password"]);
     $passw = password_hash($pass,PASSWORD_BCRYPT);
@@ -32,7 +32,7 @@ if(isset($_POST["updateProfile"])){
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $tel = mysqli_real_escape_string($conn, $_POST["telephone"]);
     $birthday = mysqli_real_escape_string($conn, $_POST["birthday"]);
-    $re = mysqli_real_escape_string($conn, $_POST["role"]);                                                   //--->>> make sure the first time you run the application
+    $re = mysqli_real_escape_string($conn, $_POST["role"]);
     $address = mysqli_real_escape_string($conn, $_POST["address"]);
     $pass = mysqli_real_escape_string($conn, $_POST["password"]);
     $passw = password_hash($pass,PASSWORD_BCRYPT);

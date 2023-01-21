@@ -36,18 +36,18 @@ if(!isset($_SESSION["user_id"])){
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
-    <h1 style="text-align: center">Hello <?php echo $loggedUser?>! Here you can find all Users of the application.</h1>
+    <h1 style="text-align: center">Pershendetje <?php echo $user["first_name"]?>! Ketu mund te gjeni te gjithe perdoruesit e faqjes.</h1>
     <br>
     <div class="reg-container-main">
         <table class="styled-table">
             <thead>
             <tr>
-                <th>First Name</th>
-                <th>Surname</th>
+                <th>Emer</th>
+                <th>Mbiemer</th>
                 <th>Email</th>
-                <th>Phone Number</th>
-                <th>Address</th>
-                <th>ACTIONS</th>
+                <th>Numer Telefoni</th>
+                <th>Adresa</th>
+                <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
             <tbody>
@@ -66,7 +66,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'>Delete</a>
+                            <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'>Fshi</a>
                         </td>
                       </tr>
                      ";

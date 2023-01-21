@@ -43,23 +43,23 @@ if(!isset($_SESSION["user_id"])){
 <main>
     <div class="reg-container">
         <div>
-            <h1>New Admin</h1>
+            <h1>Administrator i ri</h1>
         </div>
         <form class="sign-up-form" method="post" action="../back-end/insert_admin.php" onsubmit="return validate()">
             <div class="form-field column">
                 <label for="first_name"><i class="fas fa-id-card"></i><span
-                            style="display: none">First Name</span></label>
-                <input id="first_name" type="text" name="first_name" class="form-input" placeholder="First Name" onkeyup="validateFirstname()">
+                            style="display: none">Emri</span></label>
+                <input id="first_name" type="text" name="first_name" class="form-input" placeholder="Emri" onkeyup="validateFirstname()">
                 <span id="first_name-error">
-                     <i title="First name MUST not contain more than 20 characters&#10;First name MUST not contain Numbers&#10;First name MUST not contain Special Characters"
+                     <i title="Emri NUK duhet te permbaje me shume se 15 karaktere&#10;Emri NUK duhet te permbaje Numra&#10;Emri NUK duhet te permbaje karaktere speciale"
                         style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
-                <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Surname</span></label>
-                <input id="surname" type="text" name="surname" class="form-input" placeholder="Surname" onkeyup="validateSurname()">
+                <label for="surname"><i class="fas fa-signature"></i><span style="display: none">Mbiemri</span></label>
+                <input id="surname" type="text" name="surname" class="form-input" placeholder="Mbiemri" onkeyup="validateSurname()">
                 <span id="surname-error">
-                    <i title="Surname MUST not contain more than 20 characters&#10;Surname MUST not contain Numbers&#10;Surname MUST not contain Special Characters"
+                    <i title="Mbiemri NUK duhet te permbaje me shume se 20 karaktere&#10;Mbiemri NUK duhet te permbaje Numra&#10;Mbiemri NUK duhet te permbaje karaktere speciale"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
@@ -67,31 +67,31 @@ if(!isset($_SESSION["user_id"])){
                 <label for="email"><i class="fas fa-paper-plane"></i><span style="display: none">Email</span></label>
                 <input id="email" type="email" name="email" class="form-input" placeholder="Email" onkeyup="validateEmail()">
                 <span id="email-error">
-                    <i title="Email MUST not contain less than 10 characters&#10;Email MUST not contain Numbers&#10;Surname MUST not contain Special Characters"
+                    <i title="Email NUK duhet te permbaje me pak se 15 karaktere&#10;Email NUK duhet te permbaje me shume se 40 karaktere&#10;Email NUK duhet te nise me karakter Special"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
-                <label for="telephone"><i class="fa-solid fa-phone-volume"></i><span style="display: none">Phone Number</span></label>
-                <input id="telephone" name="telephone" type="text" class="form-input" placeholder="Phone Number" onkeyup="validatePhone()">
+                <label for="telephone"><i class="fa-solid fa-phone-volume"></i><span style="display: none">Numri i telefonit</span></label>
+                <input id="telephone" name="telephone" type="text" class="form-input" placeholder="Numri i telefonit" onkeyup="validatePhone()">
                 <span id="phone-error">
-                    <i title="Phone Number MUST not be empty"
+                    <i title="Numri i telefonit nuk duhet te jete bosh"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
-                <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Birthday</span></label>
-                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Birthday" onchange="validateBirthday()">
+                <label for="birthday"><i class="fas fa-calendar"></i><span style="display: none">Ditelindja</span></label>
+                <input id="birthday" type="date" name="birthday" class="form-input" placeholder="Ditelindja" onchange="validateBirthday()">
                 <span id="birthday-error">
-                     <i title="Date of Birth"
+                     <i title="Ditelindja"
                         style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
-                <label for="address"><i class="fa-regular fa-location-dot"></i><span style="display: none">Address</span></label>
-                <input id="address" name="address" type="text" class="form-input" placeholder="Address" onkeyup="validateAddress()">
+                <label for="address"><i class="fa-regular fa-location-dot"></i><span style="display: none">Adresa</span></label>
+                <input id="address" name="address" type="text" class="form-input" placeholder="Adresa juaj" onkeyup="validateAddress()">
                 <span id="address-error">
-                    <i title="Address MUST not be empty"
+                    <i title=""
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
@@ -99,20 +99,20 @@ if(!isset($_SESSION["user_id"])){
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
                 <input id="password" type="password" name="password" class="form-input" placeholder="Password" onkeyup="validatePassword()">
                 <span id="password-error">
-                    <i title="Password MUST not contain less than 8 characters&#10;Password MUST not contain more than 20 characters&#10;Password MUST contain at least 1 Number&#10;Password MUST contain at least 1 Special Character&#10;Password MUST contain at least 1 UPPER CASE letter&#10;Password MUST contain at least 1 LOWER CASE letter"
+                    <i title="Password NUK duhet te jete bosh&#10;Password NUK duhet te permbaje me pak se 8 karaktere&#10;Password NUK duhet te permbaje me shume se 20 karaktere&#10;Password DUHET te permbaje te pakten 1 Karakter Special&#10;Password DUHET te permbaje te pakten 1 Numer&#10;Password DUHET te permbaje te pakten 1 shkronje te madhe&#10;Password DUHET te permbaje te pakten 1 shkronje te vogel"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <div class="form-field column">
                 <label for="password"><i class="fas fa-lock"></i><span style="display: none">Password</span></label>
-                <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Confirm Password" onkeyup="validateConfirmPassword()">
+                <input id="cfr-password" type="password" name="cfr-password" class="form-input" placeholder="Konfirmo Password-in" onkeyup="validateConfirmPassword()">
                 <span id="confirm-password-error">
-                    <i title="Confirm inputted password"
+                    <i title="Konfirmo password-in e dhene me lart"
                        style='color: gray;font-size:90%;' class="fas fa-circle-info"></i>
                 </span>
             </div>
             <button type="submit" class="login-button" name="submit">
-                <span>Register</span>
+                <span>Regjistro</span>
             </button>
         </form>
     </div>
