@@ -27,7 +27,7 @@ if (isset($_SESSION["user_id"])) {
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-	<h1>Hello <?php echo $loggedUser?></h1>
+	<h1>Pershendetje <?php echo $loggedUser?></h1>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>
