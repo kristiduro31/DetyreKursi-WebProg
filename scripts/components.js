@@ -10,10 +10,10 @@ class Navbar extends HTMLElement{
                        <ul>
                           <li><a href="../front-end/transport.php">Transport <i class="fa fa-taxi" style="margin-left: 0"></i></a></li>
                           <li><a href="../front-end/restaurant.php">Restaurant <i class="fa-solid fa-utensils" style="margin-left: 0; font-size:100%"></i></a></li>
-                          <li><a href="../front-end/customs.php">Customs <i class="fa-solid fa-person-military-to-person" style="margin-left: 0"></i></a></li>
+                          <li><a href="../admin/add-airport.php">Customs <i class="fa-solid fa-person-military-to-person" style="margin-left: 0"></i></a></li>
                           <li><a href="../front-end/shops.php">Shops <i class="fa-solid fa-cart-shopping" style="margin-left: 0"></i></a></li>
                           <li><a href="../front-end/health.php">Health <i class="fa fa-medkit" style="margin-left: 0"></i></a></li>
-                          <li><a href="../front-end/luggage.php">Luggage <i class="fa-solid fa-suitcase-rolling" style="margin-left: 0"></i></a></li>
+                          <li><a href="../admin/add-flight.php">Luggage <i class="fa-solid fa-suitcase-rolling" style="margin-left: 0"></i></a></li>
                        </ul>
                     </li>
                     <li><a href="../front-end/car-renting.php">Car Rentals <i class="fa fa-automobile" style="font-size:100%;"></i></a></li>
@@ -58,8 +58,8 @@ class Footer extends HTMLElement{
            <br><br><br>
             <ul>
                 <li><a href="../front-end/faqs.php">FAQs</a></li>
-                <li><a href="../front-end/customs.php">Customs</a></li>
-                <li><a href="../front-end/luggage.php">Luggages</a></li>
+                <li><a href="../admin/add-airport.php">Customs</a></li>
+                <li><a href="../admin/add-flight.php">Luggages</a></li>
                 <li><a href="../front-end/privacy-policy.php">Privacy Policy</a></li>
             </ul>
         </div>

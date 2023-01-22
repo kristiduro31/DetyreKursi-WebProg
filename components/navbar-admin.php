@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><a class="active" href="../admin/admin-landing-page.php">Faqja kryesore <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
+        <li><a class="active" href="../admin/admin-landing-page.php">Faqja Kryesore <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
         <li>
             <a href="#">Sherbime <i class="fa fa-cogs" style="font-size:100%"></i></a>
             <ul>
@@ -17,6 +17,4 @@
         </li>
     </ul>
 </nav>
-<?php
-echo "logged in";
 
