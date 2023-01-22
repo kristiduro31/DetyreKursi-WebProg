@@ -389,12 +389,6 @@ ul {
     text-align: center;
 }
 
-
-.column {
-    float: right;
-    width: 50%;
-}
-
 /*car-rental*/
 .row:after {
     content: "";
