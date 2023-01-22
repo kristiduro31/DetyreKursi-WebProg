@@ -499,11 +499,11 @@ ul {
 }
 
 .profile{
-    background-color: #063247;
+    background-color: white;
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto;
     border: 3.5px solid #063247;
     border-radius: 50%;
@@ -513,6 +513,13 @@ ul {
 .profile label{
     margin-top: 42%;
     color: white;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0;
 }
 
 .profile:hover{

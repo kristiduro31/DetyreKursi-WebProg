@@ -79,3 +79,31 @@ if(isset($_POST["updateAirport"])){
     }
 }
 
+if(isset($_POST["updateCompany"])){
+    $flight_comp_id = mysqli_real_escape_string($conn, $_POST["flight_company_id"]);
+    $label = mysqli_real_escape_string($conn, $_POST["label"]);
+    $email = mysqli_real_escape_string($conn, $_POST["email"]);
+    $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
+    $addr = mysqli_real_escape_string($conn, $_POST['address']);
+    $descr = mysqli_real_escape_string($conn, $_POST["description"]);
+    $logo = $_FILES["logo"]["name"];
+
+    $sql = "SELECT `logo` FROM `flight_company` WHERE flight_company_id='$flight_comp_id'";
+    $result = mysqli_query($conn,$sql);
+    $row = mysqli_fetch_array($result);
+
+    if($logo==""){
+        $logo=$row['logo'];
+    }
+
+    $insert = "UPDATE `flight_company` SET `logo`='$logo', `label`='$label',`company_description`='$descr',`telephone`='$phone',`address`='$addr',`email_company`='$email' WHERE flight_company_id='$flight_comp_id'";
+
+    if (mysqli_query($conn, $insert)) {
+        move_uploaded_file($_FILES["logo"]["tmp_name"], "../images/companies/".$_FILES["logo"]["name"]);
+        header("Location: ../admin/flight-company-manage.php");
+        exit();
+    } else {
+        echo "Something went wrong. Please try again later.";
+    }
+}
+

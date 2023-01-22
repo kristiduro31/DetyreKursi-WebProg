@@ -46,8 +46,9 @@ if (isset($_POST["add-flight-company"])) {
     <div class="admin-container">
         <form method="post" class="field-left" style="margin-top: 1rem" onsubmit="return checkEmail()" enctype="multipart/form-data">
             <div class="profile">
-                <label for="logo"><i class="fa-solid fa-plus" style="color: white"></i> Shto logo</label>
+                <img src="../images/airline-logo-default.png" id="img-profile">
             </div>
+            <label for="logo" id="label-logo" title="Logo duhet te jete te pakten 120x120"><i class="fa-solid fa-plus" style="margin-top: 0;margin-bottom: 10px "></i> Vendosni logo-n tuaj</label>
 
             <input type="text" id="label" name="label" class="form-input" placeholder="Emertimi">
             <input type="email" id="email" name="email" class="form-input" placeholder="Email">
@@ -55,7 +56,7 @@ if (isset($_POST["add-flight-company"])) {
             <input type="text" id="address" name="address" class="form-input" placeholder="Adrese">
             <input type="text" id="description" name="description" class="form-input" placeholder="Pershkrim">
 
-            <input type="file" id="logo" name="logo" style="display: none">
+            <input type="file" id="logo" name="logo" style="display: none" onchange="loadFile()">
 
             <button type="submit" class="login-button" name="add-flight-company" id="add-flight-company-button"
                     style="margin-top: 40px">
@@ -76,6 +77,7 @@ if (isset($_POST["add-flight-company"])) {
             }else return true;
         }
 </script>
+<script src="../scripts/scripts.js"></script>
 <?php include "../components/footer-bar.php" ?>
 </body>
 </html>

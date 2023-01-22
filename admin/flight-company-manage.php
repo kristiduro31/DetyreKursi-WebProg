@@ -55,15 +55,15 @@ if(!isset($_SESSION["user_id"])){
             }
             while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
                 echo "
-                      <tr>
-                        <td>$row[logo]</td>
+                      <tr style='height: 40px'>
+                        <td><img src='../images/companies/$row[logo]' style='height: 40px'></td>
                         <td>$row[label]</td>
                         <td>$row[email_company]</td>
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td colspan='2'>$row[company_description]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='updateAdminsProfile.php?id=$row[flight_company_id]'>Edito</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='update-flight-company.php?id=$row[flight_company_id]'>Edito</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteCompany.php?id=$row[flight_company_id]'>Fshi</a>
