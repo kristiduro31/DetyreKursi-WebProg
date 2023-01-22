@@ -397,19 +397,19 @@ ul {
 .admin-panel .admin-option {
     width: 300px;
     background-color: white;
-    /*margin: 1.5rem; -> Safari*/
+    margin: 1.5rem;
     margin: 2rem;
     border: solid #063247;
     border-radius: 1%;
-    /*padding: 1.5rem; -> Safari*/
-    padding: 2rem;
+    padding: 1.5rem;
+    /*padding: 2rem;*/
     display: inline-block;
     transition: transform .2s;
 }
 
 .admin-panel .admin-option:hover{
-    /*transform: scale(1.05); -> Safari*/
-    transform: scale(1.1);
+    transform: scale(1.05);
+    /*transform: scale(1.1);*/
 }
 
 .admin-panel img {

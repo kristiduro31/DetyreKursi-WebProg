@@ -30,14 +30,19 @@ if(!isset($_SESSION["user_id"])){
         a {
             color: white;
         }
+        .table-title button{
+            width: 150px;
+        }
     </style>
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
-    <h1 style="text-align: center">Pershendetje <?php echo $user["first_name"]?>! Ketu mund te gjeni te gjithe administratoret e faqjes.</h1>
-    <br>
     <div class="reg-container-main">
+        <div class="table-title">
+            <h1>Administratoret e faqjes</h1>
+            <button onclick="location.href = 'new-admin-signup.php'"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Administrator</button>
+        </div>
 
         <table class="styled-table">
             <thead>
@@ -77,13 +82,6 @@ if(!isset($_SESSION["user_id"])){
             ?>
             </tbody>
         </table>
-        <div>
-            <button class="login-button" style="padding: 4px; width: 150px; margin-bottom: 20px; margin-top: 20px">
-                <a href="new-admin-signup.php">
-                    <i class="fa-solid fa-plus" style="color: white"></i>  <b>Shtoni administrator</b>
-                </a>
-            </button>
-        </div>
     </div>
 </main>
 <?php include "../components/footer-bar.php" ?>
