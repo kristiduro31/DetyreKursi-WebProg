@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ef24df7-1ba2-4f86-85d2-25feb550dead" name="Changes" comment="Removing unnecessary code">
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Small fix">
+      <change afterPath="$PROJECT_DIR$/admin/add-flight-company.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/update-flight-company.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back-end/deleteCompany.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/airline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-airport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/airports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/airports-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-airport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/new-admin-signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/updateAdminsProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/deleteAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/deleteAirport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/insert_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +42,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -51,31 +74,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/queries" />
       <recent name="$PROJECT_DIR$/back-end" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/admin" />
-      <recent name="$PROJECT_DIR$/queries" />
-      <recent name="$PROJECT_DIR$/back-end" />
+      <recent name="$PROJECT_DIR$/admin/flight-companies" />
+      <recent name="$PROJECT_DIR$/admin/administrators" />
+      <recent name="$PROJECT_DIR$/admin/airport" />
+      <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -225,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674069433656</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Small fix">
+      <created>1674404711990</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674404711990</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +353,7 @@
     <MESSAGE value="Read all Admins and it's data&#10;Delete Admin by id&#10;Read all Users and it's data&#10;Delete User by id" />
     <MESSAGE value="Update other admin accounts if you have admin privileges. You can update your own profile data" />
     <MESSAGE value="Removing unnecessary code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing unnecessary code" />
+    <MESSAGE value="Small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
   </component>
 </project>

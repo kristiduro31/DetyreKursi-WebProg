@@ -470,6 +470,14 @@ ul {
     width: 200px;
 }
 
+#add-flight-company-button{
+    width: 200px;
+}
+
+#add-admin-button{
+    width: 150px;
+}
+
 .table-title{
     display: flex;
     padding-left: 8rem;
@@ -488,4 +496,25 @@ ul {
 .table-title button:hover{
     background-color: #e91e63;
     transition: background-color .2s;
+}
+
+.profile{
+    background-color: #063247;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 3.5px solid #063247;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile label{
+    margin-top: 42%;
+    color: white;
+}
+
+.profile:hover{
+    background-color: #23dbdb;
 }

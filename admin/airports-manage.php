@@ -61,7 +61,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[tel]</td>
                         <td>$row[city_name]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='editAirport.php?id=$row[airport_id]'>Perditeso</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='update-airport.php?id=$row[airport_id]'>Perditeso</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteAirport.php?id=$row[airport_id]'>Fshi</a>

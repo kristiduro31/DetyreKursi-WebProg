@@ -73,7 +73,7 @@ if(isset($_POST["updateAirport"])){
     $insert = "UPDATE airport SET label='$label', website='$web',tel='$phone', city='$cityId'  WHERE airport_id='$id'";
 
     if (mysqli_query($conn, $insert)) {
-        header("Location: ../admin/airports.php");
+        header("Location: ../admin/airports-manage.php");
     } else {
         echo "Something went wrong. Please try again later.";
     }

@@ -25,7 +25,7 @@ if (isset($_POST["add-airport"])) {
                 VALUES ( '$label', '$web', '$phone', '$cityId')";
 
     if (mysqli_query($conn, $insert)) {
-        header("Location: airports.php");
+        header("Location: airports-manage.php");
     } else {
         echo "Something went wrong. Please try again later.";
     }
