@@ -10,7 +10,7 @@ class Navbar extends HTMLElement{
                        <ul>
                           <li><a href="../front-end/transport.php">Transport <i class="fa fa-taxi" style="margin-left: 0"></i></a></li>
                           <li><a href="../front-end/restaurant.php">Restaurant <i class="fa-solid fa-utensils" style="margin-left: 0; font-size:100%"></i></a></li>
-                          <li><a href="../admin/add-airport.php">Customs <i class="fa-solid fa-person-military-to-person" style="margin-left: 0"></i></a></li>
+                          <li><a href="../admin/airport/add-airport.php">Customs <i class="fa-solid fa-person-military-to-person" style="margin-left: 0"></i></a></li>
                           <li><a href="../front-end/shops.php">Shops <i class="fa-solid fa-cart-shopping" style="margin-left: 0"></i></a></li>
                           <li><a href="../front-end/health.php">Health <i class="fa fa-medkit" style="margin-left: 0"></i></a></li>
                           <li><a href="../admin/add-flight.php">Luggage <i class="fa-solid fa-suitcase-rolling" style="margin-left: 0"></i></a></li>

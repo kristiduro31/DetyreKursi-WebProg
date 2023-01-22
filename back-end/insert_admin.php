@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn,$sql2);
     $row_count = mysqli_num_rows($result);
     if($row_count>0){
-        echo "<script>alert('Email already used'); window.location = '../admin/new-admin-signup.php';</script>";
+        echo "<script>alert('Email already used'); window.location = '../admin/add-admin.php';</script>";
         exit();
     }
 

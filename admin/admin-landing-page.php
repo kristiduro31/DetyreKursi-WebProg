@@ -33,7 +33,7 @@ if(!isset($_SESSION["user_id"])){
 <main class="landing-container">
     <h1>Pershendetje <?php echo $loggedUser ?>!</h1>
     <div class="admin-panel">
-        <a href="airports.php">
+        <a href="airports-manage.php">
             <div class="admin-option">
                 <img src="../images/add-airport.PNG" alt="">
                 <h2>Aeroporte</h2>

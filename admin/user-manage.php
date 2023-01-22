@@ -36,9 +36,10 @@ if(!isset($_SESSION["user_id"])){
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
-    <h1 style="text-align: center">Pershendetje <?php echo $user["first_name"]?>! Ketu mund te gjeni te gjithe perdoruesit e faqjes.</h1>
-    <br>
     <div class="reg-container-main">
+        <div class="table-title">
+            <h1>Perdoruesit e faqjes</h1>
+        </div>
         <table class="styled-table">
             <thead>
             <tr>

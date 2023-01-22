@@ -1,8 +1,8 @@
 <nav>
     <ul>
-        <li><a class="active" href="../front-end/landing-page.php">Faqja kryesore <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
+        <li><a class="active" href="../front-end/landing-page.php">Faqja Kryesore <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
         <li>
-            <a href="#">Sherbime <i class="fa fa-cogs" style="font-size:100%"></i></a>
+            <a href="#">Shërbime <i class="fa fa-cogs" style="font-size:100%"></i></a>
             <ul>
                 <li><a href="../front-end/transport.php">Transporti <i class="fa fa-taxi" style="margin-left: 0"></i></a></li>
                 <li><a href="../front-end/restaurant.php">Restorante <i class="fa-solid fa-utensils" style="margin-left: 0; font-size:100%"></i></a></li>
