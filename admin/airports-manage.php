@@ -34,7 +34,7 @@ if(!isset($_SESSION["user_id"])){
     <div class="reg-container-main">
         <div class="table-title">
             <h1>Aeroporte</h1>
-            <button onclick="location.href = 'add-airport.php'"><i class="fa-solid fa-plus" style="color: white"></i> Shto Aeroport</button>
+            <button onclick="location.href = 'add-airport.php'">Shto Aeroport</button>
         </div>
         <table class="styled-table">
             <thead>
@@ -61,7 +61,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[tel]</td>
                         <td>$row[city_name]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='update-airport.php?id=$row[airport_id]'>Perditeso</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='editAirport.php?id=$row[airport_id]'>Perditeso</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteAirport.php?id=$row[airport_id]'>Fshi</a>
