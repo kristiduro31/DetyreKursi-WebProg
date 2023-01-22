@@ -12,7 +12,7 @@ $cities = mysqli_query($conn, $sql);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shto Aeroport</title>
+    <title>Perditeso Aeroport</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">

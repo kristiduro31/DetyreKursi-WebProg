@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Small fix">
-      <change afterPath="$PROJECT_DIR$/admin/add-flight-company.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/update-flight-company.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/deleteCompany.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/airline.png" afterDir="false" />
+    <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Flight companies C-R and D. Upcoming update feature.">
+      <change afterPath="$PROJECT_DIR$/images/airline-logo-default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/companies/airline1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-airport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/airports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/airports-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-airport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/new-admin-signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/updateAdminsProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/deleteAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/deleteAirport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/insert_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/insert_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-flight-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-flight-company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-company-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-airport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-flight-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-flight-company.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navbar-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +42,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -91,16 +81,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/images/companies" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/queries" />
       <recent name="$PROJECT_DIR$/back-end" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/images/companies" />
       <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/admin/flight-companies" />
       <recent name="$PROJECT_DIR$/admin/administrators" />
-      <recent name="$PROJECT_DIR$/admin/airport" />
-      <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -257,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674404711990</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Flight companies C-R and D. Upcoming update feature.">
+      <created>1674411615610</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674411615610</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +352,7 @@
     <MESSAGE value="Update other admin accounts if you have admin privileges. You can update your own profile data" />
     <MESSAGE value="Removing unnecessary code" />
     <MESSAGE value="Small fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
+    <MESSAGE value="Flight companies C-R and D. Upcoming update feature." />
+    <option name="LAST_COMMIT_MESSAGE" value="Flight companies C-R and D. Upcoming update feature." />
   </component>
 </project>
