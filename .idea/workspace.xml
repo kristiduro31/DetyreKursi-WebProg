@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="Removing unnecessary code">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/images/car-rentals/alAirRental.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/images/car-rentals/e-rental.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/images/car-rentals/euro.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DetyreKursi-WebProg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DetyreKursi-WebProg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/car-renting.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/car-renting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +49,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1.11">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/../../../../../xampp/php/PEAR" />
     </include_path>
@@ -49,28 +59,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/Desktop/DkWeb/DetyreKursi-WebProg/front-end/images/car-rentals",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\DkWeb\DetyreKursi-WebProg\front-end\images\car-rentals" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/queries" />
       <recent name="$PROJECT_DIR$/back-end" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/admin" />
-      <recent name="$PROJECT_DIR$/queries" />
-      <recent name="$PROJECT_DIR$/back-end" />
+      <recent name="C:\Users\User\Desktop\DkWeb\DetyreKursi-WebProg\styles\images" />
+      <recent name="C:\Users\User\Desktop\DkWeb\DetyreKursi-WebProg\images" />
+      <recent name="C:\Users\User\Desktop\DkWeb\DetyreKursi-WebProg\styles\images\car-rentals" />
+      <recent name="C:\Users\User\Desktop\DkWeb\DetyreKursi-WebProg\front-end\images\car-rentals" />
+      <recent name="C:\Users\User\Desktop\DkWeb\DetyreKursi-WebProg\front-end\images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="login.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/front-end/login.php">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,6 +110,9 @@
       <workItem from="1673981791001" duration="1039000" />
       <workItem from="1673995662832" duration="3578000" />
       <workItem from="1674023919939" duration="24109000" />
+      <workItem from="1674309673125" duration="2586000" />
+      <workItem from="1674313241543" duration="13345000" />
+      <workItem from="1674394724206" duration="15558000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
