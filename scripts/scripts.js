@@ -34,3 +34,19 @@ function loadFile(){
         URL.revokeObjectURL(output.src)
     }
 };
+
+click = 0;
+function removeImage(id){
+    element = document.getElementById(id);
+    if(element.style.visibility === 'hidden')
+    {
+        element.style.visibility='visible';
+        element.style.width='10%';
+    }
+    else{
+        element.style.visibility='hidden';
+        element.style.width='0%';
+    }
+
+}
+

@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Clearing .idea cache">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/car-rentals/alAirRental.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/car-rentals/e-rental.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/car-rentals/euro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/car-rentals/imageedit_1_9851293430.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/car-renting.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/car-renting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,22 +64,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg/front-end",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/queries" />
       <recent name="$PROJECT_DIR$/back-end" />
@@ -88,7 +96,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8932201a-db5e-45bb-b809-f03a674fdb94" name="Changes" comment="" />
+      <changelist id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Clearing .idea cache" />
       <created>1673816363411</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -105,6 +113,7 @@
       <workItem from="1673981791001" duration="1039000" />
       <workItem from="1673995662832" duration="3578000" />
       <workItem from="1674023919939" duration="24109000" />
+      <workItem from="1674425092142" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>

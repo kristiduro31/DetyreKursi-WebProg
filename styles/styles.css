@@ -389,6 +389,59 @@ ul {
     text-align: center;
 }
 
+
+.column {
+    float: right;
+    width: 50%;
+}
+
+/*car-rental*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-inside {
+    float: left;
+    width: 50%;
+}
+.row-inside:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rental-image{
+    display: flex;
+    justify-content: left;
+    object-fit: cover;
+}
+
+.display-rentals li {
+    padding: 8px 30px 5px 10px;
+    border: 1px solid black;
+}
+
+.row{
+    height: 20%;
+}
+
+.company-img-in{
+    width: 20%;
+
+}
+.company-img-out{
+    width: 10%;
+    float: left;
+    height: 10%;
+}
+
+#car-rental-body{
+    background-image: url("../images/car-rentals/imageedit_1_9851293430.png") ;
+}
+
+/*admin*/
 .admin-panel {
     text-align: center;
     margin-top: 1rem;
