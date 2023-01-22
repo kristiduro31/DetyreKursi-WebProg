@@ -61,10 +61,10 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[tel]</td>
                         <td>$row[city_name]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='editAirport.php?id=$row[airport_id]'>Edit</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='editAirport.php?id=$row[airport_id]'>Perditeso</a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteAiport.php?id=$row[airport_id]'>Delete</a>
+                            <a style='color: red' href='../back-end/deleteAirport.php?id=$row[airport_id]'>Fshi</a>
                         </td>
                       </tr>
                      ";
