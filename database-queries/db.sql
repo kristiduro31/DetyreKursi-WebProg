@@ -13,7 +13,7 @@ CREATE TABLE Users (
 CREATE TABLE Flight_Company(
 	flight_company_id int NOT NULL AUTO_INCREMENT,
     label varchar(30) NOT NULL,
-    logo longblob NOT NULL,
+    logo varchar(250) NOT NULL,
     company_description varchar(100),
     telephone varchar(20),
     address varchar(40),
