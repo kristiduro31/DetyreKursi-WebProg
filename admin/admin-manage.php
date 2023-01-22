@@ -30,6 +30,9 @@ if(!isset($_SESSION["user_id"])){
         a {
             color: white;
         }
+        .table-title button{
+            width: 150px;
+        }
     </style>
 </head>
 <body onload="realtimeClock(),getRouting()">
@@ -38,7 +41,7 @@ if(!isset($_SESSION["user_id"])){
     <div class="reg-container-main">
         <div class="table-title">
             <h1>Administratoret e faqjes</h1>
-            <button onclick="location.href = 'add-admin.php'" id=""><i class="fa-solid fa-plus" style="color: white;"></i> Shto Administrator</button>
+            <button onclick="location.href = 'new-admin-signup.php'"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Administrator</button>
         </div>
 
         <table class="styled-table">
@@ -68,7 +71,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='update-admin.php?id=$row[user_id]'>Edito</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='updateAdminsProfile.php?id=$row[user_id]'>Edito</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteAdmin.php?id=$row[user_id]'>Fshi</a>
