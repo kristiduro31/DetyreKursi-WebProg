@@ -34,7 +34,7 @@ if(!isset($_SESSION["user_id"])){
     <div class="reg-container-main">
         <div class="table-title">
             <h1>Aeroporte</h1>
-            <button onclick="location.href = 'add-airport.php'">Shto Aeroport</button>
+            <button onclick="location.href = 'add-airport.php'"><i class="fa-solid fa-plus" style="color: white"></i> Shto Aeroport</button>
         </div>
         <table class="styled-table">
             <thead>
