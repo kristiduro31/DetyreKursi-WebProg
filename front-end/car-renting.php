@@ -15,7 +15,7 @@
     <h1>Makina me qera</h1>
     <br>
     <br>
-    <div class="rental" >
+    <div class="rental">
         <ul class="display-rentals">
             <li style="display: block;">
                 <details>
@@ -27,12 +27,13 @@
                         </div>
                         <div class="column">
                             <div class="column">
-                                <h3 style="font-weight: bolder">Pershkrimi</h3>
-                                <p>We are a company focused on renting cars, taxi service, car rental with driver.
-                                    Albania Airport Rent a Car was created by Mr. Dashamir Kullaj in 2003, since the first
-                                    years our car fleet consisted of
-                                    the most prestigious vehicle brands such as Opel, Volkswagen, Mercedes Benz and
-                                    Ford.</p>
+                                <h3 style="font-weight: bolder">Përshkrimi</h3>
+                                <p>Ne jemi nje kompani e fokusuar ne dhenien e makinave me qera, sherbim taxi, makina me
+                                    qera me shofer.
+
+                                    Albania Airport Rent a Car u krijua nga Mr. Dashamir Kullaj ne vitin 2003, qe ne
+                                    vitet e para flota e makinave tona perbehej nga markat e automjeteve me prestigjoze
+                                    si Opel, Volkswagen, Mercedes Benz and Ford.</p>
                             </div>
                             <div class="column">
                                 <h3>Kontakt</h3>
@@ -43,7 +44,8 @@
                                 </div>
                                 <div class="detail">
                                     <label>Email</label>
-                                    <h4><a href="mailto:info@albaniaairportrentacar.al">info@albaniaairportrentacar.al</a>
+                                    <h4>
+                                        <a href="mailto:info@albaniaairportrentacar.al">info@albaniaairportrentacar.al</a>
                                     </h4>
                                 </div>
                                 <div class="detail">
@@ -68,8 +70,8 @@
 
                         <div class="column">
                             <div class="column">
-                                <h3 style="font-weight: bolder">Pershkrimi</h3>
-                                <p>Rent cars at good prices</p>
+                                <h3 style="font-weight: bolder">Përshkrimi</h3>
+                                <p>Makina me qira me çmime të mira</p>
                             </div>
                             <div class="column">
                                 <h3>Kontakt</h3>
@@ -83,7 +85,8 @@
                                 </div>
                                 <div class="detail">
                                     <label>Website</label>
-                                    <h4><a target="_blank" href="www.albaniacarrentals.com">www.albaniacarrentals.com</a>
+                                    <h4><a target="_blank"
+                                           href="www.albaniacarrentals.com">www.albaniacarrentals.com</a>
                                 </div>
                             </div>
 
@@ -100,12 +103,18 @@
                         </div>
                         <div class="column">
                             <div class="column">
-                                <h3 style="font-weight: bolder">Pershkrimi</h3>
-                                <p>Eurocar Rentals is Mektrin Motors’ next rental car market success. Our principles are based on values that help us build long-term relationships with clients, the community, partners, and, most importantly, with one another.
+                                <h3 style="font-weight: bolder">Përshkrimi</h3>
+                                <p>Eurocar Rentals është suksesi i radhës i Mektrin Motors në tregun e makinave me qira.
+                                    Parimet tona bazohen në vlera që na ndihmojnë të ndërtojmë marrëdhënie afatgjata me
+                                    klientët, komunitetin, partnerët dhe, më e rëndësishmja, me njëri-tjetrin.
 
-                                    Eurocar provides personalized car rental plans and a full range of transportation solutions, providing the best service on the market as we believe that our customers are the core of the company.
+                                    Eurocar ofron plane të personalizuara të makinave me qira dhe një gamë të plotë
+                                    zgjidhjesh transporti, duke ofruar shërbimin më të mirë në treg pasi ne besojmë se
+                                    klientët tanë janë thelbi i kompanisë.
 
-                                    Eurocar will be your safest companion on any trip, being as close to your requirements and expectations as possible, with professional service throughout the process and a variety of our vehicles and services.</p>
+                                    Eurocar do të jetë shoqëruesi juaj më i sigurt në çdo udhëtim, duke qenë sa më afër
+                                    kërkesave dhe pritshmërive tuaja, me shërbim profesional gjatë gjithë procesit dhe
+                                    një shumëllojshmëri të automjeteve dhe shërbimeve tona</p>
                             </div>
                             <div class="column">
                                 <h3>Kontakti</h3>
