@@ -9,5 +9,5 @@ if(isset($_GET['id'])){
     mysqli_query($conn, $sql);
     echo "<script>alert('Aeroporti u fshi!')</script>";
 }
-header('location: ../admin/airports-manage.php');
+header('location: ../admin/airports.php');
 exit;
