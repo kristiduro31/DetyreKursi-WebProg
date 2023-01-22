@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/1e579789f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body onload="realtimeClock(), getRouting()">
+<body id="car-rental-body" onload="realtimeClock(), getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
     <h1>Car Rentals</h1>
@@ -22,7 +22,7 @@
                     <summary><h3>Albanian Airport Rent a Car</h3></summary>
                     <div class="row">
                         <div class="column">
-                            <img class="company-img-in" src="images/car-rentals/alAirRental.png"
+                            <img class="company-img-in" src="../images/car-rentals/alAirRental.png"
                                  alt="Image could not be displayed">
                         </div>
                         <div class="column">
@@ -61,7 +61,7 @@
                     <div class="row">
                         <div class="column">
                             <div class="image">
-                                <img class="company-img-in" src="images/car-rentals/e-rental.png"
+                                <img class="company-img-in" src="../images/car-rentals/e-rental.png"
                                      alt="Image could not be displayed">
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                     <summary><h3>Eurocar Rentals</h3></summary>
                     <div class="row">
                         <div class="column">
-                            <img class="company-img-in" src="images/car-rentals/euro.png"
+                            <img class="company-img-in" src="../images/car-rentals/euro.png"
                                  alt="Image could not be displayed">
                         </div>
                         <div class="column">

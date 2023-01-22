@@ -427,8 +427,8 @@ ul {
     height: 10%;
 }
 
-.rental{
-    background-image: url("images/imageedit_1_9851293430.png") ;
+#car-rental-body{
+    background-image: url("../images/car-rentals/imageedit_1_9851293430.png") ;
 }
 
 
