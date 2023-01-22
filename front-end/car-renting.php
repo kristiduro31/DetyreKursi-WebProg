@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Car Rentals</title>
+    <title>Makina me qera</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -12,7 +12,7 @@
 <body id="car-rental-body" onload="realtimeClock(), getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-    <h1>Car Rentals</h1>
+    <h1>Makina me qera</h1>
     <br>
     <br>
     <div class="rental" >
@@ -27,7 +27,7 @@
                         </div>
                         <div class="column">
                             <div class="column">
-                                <h3 style="font-weight: bolder">Description</h3>
+                                <h3 style="font-weight: bolder">Pershkrimi</h3>
                                 <p>We are a company focused on renting cars, taxi service, car rental with driver.
                                     Albania Airport Rent a Car was created by Mr. Dashamir Kullaj in 2003, since the first
                                     years our car fleet consisted of
@@ -35,9 +35,9 @@
                                     Ford.</p>
                             </div>
                             <div class="column">
-                                <h3>Contact</h3>
+                                <h3>Kontakt</h3>
                                 <div class="detail">
-                                    <label>Mobile</label>
+                                    <label>Numri i telefonit</label>
                                     <h4><a href="tel:+355684011010">+355 68 40 11 010</a></h4>
                                     <h4><a href="tel:+355684088008">+355 68 40 88 008</a></h4>
                                 </div>
@@ -68,13 +68,13 @@
 
                         <div class="column">
                             <div class="column">
-                                <h3 style="font-weight: bolder">Description</h3>
+                                <h3 style="font-weight: bolder">Pershkrimi</h3>
                                 <p>Rent cars at good prices</p>
                             </div>
                             <div class="column">
-                                <h3>Contact</h3>
+                                <h3>Kontakt</h3>
                                 <div class="detail">
-                                    <label>Mobile</label>
+                                    <label>Numri i telefonit</label>
                                     <h4><a href="+355676018857">+355 676018857</a></h4>
                                 </div>
                                 <div class="detail">
@@ -100,7 +100,7 @@
                         </div>
                         <div class="column">
                             <div class="column">
-                                <h3 style="font-weight: bolder">Description</h3>
+                                <h3 style="font-weight: bolder">Pershkrimi</h3>
                                 <p>Eurocar Rentals is Mektrin Motors’ next rental car market success. Our principles are based on values that help us build long-term relationships with clients, the community, partners, and, most importantly, with one another.
 
                                     Eurocar provides personalized car rental plans and a full range of transportation solutions, providing the best service on the market as we believe that our customers are the core of the company.
@@ -108,9 +108,9 @@
                                     Eurocar will be your safest companion on any trip, being as close to your requirements and expectations as possible, with professional service throughout the process and a variety of our vehicles and services.</p>
                             </div>
                             <div class="column">
-                                <h3>Contact</h3>
+                                <h3>Kontakti</h3>
                                 <div class="detail">
-                                    <label>Mobile</label>
+                                    <label>Numri i telefonit</label>
                                     <h4><a href="tel:+355 4 2255 399">+355 4 2255 399</a></h4>
                                     <h4><a href="tel:+355 376005454">+355 376005454</a></h4>
                                 </div>

@@ -10,7 +10,7 @@ if(isset($_POST["updateAdmin"])){
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $tel = mysqli_real_escape_string($conn, $_POST["telephone"]);
     $birthday = mysqli_real_escape_string($conn, $_POST["birthday"]);
-    $re = mysqli_real_escape_string($conn, $_POST["role"]);                                                   //--->>> make sure the first time you run the application
+    $re = mysqli_real_escape_string($conn, $_POST["role"]);
     $address = mysqli_real_escape_string($conn, $_POST["address"]);
     $pass = mysqli_real_escape_string($conn, $_POST["password"]);
     $passw = password_hash($pass,PASSWORD_BCRYPT);
@@ -32,7 +32,7 @@ if(isset($_POST["updateProfile"])){
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $tel = mysqli_real_escape_string($conn, $_POST["telephone"]);
     $birthday = mysqli_real_escape_string($conn, $_POST["birthday"]);
-    $re = mysqli_real_escape_string($conn, $_POST["role"]);                                                   //--->>> make sure the first time you run the application
+    $re = mysqli_real_escape_string($conn, $_POST["role"]);
     $address = mysqli_real_escape_string($conn, $_POST["address"]);
     $pass = mysqli_real_escape_string($conn, $_POST["password"]);
     $passw = password_hash($pass,PASSWORD_BCRYPT);
@@ -52,5 +52,30 @@ if(isset($_POST["updateProfile"])){
     }
 }
 
+if(isset($_POST["updateAirport"])){
+    $sql = "select * from `city` ";
+    $cities = mysqli_query($conn, $sql);
 
+    $id = mysqli_real_escape_string($conn, $_POST["airport_id"]);
+    $label = mysqli_real_escape_string($conn, $_POST["label"]);
+    $web = mysqli_real_escape_string($conn, $_POST["website"]);
+    $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
+    $city = mysqli_real_escape_string($conn, $_POST['city']);
+
+    $cityId = 0;
+    while ($row = mysqli_fetch_array($cities, MYSQLI_ASSOC)) {
+        if ($row['city_name'] == $city) {
+            $cityId = $row['city_id'];
+            break;
+        }
+    }
+
+    $insert = "UPDATE airport SET label='$label', website='$web',tel='$phone', city='$cityId'  WHERE airport_id='$id'";
+
+    if (mysqli_query($conn, $insert)) {
+        header("Location: ../admin/airports.php");
+    } else {
+        echo "Something went wrong. Please try again later.";
+    }
+}
 
