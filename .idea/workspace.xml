@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Small changes on hrefs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2KNYATBmATBWKdbSK8pIZPAM2Mh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

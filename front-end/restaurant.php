@@ -11,8 +11,46 @@
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
-<main>
-	<h1>Bar & Restorante</h1>
+<main class="restaurant">
+    <h1>Bar & Restorante</h1>
+    <div class="reg-container-main">
+        <div class="row">
+            <div class="column">
+                <p>First Restaurant</p>
+            </div>
+            <div class="column">
+                <p>another column</p>
+            </div>
+
+            <div class="column">
+                <p>another column</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <p>First Restaurant</p>
+            </div>
+            <div class="column">
+                <p>another column</p>
+            </div>
+
+            <div class="column">
+                <p>another column</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <p>First Restaurant</p>
+            </div>
+            <div class="column">
+                <p>another column</p>
+            </div>
+
+            <div class="column">
+                <p>another column</p>
+            </div>
+        </div>
+    </div>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>

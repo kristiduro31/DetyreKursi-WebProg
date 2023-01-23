@@ -572,3 +572,18 @@ ul {
 .profile:hover{
     background-color: #23dbdb;
 }
+.restaurant{
+    background-image: url("../images/restaurant.png");
+}
+
+.restaurant .column{
+    width: 33%;
+}
+.restaurant .row{
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.restaurant .reg-container-main :hover {
+    background-color: #6f6f6f;
+}
