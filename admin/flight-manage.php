@@ -3,6 +3,8 @@ session_start();
 global $conn;
 include '../db-config.php';
 
+global $loggedUser;
+
 if(!isset($_SESSION["user_id"])){
     header("location: ../front-end/landing-page.php");
     die();
@@ -13,7 +15,7 @@ if(!isset($_SESSION["user_id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kompanite e fluturimeve</title>
+    <title>Tirana Internation Airport-Admin Panel</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -28,43 +30,45 @@ if(!isset($_SESSION["user_id"])){
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
+    <br>
     <div class="reg-container-main">
         <div class="table-title">
-            <h1>Kompanite e fluturimeve</h1>
-            <button onclick="location.href = 'add-flight-company.php'" id="add-flight-company-button"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Kompani Fluturimi</button>
+            <h1>Fluturime</h1>
+            <button onclick="location.href = 'add-flight.php'"><i class="fa-solid fa-plus" style="color: white"></i> Krijo Fluturim</button>
         </div>
-
         <table class="styled-table">
             <thead>
             <tr>
-                <th>Logo</th>
-                <th>Emertim</th>
-                <th>Email</th>
-                <th>Numer Telefoni</th>
-                <th>Adresa</th>
+                <th>Kompania</th>
+                <th>Nisja</th>
+                <th>Avioni</th>
+                <th>Vende te mbetura</th>
+                <th>Destinacioni</th>
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
             <tbody>
             <?php
-            $sql = "select * from `flight_company`;";
+            $sql = "SELECT fc.logo, f.flight_id, f.departure, f.airplane, f.seats_left, a.label 
+                    FROM flight f INNER JOIN airport a on f.arrival_airport = a.airport_id
+                    INNER JOIN flight_company fc on f.company = fc.flight_company_id";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
             }
             while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
                 echo "
-                      <tr style='height: 40px'>
+                      <tr>
                         <td><img src='../images/companies/$row[logo]' style='height: 40px'></td>
+                        <td>$row[departure]</td>
+                        <td>$row[airplane]</td>
+                        <td>$row[seats_left]</td>
                         <td>$row[label]</td>
-                        <td>$row[email_company]</td>
-                        <td>$row[telephone]</td>
-                        <td>$row[address]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='update-flight-company.php?id=$row[flight_company_id]'>Edito</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Perditeso</a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteCompany.php?id=$row[flight_company_id]'>Fshi</a>
+                            <a style='color: red' href='../back-end/deleteFlight.php?id=$row[flight_id]'>Fshi</a>
                         </td>
                       </tr>
                      ";
@@ -77,3 +81,4 @@ if(!isset($_SESSION["user_id"])){
 <?php include "../components/footer-bar.php" ?>
 </body>
 </html>
+
