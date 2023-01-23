@@ -41,7 +41,7 @@ if(!isset($_SESSION["user_id"])){
     <div class="reg-container-main">
         <div class="table-title">
             <h1>Administratoret e faqjes</h1>
-            <button onclick="location.href = 'new-admin-signup.php'"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Administrator</button>
+            <button onclick="location.href = 'add-admin.php'"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Administrator</button>
         </div>
 
         <table class="styled-table">

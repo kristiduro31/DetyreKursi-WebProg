@@ -26,11 +26,6 @@ if (isset($_SESSION["user_id"])) {
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="https://kit.fontawesome.com/1e579789f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        h1, h4 {
-            text-align: center;
-        }
-    </style>
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php
@@ -41,7 +36,7 @@ if (isset($_SESSION["user_id"])) {
 <main>
     <div class="reg-container">
         <div>
-            <h1>Shikoni dhe Modifikoni të dhënat tuaja</h1>
+            <h1>Shihni dhe Modifikoni të dhënat tuaja:</h1>
         </div>
         <form class="sign-up-form" method="post" action="../back-end/update.php" onsubmit="return (checkPasswordUpdate() && validateConfirmPassword())">
             <input type="hidden" value="<?php echo $loggedUser["user_id"]; ?>" name="user_id">
