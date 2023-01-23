@@ -422,7 +422,9 @@ ul {
 }
 
 .company-img-in{
-    width: 20%;
+    width: 40%;
+    float: right;
+    padding-right: 10%;
 
 }
 .company-img-out{
@@ -572,3 +574,13 @@ ul {
 .profile:hover{
     background-color: #23dbdb;
 }
+
+.rental .column-inside{
+    padding-top: 5%;
+    padding-left: 3px;
+    text-align: left;
+    float: left;
+    width: 33%;
+
+}
+
