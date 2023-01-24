@@ -31,6 +31,7 @@ if (isset($_POST["add-flight-company"])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Shto Kompani Fluturimesh</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>

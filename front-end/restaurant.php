@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bar & Restorante</title>
-    <script src="../scripts/components.js"></script>
-    <script src="../scripts/scripts.js"></script>
-    <link rel="stylesheet" href="../styles/styles.css">
-    <script src="https://kit.fontawesome.com/1e579789f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<title>Bare & Restorante</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+	<script src="../scripts/components.js"></script>
+	<script src="../scripts/scripts.js"></script>
+	<link rel="stylesheet" href="../styles/styles.css">
+	<script src="https://kit.fontawesome.com/1e579789f0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="restaurant-main" onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
@@ -75,6 +76,11 @@
         </div>
     </div>
 </mai>
+=======
+<main>
+	<h1>Bare & Restorante</h1>
+</main>
+>>>>>>> a98c5b9b2224076c6f638b84e81ac0a9c3802ee5
 <?php include "../components/footer-bar.php" ?>
 </body>
 </html>

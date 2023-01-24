@@ -15,7 +15,8 @@ if(!isset($_SESSION["user_id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tirana Internation Airport-Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+    <title>Aeroporte</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -48,7 +49,7 @@ if(!isset($_SESSION["user_id"])){
             </thead>
             <tbody>
             <?php
-            $sql = "SELECT a.airport_id, a.label, a.website, a.tel, c.city_name FROM airport as a INNER JOIN city c on a.city = c.city_id;";
+            $sql = "SELECT a.airport_id, a.label, a.website, a.tel, c.city_name FROM airport as a INNER JOIN city c on a.city = c.city_id ORDER BY a.label ASC;";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");

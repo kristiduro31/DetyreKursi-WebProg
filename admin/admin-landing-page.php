@@ -21,6 +21,7 @@ if(!isset($_SESSION["user_id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Tirana Internation Airport-Admin Panel</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
@@ -39,7 +40,7 @@ if(!isset($_SESSION["user_id"])){
                 <h2>Aeroporte</h2>
             </div>
         </a>
-        <a href="add-flight.php">
+        <a href="flight-manage.php">
             <div class="admin-option">
                 <img src="../images/add-flight.PNG" alt="">
                 <h2>Fluturime</h2>

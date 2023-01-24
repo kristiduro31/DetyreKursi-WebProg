@@ -107,3 +107,42 @@ if(isset($_POST["updateCompany"])){
     }
 }
 
+if(isset($_POST["updateFlight"])){
+
+    $flightID=mysqli_real_escape_string($conn, $_POST["flight_id"]);
+    $departure=mysqli_real_escape_string($conn, $_POST["departure"]);
+    $type=mysqli_real_escape_string($conn, $_POST["type"]);
+    $airplane=mysqli_real_escape_string($conn, $_POST["airplane"]);
+    $seats_total=mysqli_real_escape_string($conn, $_POST["seats"]);
+    $seats_left=mysqli_real_escape_string($conn, $_POST["seats_left"]);
+    $prev_seats=mysqli_real_escape_string($conn, $_POST["previous_seats"]);
+    $dept_airport=mysqli_real_escape_string($conn, $_POST["dept_airport"]);
+    $arrival_airport=mysqli_real_escape_string($conn, $_POST["arrival_airport"]);
+    $company=mysqli_real_escape_string($conn, $_POST["company"]);
+    $description=mysqli_real_escape_string($conn, $_POST["description"]);
+    $ticket_price=mysqli_real_escape_string($conn, $_POST["ticket_price"]);
+
+    $occupiedSeats = $prev_seats - $seats_left;
+    $seatsLeft = $seats_total - $occupiedSeats;
+
+    $update2="UPDATE `Flight` SET flight_description='$description',
+                    departure='$departure',
+                    airplane='$airplane',
+                    seats_total='$seats_total',
+                    seats_left='$seatsLeft',
+                    arrival_airport='$arrival_airport',
+                    company='$company',
+                    departure_airport='$dept_airport',
+                    type='$type',
+                    ticket_price='$ticket_price'
+                    WHERE flight_id='$flightID'";
+
+    if (mysqli_query($conn, $update2)) {
+        header("Location: ../admin/flight-manage.php");
+    } else {
+        echo "Something went wrong. Please try again later.";
+    }
+    exit();
+}
+
+

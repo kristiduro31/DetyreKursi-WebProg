@@ -20,7 +20,8 @@ if(!isset($_SESSION["user_id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tirana Internation Airport-Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+    <title>Admin Panel</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -57,7 +58,7 @@ if(!isset($_SESSION["user_id"])){
             </thead>
             <tbody>
             <?php
-            $sql = "select * from `Users` WHERE `role`='admin'";
+            $sql = "select * from `Users` WHERE `role`='admin' ORDER BY first_name, surname ASC;";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
@@ -71,7 +72,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='updateAdminsProfile.php?id=$row[user_id]'>Edito</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='update-admin.php?id=$row[user_id]'>Edito</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteAdmin.php?id=$row[user_id]'>Fshi</a>

@@ -36,6 +36,7 @@ if (isset($_POST["add-airport"])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Shto Aeroport</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
@@ -52,8 +53,7 @@ if (isset($_POST["add-airport"])) {
     <div class="admin-container">
         <form method="post" class="field-left">
             <input type="text" id="label" name="label" class="form-input" placeholder="Emri">
-
-            <input type="url" id="website" name="website" class="form-input" placeholder="Link-u Web">
+            <input type="text" id="website" name="website" class="form-input" placeholder="Link-u Web">
             <input type="tel" id="phone" name="phone" class="form-input" placeholder="Numer Telefoni">
             <input type="text" id="city" list="cities" name="city" class="form-input" placeholder="Qyteti">
             <datalist id="cities">

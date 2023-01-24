@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Privacy Policy</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
 	<script src="../scripts/components.js"></script>
 	<script src="../scripts/scripts.js"></script>
 	<link rel="stylesheet" href="../styles/styles.css">

@@ -13,6 +13,7 @@ if(!isset($_SESSION["user_id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Kompanite e fluturimeve</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
@@ -42,7 +43,6 @@ if(!isset($_SESSION["user_id"])){
                 <th>Email</th>
                 <th>Numer Telefoni</th>
                 <th>Adresa</th>
-                <th colspan="2">Pershkrim</th>
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
@@ -61,7 +61,6 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[email_company]</td>
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
-                        <td colspan='2'>$row[company_description]</td>
                         <td>
                            <a style='margin: 0 5px; color: darkgreen' href='update-flight-company.php?id=$row[flight_company_id]'>Edito</a>
                         </td>
