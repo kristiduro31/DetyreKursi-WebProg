@@ -25,6 +25,10 @@ if(!isset($_SESSION["user_id"])){
         a {
             color: white;
         }
+        .table-title button {
+            margin-right: 0px;
+            margin-left: 0px
+        }
     </style>
 </head>
 <body onload="realtimeClock(),getRouting()">
@@ -34,23 +38,27 @@ if(!isset($_SESSION["user_id"])){
     <div class="reg-container-main">
         <div class="table-title">
             <h1>Fluturime</h1>
-            <button onclick="location.href = 'add-flight.php'"><i class="fa-solid fa-plus" style="color: white"></i> Krijo Fluturim</button>
+            <button onclick="location.href = 'add-departure.php'"><i class="fa-solid fa-plus" style="color: white"></i> Krijo Nisje</button>
+            <button onclick="location.href = 'add-arrival.php'"><i class="fa-solid fa-plus" style="color: white"></i> Krijo Mberritje</button>
         </div>
         <table class="styled-table">
             <thead>
             <tr>
                 <th>Kompania</th>
-                <th>Nisja</th>
+                <th>Ora-Nisja</th>
                 <th>Avioni</th>
-                <th>Vende te mbetura</th>
+                <th>Nisja</th>
                 <th>Destinacioni</th>
+                <th>Vende te mbetura</th>
+                <th>Cmimi biletes</th>
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
             <tbody>
             <?php
-            $sql = "SELECT fc.logo, f.flight_id, f.departure, f.airplane, f.seats_left, a.label 
+            $sql = "SELECT fc.logo, f.flight_id, f.departure, f.airplane, f.seats_left,f.ticket_price, a.label AS Arrival, a2.label AS Departure
                     FROM flight f INNER JOIN airport a on f.arrival_airport = a.airport_id
+                    INNER JOIN airport a2 on f.departure_airport = a2.airport_id
                     INNER JOIN flight_company fc on f.company = fc.flight_company_id";
             $result = mysqli_query($conn, $sql);
             if(!$result){
@@ -62,8 +70,10 @@ if(!isset($_SESSION["user_id"])){
                         <td><img src='../images/companies/$row[logo]' style='height: 40px'></td>
                         <td>$row[departure]</td>
                         <td>$row[airplane]</td>
+                        <td>$row[Departure]</td>
+                        <td>$row[Arrival]</td>
+                        <td>$row[ticket_price]</td>
                         <td>$row[seats_left]</td>
-                        <td>$row[label]</td>
                         <td>
                            <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Perditeso</a>
                         </td>

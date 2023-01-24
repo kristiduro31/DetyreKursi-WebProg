@@ -7,26 +7,7 @@ $sqlAirports = "select * from `airport` ";
 $sqlCompanies = "select * from `flight_company`";
 $airports = mysqli_query($conn, $sqlAirports);
 $companies = mysqli_query($conn, $sqlCompanies);
-
-if (isset($_POST["add-flight"])) {
-    $departure = mysqli_real_escape_string($conn, $_POST["departure"]);
-    $airplane = mysqli_real_escape_string($conn, $_POST["airplane"]);
-    $seats = mysqli_real_escape_string($conn, $_POST["seats"]);
-    $airport = mysqli_real_escape_string($conn, $_POST["airport"]);
-    $company = mysqli_real_escape_string($conn, $_POST["company"]);
-    $description = mysqli_real_escape_string($conn, $_POST["description"]);
-
-    $insert = "INSERT INTO `flight` (flight_description, departure, airplane, seats_total, seats_left, arrival_airport, company) 
-                VALUES ('$description', '$departure', '$airplane', '$seats', '$seats', '$airport', '$company')";
-
-    if (mysqli_query($conn, $insert)) {
-        header("Location: flight-manage.php");
-    } else {
-        echo "Something went wrong. Please try again later.";
-    }
-}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,9 +44,12 @@ if (isset($_POST["add-flight"])) {
                    value="<?php echo $row["seats_total"]; ?>">
             <input type="hidden" value="<?php echo $row["seats_left"]; ?>" name="seats_left">
             <input type="hidden" value="<?php echo $row["seats_total"]; ?>" name="previous_seats">
-            <select name="airport" id="airport" class="form-input">
-                <option value="" disabled>Zgjidh Aeroportin</option>
-                <?php
+            <input type="text" value="<?php echo $row['type']?>" name="type" class="form-input" disabled placeholder="Lloji fluturimit">
+            <?php
+                if($row['type']=='Departure'){
+                    echo "<input type='text' value='$row[departure_airport]' name='airport_dep' class='form-input' disabled placeholder='Aeroporti nisjes'>
+                          <select name='airport' id='airport' class='form-input' style='margin-left: 15px'>
+                               <option value='' disabled>Zgjidh Aeroportin</option>";
                 while ($rowAirport = mysqli_fetch_array($airports, MYSQLI_ASSOC)) {
                     if ($rowAirport['airport_id'] == $row['arrival_airport']) {
                         echo "<option value='$rowAirport[airport_id]' selected>$rowAirport[label]</option>";
@@ -73,9 +57,10 @@ if (isset($_POST["add-flight"])) {
                         echo "<option value='$rowAirport[airport_id]'>$rowAirport[label]</option>";
                     }
                 }
+                echo "</select>";
+                }
                 ?>
-            </select>
-            <select name="company" id="company" class="form-input">
+            <select name="company" id="company" class="form-input" style="margin-left: 15px">
                 <option value="" disabled selected>Zgjidh Kompanine</option>
                 <?php
                 while ($rowCompany = mysqli_fetch_array($companies, MYSQLI_ASSOC)) {
@@ -88,8 +73,7 @@ if (isset($_POST["add-flight"])) {
                 ?>
             </select>
 
-            <input type="text" id="description" name="description" class="form-input" placeholder="Pershrkimi" value="<?php echo $row["flight_description"]; ?>">
-
+            <input type="text" id="description" name="description" class="form-input" placeholder="Pershkrimi" value="<?php echo $row["flight_description"]; ?>">
 
             <button type="submit" class="login-button" name="updateFlight" id="add-airport-button"
                     style="margin-top: 40px">
