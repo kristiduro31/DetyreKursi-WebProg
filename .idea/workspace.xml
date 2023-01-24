@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Small change on Flight_Company logo datatype at db.sql">
-      <change afterPath="$PROJECT_DIR$/admin/editFlight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Fluturime Igli">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-flight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-flight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/flight-company-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="fluturime" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -284,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674428311276</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fluturime Igli">
+      <created>1674555134935</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674555134935</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +404,7 @@
     <MESSAGE value="Update company coz Git forgot to put it into Main branch" />
     <MESSAGE value="Yep" />
     <MESSAGE value="Small changes on hrefs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small changes on hrefs" />
+    <MESSAGE value="Fluturime Igli" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fluturime Igli" />
   </component>
 </project>

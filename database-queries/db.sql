@@ -47,13 +47,16 @@ CREATE TABLE Airport(
 CREATE TABLE Flight(
 	flight_id int NOT NULL auto_increment,
     flight_description varchar(100),
-    departure date NOT NULL,
+    departure datetime NOT NULL,
     airplane varchar(20),
     seats_total int NOT NULL,
     seats_left int NOT NULL,
+    departing_airport int not null,
     arrival_airport int NOT NULL,
     company int NOT NULL,
+    ticket_price double NOT NULL,
 	FOREIGN KEY (arrival_airport) REFERENCES Airport(airport_id),
+    FOREIGN KEY (departing_airport) REFERENCES Airport(airport_id),
 	FOREIGN KEY (company) REFERENCES Flight_Company(flight_company_id),
     PRIMARY KEY (flight_id)
 );
