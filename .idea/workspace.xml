@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Fluturime Igli">
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Database changes">
+      <change afterPath="$PROJECT_DIR$/admin/add-arrival.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/add-departure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back-end/deleteFlight.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-airport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/airports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/airports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editAirport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editFlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editFlight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +78,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg/back-end",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,11 +94,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/back-end" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/front-end" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/queries" />
-      <recent name="$PROJECT_DIR$/back-end" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components" />
@@ -287,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674555134935</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Database changes">
+      <created>1674555582788</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1674555582788</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +423,7 @@
     <MESSAGE value="Yep" />
     <MESSAGE value="Small changes on hrefs" />
     <MESSAGE value="Fluturime Igli" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fluturime Igli" />
+    <MESSAGE value="Database changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database changes" />
   </component>
 </project>

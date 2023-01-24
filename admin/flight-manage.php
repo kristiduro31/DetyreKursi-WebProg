@@ -34,24 +34,32 @@ if(!isset($_SESSION["user_id"])){
     <div class="reg-container-main">
         <div class="table-title">
             <h1>Fluturime</h1>
-            <button onclick="location.href = 'add-flight.php'"><i class="fa-solid fa-plus" style="color: white"></i> Krijo Fluturim</button>
+            <div class="button-flights">
+                <button onclick="location.href = 'add-departure.php'"style="width: 120px; margin-right: 0px"><i class="fa-solid fa-plus" style="color: white"></i> Fluturim Nisje</button>
+                <button onclick="location.href = 'add-arrival.php'" style="width: 120px"><i class="fa-solid fa-plus" style="color: white"></i> Fluturim Mberritje</button>
+            </div>
         </div>
         <table class="styled-table">
             <thead>
             <tr>
                 <th>Kompania</th>
-                <th>Nisja</th>
+                <th>Lloji</th>
+                <th>Orari</th>
                 <th>Avioni</th>
-                <th>Vende te mbetura</th>
+                <th>Nisja</th>
                 <th>Destinacioni</th>
+                <th>Vende te mbetura</th>
+                <th>Cmimi i biletes</th>
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
             <tbody>
             <?php
-            $sql = "SELECT fc.logo, f.flight_id, f.departure, f.airplane, f.seats_left, a.label 
+            $sql = "SELECT fc.logo, f.type, f.flight_id, f.departure, f.airplane, f.seats_left, f.ticket_price, a.label as Departure, a2.label as Arrival
                     FROM flight f INNER JOIN airport a on f.arrival_airport = a.airport_id
-                    INNER JOIN flight_company fc on f.company = fc.flight_company_id";
+                    INNER JOIN airport a2 on f.departure_airport = a2.airport_id    
+                    INNER JOIN flight_company fc on f.company = fc.flight_company_id
+                    ORDER BY f.departure DESC";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
@@ -59,11 +67,14 @@ if(!isset($_SESSION["user_id"])){
             while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
                 echo "
                       <tr>
-                        <td><img src='../images/companies/$row[logo]' style='height: 40px'></td>
+                        <td><img src='../images/companies/$row[logo]' style='height: 40px; border-radius: 50%'></td>
+                        <td>$row[type]</td>
                         <td>$row[departure]</td>
                         <td>$row[airplane]</td>
+                        <td>$row[Arrival]</td>
+                        <td>$row[Departure]</td>
                         <td>$row[seats_left]</td>
-                        <td>$row[label]</td>
+                        <td>$row[ticket_price]$</td>
                         <td>
                            <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Perditeso</a>
                         </td>

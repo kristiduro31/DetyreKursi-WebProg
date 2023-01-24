@@ -53,7 +53,7 @@ if(!isset($_SESSION["user_id"])){
             </thead>
             <tbody>
             <?php
-            $sql = "select * from `Users` WHERE `role`='user'";
+            $sql = "select * from `Users` WHERE `role`='user' ORDER BY first_name,surname ASC;";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
