@@ -8,16 +8,19 @@ $sqlCompanies = "select * from `flight_company`";
 $airports = mysqli_query($conn, $sqlAirports);
 $companies = mysqli_query($conn, $sqlCompanies);
 
-if (isset($_POST["add-flight"])) {
+if (isset($_POST["add-departure"])) {
     $departure = mysqli_real_escape_string($conn, $_POST["departure"]);
     $airplane = mysqli_real_escape_string($conn, $_POST["airplane"]);
     $seats = mysqli_real_escape_string($conn, $_POST["seats"]);
-    $airport = mysqli_real_escape_string($conn, $_POST["airport"]);
+    $airport_arrival = mysqli_real_escape_string($conn, $_POST["arrival_airport"]);
+    $airport_dep = mysqli_real_escape_string($conn, $_POST["dept_airport"]);
     $company = mysqli_real_escape_string($conn, $_POST["company"]);
     $description = mysqli_real_escape_string($conn, $_POST["description"]);
+    $price = mysqli_real_escape_string($conn, $_POST["ticket_price"]);
+    $type=mysqli_real_escape_string($conn, $_POST["type"]);
 
-    $insert = "INSERT INTO `flight` (flight_description, departure, airplane, seats_total, seats_left, arrival_airport, company) 
-                VALUES ('$description', '$departure', '$airplane', '$seats', '$seats', '$airport', '$company')";
+    $insert = "INSERT INTO `flight` (flight_description, departure, airplane, seats_total, seats_left, arrival_airport, company, departure_airport, type, ticket_price) 
+                VALUES ('$description', '$departure', '$airplane', '$seats', '$seats', '$airport_arrival', '$company', '$airport_dep', '$type', '$price')";
 
     if (mysqli_query($conn, $insert)) {
         header("Location: flight-manage.php");
@@ -41,23 +44,26 @@ if (isset($_POST["add-flight"])) {
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main class="admin-panel">
-    <h1>Fluturim i Ri</h1>
-
+    <h1>Nisje e Re</h1>
 
     <div class="admin-container">
         <form method="post" class="field-left">
-            <input type="date" id="departure" name="departure" class="form-input" placeholder="Departure">
+            <input type="datetime-local" id="departure" name="departure" class="form-input" placeholder="Departure">
             <input type="text" id="airplane" name="airplane" class="form-input" placeholder="Avioni">
             <input type="number" id="seats" name="seats" class="form-input" placeholder="Vende Total">
-            <select name="airport" id="airport" class="form-input">
+            <input type="hidden" id="dept_airport" name="dept_airport" class="form-input" value="31">
+            <input type="hidden" id="type" name="type" class="form-input" value="Departure">
+            <select name="arrival_airport" id="arrival_airport" class="form-input" style="margin-left: 15px">
                 <option value="" disabled selected>Zgjidh Aeroportin</option>
                 <?php
                 while ($row = mysqli_fetch_array($airports, MYSQLI_ASSOC)) {
-                    echo "<option value='$row[airport_id]'>$row[label]</option>";
+                    if($row['airport_id']!=31) {
+                        echo "<option value='$row[airport_id]'>$row[label]</option>";
+                    }
                 }
                 ?>
             </select>
-            <select name="company" id="company" class="form-input">
+            <select name="company" id="company" class="form-input" style="margin-left: 15px">
                 <option value="" disabled selected>Zgjidh Kompanine</option>
                 <?php
                 while ($row = mysqli_fetch_array($companies, MYSQLI_ASSOC)) {
@@ -65,18 +71,16 @@ if (isset($_POST["add-flight"])) {
                 }
                 ?>
             </select>
+            <input type="number" step="0.01" id="ticket_price" name="ticket_price" class="form-input" placeholder="Cmimi i biletes">
+            <input type="text" id="description" name="description" class="form-input" placeholder="Pershkrimi">
 
-            <input type="text" id="description" name="description" class="form-input" placeholder="Pershrkimi">
-
-
-            <button type="submit" class="login-button" name="add-flight" id="add-airport-button"
+            <button type="submit" class="login-button" name="add-departure" id="add-airport-button"
                     style="margin-top: 40px">
-                <span>Krijo Fluturim</span>
+                <span>Krijo Fluturim Nisjeje</span>
             </button>
         </form>
 
         <div class="image-right">
-
             <img src="../images/add-flight.PNG" alt="">
         </div>
     </div>

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Small changes on hrefs">
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="FULL FLIGHT CRUD">
+      <change afterPath="$PROJECT_DIR$/database-queries/insertTIA_airport.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/cities.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/cities.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/countries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/countries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="flight-company_crud" />
+        <entry key="$PROJECT_DIR$" value="fluturime" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,10 +47,13 @@
       </list>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/database-queries/db.sql" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1.11">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/../../../../../xampp/php/PEAR" />
     </include_path>
@@ -58,27 +63,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg/front-end&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg/back-end",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/back-end" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/front-end" />
       <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/queries" />
-      <recent name="$PROJECT_DIR$/back-end" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components" />
@@ -90,7 +101,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Clearing .idea cache" />
+      <changelist id="e499955d-f73c-4737-82cb-e5579916d2c8" name="Changes" comment="Removing unnecessary code" />
       <created>1673816363411</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -108,6 +119,7 @@
       <workItem from="1673995662832" duration="3578000" />
       <workItem from="1674023919939" duration="24109000" />
       <workItem from="1674425092142" duration="760000" />
+      <workItem from="1674507184457" duration="5701000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -270,7 +282,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674428311276</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fluturime Igli">
+      <created>1674555134935</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674555134935</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Database changes">
+      <created>1674555582788</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1674555582788</updated>
+    </task>
+    <task id="LOCAL-00026" summary="FULL FLIGHT CRUD">
+      <created>1674575893170</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1674575893170</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +383,11 @@
             <State />
           </value>
         </entry>
+        <entry key="a93f32bf-7c2a-4d0e-a69f-12286a3d2ad4">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_GENERIC_TABS">
@@ -359,7 +397,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="No idea what I am doing" />
     <MESSAGE value="Server side validation if email is already used" />
     <MESSAGE value="Full sign-up and login functionality" />
     <MESSAGE value="Small tweaks" />
@@ -382,6 +419,9 @@
     <MESSAGE value="Update company coz Git forgot to put it into Main branch" />
     <MESSAGE value="Yep" />
     <MESSAGE value="Small changes on hrefs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small changes on hrefs" />
+    <MESSAGE value="Fluturime Igli" />
+    <MESSAGE value="Database changes" />
+    <MESSAGE value="FULL FLIGHT CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="FULL FLIGHT CRUD" />
   </component>
 </project>

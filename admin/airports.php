@@ -48,7 +48,7 @@ if(!isset($_SESSION["user_id"])){
             </thead>
             <tbody>
             <?php
-            $sql = "SELECT a.airport_id, a.label, a.website, a.tel, c.city_name FROM airport as a INNER JOIN city c on a.city = c.city_id;";
+            $sql = "SELECT a.airport_id, a.label, a.website, a.tel, c.city_name FROM airport as a INNER JOIN city c on a.city = c.city_id ORDER BY a.label ASC;";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");

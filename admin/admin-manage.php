@@ -57,7 +57,7 @@ if(!isset($_SESSION["user_id"])){
             </thead>
             <tbody>
             <?php
-            $sql = "select * from `Users` WHERE `role`='admin'";
+            $sql = "select * from `Users` WHERE `role`='admin' ORDER BY first_name, surname ASC;";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
@@ -71,7 +71,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='updateAdminsProfile.php?id=$row[user_id]'>Edito</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='update-admin.php?id=$row[user_id]'>Edito</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteAdmin.php?id=$row[user_id]'>Fshi</a>
