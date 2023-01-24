@@ -34,7 +34,8 @@ if (isset($_POST["add-arrival"])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shto Aeroport</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+    <title>Shto Fluturim Mberrites</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">

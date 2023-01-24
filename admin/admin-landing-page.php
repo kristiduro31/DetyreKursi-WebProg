@@ -21,6 +21,7 @@ if(!isset($_SESSION["user_id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Tirana Internation Airport-Admin Panel</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>

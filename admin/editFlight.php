@@ -13,7 +13,8 @@ $companies = mysqli_query($conn, $sqlCompanies);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edito Aeroport</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+    <title>Perditeso Fluturim</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">

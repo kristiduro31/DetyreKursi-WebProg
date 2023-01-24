@@ -15,7 +15,8 @@ if(!isset($_SESSION["user_id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tirana Internation Airport-Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+    <title>Fluturime</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -74,7 +75,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[Arrival]</td>
                         <td>$row[Departure]</td>
                         <td>$row[seats_left]</td>
-                        <td>$row[ticket_price]$</td>
+                        <td>$row[ticket_price]€</td>
                         <td>
                            <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Perditeso</a>
                         </td>
