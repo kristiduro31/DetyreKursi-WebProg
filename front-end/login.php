@@ -54,6 +54,7 @@ if (isset($_POST["login"])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Login</title>
     <script src="../scripts/components.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -62,12 +63,7 @@ if (isset($_POST["login"])) {
     <script src="https://kit.fontawesome.com/1e579789f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        span {
-            opacity: 75%;
-        }
-        select {
-            background-color: white;
-        }
+        span { opacity: 75%; }
     </style>
 </head>
 <body onload="realtimeClock(),getRouting()">
