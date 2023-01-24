@@ -24,3 +24,4 @@ INSERT INTO country(country_name) VALUES ('Poland');
 INSERT INTO country(country_name) VALUES ('Czechia');
 INSERT INTO country(country_name) VALUES ('Denmark');
 INSERT INTO country(country_name) VALUES ('Netherlands');
+INSERT INTO country(country_name) VALUES ('Albania');

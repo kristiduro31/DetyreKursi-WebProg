@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e499955d-f73c-4737-82cb-e5579916d2c8" name="Changes" comment="Removing unnecessary code">
-      <change afterPath="$PROJECT_DIR$/admin/editFlight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/deleteFlight.php" afterDir="false" />
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Small change on Flight_Company logo datatype at db.sql">
+      <change afterPath="$PROJECT_DIR$/admin/add-arrival.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-flight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-flight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/flight-company-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-flight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-departure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editAirport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editFlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editFlight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/cities.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/cities.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/countries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/countries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="flight-company_crud" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +56,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1.11">
     <include_path>
       <path value="$PROJECT_DIR$/../../../../../xampp/php/PEAR" />
     </include_path>
@@ -70,18 +72,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/Documents/web/DetyreKursi-WebProg",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg/front-end",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "web.server",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -102,7 +99,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e499955d-f73c-4737-82cb-e5579916d2c8" name="Changes" comment="Removing unnecessary code" />
+      <changelist id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Clearing .idea cache" />
       <created>1673816363411</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -120,7 +117,6 @@
       <workItem from="1673995662832" duration="3578000" />
       <workItem from="1674023919939" duration="24109000" />
       <workItem from="1674425092142" duration="760000" />
-      <workItem from="1674507184457" duration="5701000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
