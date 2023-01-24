@@ -347,8 +347,14 @@ ul {
     border: solid #063247;
     border-radius: 1.5%;
     text-align: center;
-
     position: relative;
+}
+
+.reg-container-main .main-paragraph {
+    width: 1000px;
+    min-width: 400px;
+    margin: 15px auto;
+    text-align: left;
 }
 
 .styled-table {

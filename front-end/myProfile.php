@@ -20,7 +20,8 @@ if (isset($_SESSION["user_id"])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tirana Internation Airport</title>
+    <title>Profili im</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">

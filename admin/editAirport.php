@@ -12,7 +12,8 @@ $cities = mysqli_query($conn, $sql);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shto Aeroport</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+    <title>Perditeso Aeroport</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -37,7 +38,7 @@ $cities = mysqli_query($conn, $sql);
 
             <input type="hidden" value="<?php echo $row["airport_id"]; ?>" name="airport_id">
             <input type="text" id="label" name="label" class="form-input" placeholder="Emri" value="<?php echo $row["label"]?>">
-            <input type="url" id="website" name="website" class="form-input" placeholder="Link-u Web" value="<?php echo $row["website"]?>">
+            <input type="text" id="website" name="website" class="form-input" placeholder="Link-u Web" value="<?php echo $row["website"]?>">
             <input type="tel" id="phone" name="phone" class="form-input" placeholder="Numer Telefoni" value="<?php echo $row["tel"]?>">
             <input type="text" id="city" list="cities" name="city" class="form-input" placeholder="Qyteti" value="<?php echo $row["city_name"]?>">
             <datalist id="cities">

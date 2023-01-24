@@ -9,6 +9,7 @@ require '../db-config.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Perditeso Kompanine</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>

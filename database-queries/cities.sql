@@ -99,3 +99,5 @@ INSERT INTO city(city_name, country) VALUES ('Copenhagen','25');
 
 INSERT INTO city(city_name, country) VALUES ('Amsterdam','26');
 INSERT INTO city(city_name, country) VALUES ('Eindhoven','26');
+
+INSERT INTO city(city_name, country) VALUES ('Tirana','27');
