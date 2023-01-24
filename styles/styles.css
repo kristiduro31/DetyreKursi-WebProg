@@ -572,12 +572,13 @@ ul {
 .profile:hover{
     background-color: #23dbdb;
 }
-.restaurant{
-    background-image: url("../images/restaurant.png");
+.restaurant-main{
+    background-image: url("../images/restaurant/restaurant.png");
 }
 
 .restaurant .column{
     width: 33%;
+    text-align: left;
 }
 .restaurant .row{
     padding-top: 4%;
@@ -587,3 +588,9 @@ ul {
 .restaurant .reg-container-main :hover {
     background-color: #6f6f6f;
 }
+.restaurant .rest-img{
+    width: 40%;
+    padding-left: 10%;
+}
+
+
