@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Database changes">
-      <change afterPath="$PROJECT_DIR$/admin/add-arrival.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/add-departure.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/deleteFlight.php" afterDir="false" />
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="FULL FLIGHT CRUD">
+      <change afterPath="$PROJECT_DIR$/database-queries/insertTIA_airport.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-airport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/airports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/airports.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editAirport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editFlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editFlight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/flight-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/cities.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/cities.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-queries/countries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/countries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674555582788</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="FULL FLIGHT CRUD">
+      <created>1674575893170</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1674575893170</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +397,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="No idea what I am doing" />
     <MESSAGE value="Server side validation if email is already used" />
     <MESSAGE value="Full sign-up and login functionality" />
     <MESSAGE value="Small tweaks" />
@@ -424,6 +421,7 @@
     <MESSAGE value="Small changes on hrefs" />
     <MESSAGE value="Fluturime Igli" />
     <MESSAGE value="Database changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database changes" />
+    <MESSAGE value="FULL FLIGHT CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="FULL FLIGHT CRUD" />
   </component>
 </project>
