@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Inserting Albania, Tirana and TIA with a final airport_id of 31.">
-      <change afterPath="$PROJECT_DIR$/images/companies/swiss.png" afterDir="false" />
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Small fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/flight-company-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/flight-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/update-flight-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-flight-company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navbar-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-queries/cities.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/cities.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/companies/airline1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +120,9 @@
       <workItem from="1674507184457" duration="5701000" />
       <workItem from="1674584736069" duration="2434000" />
       <workItem from="1674602473732" duration="302000" />
-      <workItem from="1674602845095" duration="3308000" />
+      <workItem from="1674602845095" duration="3924000" />
+      <workItem from="1674607365939" duration="21000" />
+      <workItem from="1674632874446" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -311,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674575893170</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Small fixes">
+      <created>1674606795262</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1674606795262</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +412,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Server side validation if email is already used" />
     <MESSAGE value="Full sign-up and login functionality" />
     <MESSAGE value="Small tweaks" />
     <MESSAGE value="Small fix on redirection page if user is already logged in, depending on his user role." />
@@ -435,6 +436,7 @@
     <MESSAGE value="Fluturime Igli" />
     <MESSAGE value="Database changes" />
     <MESSAGE value="FULL FLIGHT CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="FULL FLIGHT CRUD" />
+    <MESSAGE value="Small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
   </component>
 </project>
