@@ -38,7 +38,7 @@ INSERT INTO city(city_name, country) VALUES ('Sofia','9');
 
 INSERT INTO city(city_name, country) VALUES ('Bucharest','10');
 
-INSERT INTO city(city_name, country) VALUES ('Turkey','11');
+INSERT INTO city(city_name, country) VALUES ('Istanbul','11');
 INSERT INTO city(city_name, country) VALUES ('Antalia','11');
 INSERT INTO city(city_name, country) VALUES ('Ankara','11');
 

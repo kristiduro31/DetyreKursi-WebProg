@@ -2,7 +2,7 @@
     <ul>
         <li><a class="active" href="../admin/admin-landing-page.php">Faqja Kryesore <i class="fa fa-plane" style="font-size:120%;"></i></a></li>
         <li>
-            <a href="#">Sherbime <i class="fa fa-cogs" style="font-size:100%"></i></a>
+            <a href="#">Shërbime <i class="fa fa-cogs" style="font-size:100%"></i></a>
             <ul>
                 <li><a href="../admin/admin-manage.php">Administratorë <i class="fa-sharp fa-solid fa-user-tie" style="margin-left: 0"></i></a></li>
                 <li><a href="../admin/flight-company-manage.php">Kompanitë <i class='fas fa-business-time' style="margin-left: 0"></i></a></li>

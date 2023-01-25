@@ -47,7 +47,7 @@ require '../db-config.php';
 
                 <button type="submit" class="login-button" name="updateCompany" id="add-flight-company-button"
                         style="margin-top: 40px">
-                    <span>Perditeso</span>
+                    <span>Përditëso</span>
                 </button>
                 <?php
             }

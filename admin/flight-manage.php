@@ -77,7 +77,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[seats_left]</td>
                         <td>$row[ticket_price]€</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Perditeso</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Përditëso</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteFlight.php?id=$row[flight_id]'>Fshi</a>

@@ -14,7 +14,7 @@ if(!isset($_SESSION["user_id"])){
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
-    <title>Kompanite e fluturimeve</title>
+    <title>Kompanitë e fluturimeve</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -31,7 +31,7 @@ if(!isset($_SESSION["user_id"])){
 <main>
     <div class="reg-container-main">
         <div class="table-title">
-            <h1>Kompanite e fluturimeve</h1>
+            <h1>Kompanitë e fluturimeve</h1>
             <button onclick="location.href = 'add-flight-company.php'" id="add-flight-company-button"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Kompani Fluturimi</button>
         </div>
 
@@ -48,7 +48,7 @@ if(!isset($_SESSION["user_id"])){
             </thead>
             <tbody>
             <?php
-            $sql = "select * from `flight_company`;";
+            $sql = "select * from `flight_company` ORDER BY logo ASC;";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
@@ -62,7 +62,7 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='update-flight-company.php?id=$row[flight_company_id]'>Edito</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='update-flight-company.php?id=$row[flight_company_id]'>Përditëso</a>
                         </td>
                         <td>
                             <a style='color: red' href='../back-end/deleteCompany.php?id=$row[flight_company_id]'>Fshi</a>
