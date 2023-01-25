@@ -15,6 +15,7 @@ if(!isset($_SESSION["user_id"])){
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Kompanitë e fluturimeve</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -25,13 +26,28 @@ if(!isset($_SESSION["user_id"])){
             color: white;
         }
     </style>
+    <script>
+        $(document).ready(function(){
+            $("#my-search").on("keyup", function (){
+                var value = $(this).val().toLowerCase();
+                $("#kompani tr").filter(function (){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                });
+            });
+        });
+    </script>
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
+    <h1 style="margin-left: 12.5%">Kompanitë e fluturimeve</h1>
+    <br>
     <div class="reg-container-main">
         <div class="table-title">
-            <h1>Kompanitë e fluturimeve</h1>
+            <div id="search-box">
+                <input style="width: 55%" type="text" id="my-search" placeholder="Search..." class="searchQueryInput">
+                <span style="margin-top: 4%; margin-left: 15%;font-size:130%"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
             <button onclick="location.href = 'add-flight-company.php'" id="add-flight-company-button"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Kompani Fluturimi</button>
         </div>
 
@@ -39,14 +55,14 @@ if(!isset($_SESSION["user_id"])){
             <thead>
             <tr>
                 <th>Logo</th>
-                <th>Emertim</th>
+                <th>Emërtim</th>
                 <th>Email</th>
-                <th>Numer Telefoni</th>
+                <th>Numër Telefoni</th>
                 <th>Adresa</th>
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="kompani">
             <?php
             $sql = "select * from `flight_company` ORDER BY logo ASC;";
             $result = mysqli_query($conn, $sql);

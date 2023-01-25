@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Small fixes">
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Modifying db-diagram.png">
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/airports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/airports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-company-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="car-rental-fix" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,32 +69,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/front-end" />
       <recent name="$PROJECT_DIR$/back-end" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/queries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -122,7 +132,8 @@
       <workItem from="1674602473732" duration="302000" />
       <workItem from="1674602845095" duration="3924000" />
       <workItem from="1674607365939" duration="21000" />
-      <workItem from="1674632874446" duration="644000" />
+      <workItem from="1674632874446" duration="2208000" />
+      <workItem from="1674643087970" duration="15000000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>
@@ -313,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674606795262</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Modifying db-diagram.png">
+      <created>1674633822310</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1674633822310</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Full sign-up and login functionality" />
     <MESSAGE value="Small tweaks" />
     <MESSAGE value="Small fix on redirection page if user is already logged in, depending on his user role." />
     <MESSAGE value="login/logout button dynamic change if user is logged or not" />
@@ -437,6 +454,11 @@
     <MESSAGE value="Database changes" />
     <MESSAGE value="FULL FLIGHT CRUD" />
     <MESSAGE value="Small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
+    <MESSAGE value="Modifying db-diagram.png" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifying db-diagram.png" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

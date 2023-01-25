@@ -32,7 +32,7 @@ if(!isset($_SESSION["user_id"])){
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main class="landing-container">
-    <h1>Pershendetje <?php echo $loggedUser ?>!</h1>
+    <h1>Përshëndetje <?php echo $loggedUser ?>!</h1>
     <div class="admin-panel">
         <a href="airports.php">
             <div class="admin-option">
@@ -49,7 +49,7 @@ if(!isset($_SESSION["user_id"])){
         <a href="">
             <div class="admin-option">
                 <img src="../images/add-space.PNG" alt="">
-                <h2>Hapesira Aeroporti</h2>
+                <h2>Hapësira Aeroporti</h2>
             </div>
         </a>
     </div>

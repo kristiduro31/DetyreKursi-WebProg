@@ -17,6 +17,7 @@ if(!isset($_SESSION["user_id"])){
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Fluturime</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -27,17 +28,31 @@ if(!isset($_SESSION["user_id"])){
             color: white;
         }
     </style>
+    <script>
+        $(document).ready(function(){
+            $("#my-search").on("keyup", function (){
+                var value = $(this).val().toLowerCase();
+                $("#fluturime tr").filter(function (){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                });
+            });
+        });
+    </script>
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
+    <h1 style="margin-left: 12.5%">Fluturime</h1>
     <br>
     <div class="reg-container-main">
         <div class="table-title">
-            <h1>Fluturime</h1>
+            <div id="search-box">
+                <input style="width: 55%" type="text" id="my-search" placeholder="Search..." class="searchQueryInput">
+                <span style="margin-top: 4%; margin-left: 15%;font-size:130%"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
             <div class="button-flights">
                 <button onclick="location.href = 'add-departure.php'"style="width: 120px; margin-right: 0px"><i class="fa-solid fa-plus" style="color: white"></i> Fluturim Nisje</button>
-                <button onclick="location.href = 'add-arrival.php'" style="width: 120px"><i class="fa-solid fa-plus" style="color: white"></i> Fluturim Mberritje</button>
+                <button onclick="location.href = 'add-arrival.php'" style="width: 120px"><i class="fa-solid fa-plus" style="color: white"></i> Fluturim Mbërritje</button>
             </div>
         </div>
         <table class="styled-table">
@@ -54,12 +69,14 @@ if(!isset($_SESSION["user_id"])){
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="fluturime">
             <?php
-            $sql = "SELECT fc.logo, f.type, f.flight_id, f.departure, f.airplane, f.seats_left, f.ticket_price, a.label as Departure, a2.label as Arrival
-                    FROM flight f INNER JOIN airport a on f.arrival_airport = a.airport_id
-                    INNER JOIN airport a2 on f.departure_airport = a2.airport_id    
-                    INNER JOIN flight_company fc on f.company = fc.flight_company_id
+            $sql = "SELECT fc.logo, f.type, f.flight_id, f.departure, f.airplane, f.seats_left, f.ticket_price, a.label as Departure, a2.label as Arrival, c1.city_name as City_Arrival, c2.city_name as City_Depart
+                    FROM flight f INNER JOIN flight_company fc on f.company = fc.flight_company_id
+                    INNER JOIN airport a on f.arrival_airport = a.airport_id           
+                    INNER JOIN airport a2 on f.departure_airport = a2.airport_id
+                    INNER JOIN city c1 on a.city = c1.city_id
+                    INNER JOIN city c2 on a2.city = c2.city_id
                     ORDER BY f.departure DESC";
             $result = mysqli_query($conn, $sql);
             if(!$result){
@@ -76,6 +93,8 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[Departure]</td>
                         <td>$row[seats_left]</td>
                         <td>$row[ticket_price]€</td>
+                        <td style='display: none'>$row[City_Arrival]</td>
+                        <td style='display: none'>$row[City_Depart]</td>
                         <td>
                            <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Përditëso</a>
                         </td>
