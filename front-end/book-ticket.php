@@ -62,9 +62,10 @@ if (!isset($_SESSION["user_id"])) {
 
            <div style="display: flex; flex-direction: row">
                <div class="payment-container">
-                   <form action="../back-end/payment.php">
-                       <input type="number" id="ticket_number" class="form-input" placeholder="Numri Biletave" min="1" />
-                       <input type="text" id="person" name="person" class="form-input" placeholder="Mbajtesi i Kartes">
+                   <form action="../back-end/payment.php?id=<?php echo $flight['flight_id']?>" method="post">
+                       <input type="text" id="price" name="price" class="form-input" hidden="hidden" value="<?php echo $flight['ticket_price']?>">
+                       <input type="number" id="ticket_number" name="ticket_number" class="form-input" placeholder="Numri Biletave" min="1" />
+                       <input type="text" id="holder" name="holder" class="form-input" placeholder="Mbajtesi i Kartes">
                        <input type="text" id="number" maxlength="19" name="number" class="form-input" placeholder="Numri i Kartes">
                        <div style="display: flex; flex-direction: row">
                            <input type="text" id="exp-date" maxlength="5" name="exp-date" class="form-input" placeholder="Skadenca">
