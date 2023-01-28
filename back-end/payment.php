@@ -22,22 +22,22 @@ if (isset($_POST['makeBooking'])) {
         $result = mysqli_query($conn, $card_sql);
 
         if (mysqli_num_rows($result) == 0) {
-            echo "<script>alert('Numri i kartes eshte i pasakte'); window.location = '../front-end/book-ticket.php';</script>";
+            echo "<script>alert('Numri i kartes eshte i pasakte'); window.location = history.go(-1);</script>";
             exit();
         }
 
         $card = mysqli_fetch_array($result, MYSQLI_ASSOC);
         if ($card["holder"] != $holder) {
-            echo "<script>alert('Ju nuk jeni mbajtesi i kesaj karte!'); window.location = '../front-end/book-ticket.php';</script>";
+            echo "<script>alert('Ju nuk jeni mbajtesi i kesaj karte!'); window.location = history.go(-1);</script>";
             exit();
         }
         if ($card["expiration_date"] != $exp) {
-            echo "<script>alert('Afati vlefshmerise i pasakte!'); window.location = '../front-end/book-ticket.php';</script>";
+            echo "<script>alert('Afati vlefshmerise i pasakte!'); window.location = history.go(-1);</script>";
             exit();
         }
 
         if ($card["cvc"] != $cvc) {
-            echo "<script>alert('Numer sigurie i pasakte!'); window.location = '../front-end/landing-page.php';</script>";
+            echo "<script>alert('Numer sigurie i pasakte!'); window.location = history.go(-1);</script>";
             exit();
         }
 
@@ -50,8 +50,7 @@ if (isset($_POST['makeBooking'])) {
         $valid_until_booking = date('y-m-d', strtotime('+1 week'));
 
         if ($date_exp[1] < $currentYear || $date_exp[1] == $currentYear && $date_exp[0] < $currentMonth) {
-            echo "<script>alert('" .$currentYear ."');";
-            echo "<script>alert('Karta juaj ka kaluar afatin e vlefshmerise!'); window.location = '../front-end/landing-page.php';</script>";
+            echo "<script>alert('Karta juaj ka kaluar afatin e vlefshmerise!'); window.location = history.go(-1);</script>";
             exit();
         }
 
@@ -61,7 +60,10 @@ if (isset($_POST['makeBooking'])) {
                             VALUES ('$today', '$total', '0', '$ticket_number', true, 'Credit Card', '$valid_until_booking' ,'$user_id', '$flightId')";
 
         if (mysqli_query($conn, $makePaymentSql)) {
-            echo "<script>alert('Rezervimi u krye me sukses!'); window.location = '../front-end/landing-page.php';</script>";
+            $updateSeatsLeftSql = "UPDATE Flight SET flight.seats_left=seats_left-'$ticket_number' WHERE flight_id='$flightId' AND seats_left>0";
+            if (mysqli_query($conn, $updateSeatsLeftSql)){
+                echo "<script>alert('Rezervimi u krye me sukses!'); window.location = '../front-end/landing-page.php';</script>";
+            }
         } else {
             echo "<script>alert('Pati nje problem, ju lutem provoni perseri me vone!'); window.location = '../front-end/landing-page.php';</script>";
 
