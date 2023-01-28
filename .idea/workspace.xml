@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Inserting Albania, Tirana and TIA with a final airport_id of 31.">
-      <change afterPath="$PROJECT_DIR$/database-queries/credit_cards.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-queries/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database-queries/db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/book-ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/book-ticket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/DetyreKursi-WebProg&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/web/DetyreKursi-WebProg&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -130,7 +127,11 @@
       <workItem from="1674607365939" duration="21000" />
       <workItem from="1674632874446" duration="2208000" />
       <workItem from="1674643087970" duration="15087000" />
-      <workItem from="1674765504890" duration="7457000" />
+      <workItem from="1674765504890" duration="8278000" />
+      <workItem from="1674814080984" duration="16000" />
+      <workItem from="1674815958422" duration="246000" />
+      <workItem from="1674817797078" duration="1280000" />
+      <workItem from="1674911268377" duration="2340000" />
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>

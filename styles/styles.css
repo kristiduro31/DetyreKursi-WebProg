@@ -616,6 +616,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 400px;
 }
 
 .payment-container .form-input{
@@ -632,7 +633,12 @@ ul {
     justify-content: center;
     text-align: center;
     padding: 5rem;
+    width: 180px;
 }
 
-
+.separator{
+    width: 2px;
+    background-color: #042331;
+    margin-left: 3rem;
+}
 

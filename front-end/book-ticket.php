@@ -7,7 +7,6 @@ if (!isset($_SESSION["user_id"])) {
     header("location: ../front-end/login.php");
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -58,28 +57,35 @@ if (!isset($_SESSION["user_id"])) {
             $arrival = mysqli_fetch_array($result);
 
             ?>
-            <h2><?php echo 'Fluturim '.$departure['city_name'].' - '.$arrival['city_name']; ?></h2>
+            <h2><?php echo 'Fluturim ' . $departure['city_name'] . ' - ' . $arrival['city_name']; ?></h2>
+            <p><?php echo 'Data ' . date('d/m/y' , strtotime($flight['departure'])); ?></p>
 
-           <div style="display: flex; flex-direction: row">
-               <div class="payment-container">
-                   <form action="../back-end/payment.php?id=<?php echo $flight['flight_id']?>" method="post">
-                       <input type="text" id="price" name="price" class="form-input" hidden="hidden" value="<?php echo $flight['ticket_price']?>">
-                       <input type="number" id="ticket_number" name="ticket_number" class="form-input" placeholder="Numri Biletave" min="1" />
-                       <input type="text" id="holder" name="holder" class="form-input" placeholder="Mbajtesi i Kartes">
-                       <input type="text" id="number" maxlength="19" name="number" class="form-input" placeholder="Numri i Kartes">
-                       <div style="display: flex; flex-direction: row">
-                           <input type="text" id="exp-date" maxlength="5" name="exp-date" class="form-input" placeholder="Skadenca">
-                           <input type="text" id="cvc" maxlength="3" name="cvc" class="form-input" placeholder="CVC">
-                       </div>
-                       <button onclick="" class="login-button" name="makeBooking" >Rezervo!</button>
-                   </form>
-               </div>
+            <div style="display: flex; flex-direction: row; margin-top: 3rem">
+                <div class="payment-container">
+                    <form action="../back-end/payment.php?id=<?php echo $flight['flight_id'] ?>" method="post">
+                        <input type="text" id="price" name="price" class="form-input" hidden="hidden"
+                               value="<?php echo $flight['ticket_price'] ?>">
+                        <input type="number" id="ticket_number" name="ticket_number" class="form-input"
+                               placeholder="Numri Biletave" min="1" onkeyup="onAddedTicket()" value="1"/>
+                        <input type="text" id="holder" name="holder" class="form-input" placeholder="Mbajtesi i Kartes">
+                        <input type="text" id="number" maxlength="19" name="number" class="form-input"
+                               placeholder="Numri i Kartes">
+                        <div style="display: flex; flex-direction: row">
+                            <input type="text" id="exp-date" maxlength="5" name="exp-date" class="form-input"
+                                   placeholder="Skadenca">
+                            <input type="text" id="cvc" maxlength="3" name="cvc" class="form-input" placeholder="CVC">
+                        </div>
+                        <button onclick="" class="login-button" name="makeBooking">Rezervo!</button>
+                    </form>
+                </div>
+                <div class="separator">
 
-               <div class="price-container">
-                   <p>Totali</p>
-                   <h1><?php echo $flight['ticket_price']?>&euro;</h1>
-               </div>
-           </div>
+                </div>
+                <div class="price-container">
+                    <p>Totali</p>
+                    <h1 id="total-price"><?php echo $flight['ticket_price'] ?>&euro;</h1>
+                </div>
+            </div>
 
 
             <?php
@@ -89,5 +95,13 @@ if (!isset($_SESSION["user_id"])) {
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>
+<script>
+    function onAddedTicket(){
+        var cmimi = document.getElementById("price").value;
+        var bileta = document.getElementById("ticket_number").value;
+        document.getElementById('total-price').innerHTML = cmimi*bileta + '&euro;';
+    }
+
+</script>
 </html>
 
