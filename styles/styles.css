@@ -476,6 +476,10 @@ ul {
     background-image: url("../images/car-rentals/imageedit_1_9851293430.png");
 }
 
+.user-services-body{
+    background-image: url("../images/hotel.png");
+}
+
 /*admin*/
 .admin-panel {
     text-align: center;

@@ -83,9 +83,9 @@ CREATE TABLE Airport_Space(
     label varchar(20) NOT NULL,
     space_type varchar(20) NOT NULL,
     logo longblob NOT NULL,
-    space_description varchar(100),
+    space_description varchar(255),
     tel varchar(13) NOT NULL,
-    email varchar(20) NOT NULL,
+    email varchar(50) NOT NULL,
     web varchar(100),
     PRIMARY KEY (airport_space_id)
 );
