@@ -58,6 +58,7 @@ if(!isset($_SESSION["user_id"])){
                 <th>Logo</th>
                 <th>Emri</th>
                 <th>Lloji</th>
+                <th>Email</th>
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
@@ -74,11 +75,12 @@ if(!isset($_SESSION["user_id"])){
                         <td><img src='../images/companies/$row[logo]' style='height: 40px; border-radius: 50%'></td>               
                         <td>$row[label]</td>
                         <td>$row[space_type]</td>
+                        <td>$row[email]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Përditëso</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='editSpace.php?id=$row[airport_space_id]'>Përditëso</a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteFlight.php?id=$row[flight_id]'>Fshi</a>
+                            <a style='color: red' href='../back-end/deleteSpace.php?id=$row[airport_space_id]'>Fshi</a>
                         </td>
                       </tr>
                      ";
