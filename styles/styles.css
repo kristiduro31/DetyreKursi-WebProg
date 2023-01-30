@@ -299,6 +299,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .login-button:hover {
@@ -350,6 +351,37 @@ ul {
     position: relative;
 }
 
+#search-box {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    height: 2.5rem;
+    background-color: #f3f3f3;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+}
+
+#my-search {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 2.75rem 0 0.75rem;
+    font-size: 1rem;
+    background-color: #f3f3f3;
+}
+
+#search-box:hover {
+    border: 3px solid #063247;
+}
+
 .reg-container-main .main-paragraph {
     width: 1000px;
     min-width: 400px;
@@ -363,7 +395,7 @@ ul {
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    width: 1000px;
+    width: 85%;
     margin: 30px auto;
 }
 
@@ -374,7 +406,8 @@ ul {
 }
 
 .styled-table th, td {
-    padding: 12px 15px;
+    padding: 10px 15px;
+    max-width: 50px;
     text-align: center;
 }
 
@@ -451,7 +484,7 @@ ul {
     width: 300px;
     background-color: white;
     margin: 1.5rem;
-    margin: 2rem;
+    /*margin: 2rem;*/
     border: solid #063247;
     border-radius: 1%;
     padding: 1.5rem;
@@ -557,10 +590,9 @@ ul {
     justify-content: center;
     width: 120px;
     height: 120px;
-    margin: 0 auto;
     border: 3.5px solid #063247;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
 }
 
 .profile label{
@@ -578,6 +610,7 @@ ul {
 .profile:hover{
     background-color: #23dbdb;
 }
+<<<<<<< HEAD
 .restaurant-main{
     background-image: url("../images/restaurant/restaurant.png");
 }
@@ -599,4 +632,37 @@ ul {
     padding-left: 10%;
 }
 
+=======
+
+.payment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+}
+
+.payment-container .form-input{
+    flex: 1;
+    width: 87%;
+    padding: 0.5rem;
+    border: 1px #042331 inset;
+    margin: 1rem;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    width: 180px;
+}
+
+.separator{
+    width: 2px;
+    background-color: #042331;
+    margin-left: 3rem;
+}
+>>>>>>> master
 

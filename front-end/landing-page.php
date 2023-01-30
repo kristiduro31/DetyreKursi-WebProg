@@ -11,6 +11,7 @@ include '../db-config.php';
     <meta charset="UTF-8">
     <title>Tirana International Airport-Welcome</title>
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -19,20 +20,34 @@ include '../db-config.php';
     <style>
         a {color: white;}
     </style>
+    <script>
+        $(document).ready(function(){
+            $("#my-search").on("keyup", function (){
+                var value = $(this).val().toLowerCase();
+                $("#fluturime tr").filter(function (){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                });
+            });
+        });
+    </script>
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-    <br>
     <div class="reg-container-main">
         <section id="fluturime-nisje">
-        <div class="table-title">
-            <h1>Fluturime - Nisjet</h1>
+        <div class="table-title" style="margin-top: 20px">
+            <h1 style="font-size: 35px">Fluturime</h1>
+            <div id="search-box">
+                <input style="width: 55%" type="text" id="my-search" placeholder="Search..." class="searchQueryInput">
+                <span style="margin-top: 4%; margin-left: 15%;font-size:130%"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
         </div>
-        <table class="styled-table">
+        <table class="styled-table" style="margin-bottom: 50px; margin-top: 50px">
             <thead>
             <tr>
                 <th>Kompania</th>
+                <th>Lloji</th>
                 <th>Orari</th>
                 <th>Avioni</th>
                 <th>Nisja</th>
@@ -46,15 +61,16 @@ include '../db-config.php';
                 <th>ACTIONS</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="fluturime">
             <?php
-            $sql2 = "SELECT fc.logo, f.type, f.flight_id, f.departure, f.airplane, f.seats_left, f.ticket_price, a.label as Departure, a2.label as Arrival
-                    FROM flight f INNER JOIN airport a on f.arrival_airport = a.airport_id
-                    INNER JOIN airport a2 on f.departure_airport = a2.airport_id    
-                    INNER JOIN flight_company fc on f.company = fc.flight_company_id
-                    WHERE f.type LIKE '%Departure%'
+            $sql1 = "SELECT fc.logo, f.type, f.flight_id, f.departure, f.airplane, f.seats_left, f.ticket_price, a.label as Departure, a2.label as Arrival, c1.city_name as City_Arrival, c2.city_name as City_Depart
+                    FROM flight f INNER JOIN flight_company fc on f.company = fc.flight_company_id
+                    INNER JOIN airport a on f.arrival_airport = a.airport_id           
+                    INNER JOIN airport a2 on f.departure_airport = a2.airport_id
+                    INNER JOIN city c1 on a.city = c1.city_id
+                    INNER JOIN city c2 on a2.city = c2.city_id
                     ORDER BY f.departure DESC";
-            $result1 = mysqli_query($conn, $sql2);
+            $result1 = mysqli_query($conn, $sql1);
             if(!$result1){
                 die("Invalid query!");
             }
@@ -62,78 +78,27 @@ include '../db-config.php';
                 echo "
                       <tr>
                         <td><img src='../images/companies/$row1[logo]' style='height: 40px; border-radius: 50%'></td>
+                        <td>$row1[type]</td>
                         <td>$row1[departure]</td>
                         <td>$row1[airplane]</td>
                         <td>$row1[Arrival]</td>
                         <td>$row1[Departure]</td>
-                        <td>$row1[seats_left]</td>";
+                        <td>$row1[seats_left]</td>
+                        <td style='display: none'>$row1[City_Arrival]</td>
+                        <td style='display: none'>$row1[City_Depart]</td>";
                 if(isset($_SESSION["user_id"])){
                        echo "<td>$row1[ticket_price]€</td>";
                 }
-                        echo "<td>
-                                <a style='margin: 0 5px; color: darkgreen' href='book-ticket.php?id=$row1[flight_id]'>Rezervo bilete</a>
-                              </td>";
+                echo "<td style='margin: 0 5px;'>
+                        <a style='color: darkgreen' href='book-ticket.php?id=$row1[flight_id]'>Rezervo biletë</a>
+                      </td>";
                 echo "</tr>";
             }
             ?>
             </tbody>
         </table>
         </section>
-        <section id="fluturime-mberritje">
-        <div class="table-title">
-            <h1>Fluturime - Mbërritjet</h1>
-        </div>
-        <table class="styled-table" style="margin-bottom: 50px">
-            <thead>
-            <tr>
-                <th>Kompania</th>
-                <th>Orari</th>
-                <th>Avioni</th>
-                <th>Nisja</th>
-                <th>Destinacioni</th>
-                <th>Vende të mbetura</th>
-                <?php
-                if(isset($_SESSION["user_id"])){
-                    echo "<th>Cmimi i biletës</th>";
-                }
-                ?>
-                <th>ACTIONS</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php
-            $sql2 = "SELECT fc.logo, f.type, f.flight_id, f.departure, f.airplane, f.seats_left, f.ticket_price, a.label as Departure, a2.label as Arrival
-                    FROM flight f INNER JOIN airport a on f.arrival_airport = a.airport_id
-                    INNER JOIN airport a2 on f.departure_airport = a2.airport_id    
-                    INNER JOIN flight_company fc on f.company = fc.flight_company_id
-                    WHERE f.type LIKE '%Arrival%'
-                    ORDER BY f.departure DESC";
-            $result2 = mysqli_query($conn, $sql2);
-            if(!$result2){
-                die("Invalid query!");
-            }
-            while($row2=mysqli_fetch_array($result2, MYSQLI_ASSOC)){
-                echo "
-                      <tr>
-                        <td><img src='../images/companies/$row2[logo]' style='height: 40px; border-radius: 50%'></td>
-                        <td>$row2[departure]</td>
-                        <td>$row2[airplane]</td>
-                        <td>$row2[Arrival]</td>
-                        <td>$row2[Departure]</td>
-                        <td>$row2[seats_left]</td>";
-                        if(isset($_SESSION["user_id"])){
-                       echo "<td>$row2[ticket_price]€</td>";
-                }
-                        echo "<td>
-                                <a style='margin: 0 5px; color: darkgreen' href='book-ticket.php?id=$row2[flight_id]'>Rezervo biletë</a>
-                              </td>";
-                echo "</tr>";
-            }
-            ?>
-            </tbody>
-        </table>
-        </section>
-        <hr style="width:1000px; margin: auto;">
+        <hr style="width:1100px; margin: auto;">
         <section id="check-in" style="margin-bottom: 50px">
         <div class="table-title" style="margin-top: 0px">
             <h1>Checking-in</h1>

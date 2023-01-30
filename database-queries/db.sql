@@ -95,3 +95,12 @@ CREATE TABLE Space_Service(
     FOREIGN KEY (space) REFERENCES Airport_Space(airport_space_id),
     PRIMARY KEY (space_service_id)
 );
+
+CREATE TABLE Bank(
+    card_id int NOT NULL AUTO_INCREMENT,
+    card_number varchar(20) NOT NULL UNIQUE,
+    holder varchar(30) NOT NULL,
+    expiration_date varchar(6) NOT NULL,
+    cvc varchar(3) NOT NULL,
+    PRIMARY KEY (card_id)
+);

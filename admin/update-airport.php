@@ -13,7 +13,7 @@ $cities = mysqli_query($conn, $sql);
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
-    <title>Perditeso Aeroport</title>
+    <title>Përditeso Aeroport</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">

@@ -23,6 +23,7 @@ if(!isset($_SESSION["user_id"])){
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
     <title>Perdoruesit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -33,26 +34,40 @@ if(!isset($_SESSION["user_id"])){
             color: white;
         }
     </style>
+    <script>
+        $(document).ready(function(){
+            $("#my-search").on("keyup", function (){
+                var value = $(this).val().toLowerCase();
+                $("#user tr").filter(function (){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                });
+            });
+        });
+    </script>
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
     <div class="reg-container-main">
         <div class="table-title">
-            <h1>Perdoruesit e faqjes</h1>
+            <h1>Përdoruesit e faqjes</h1>
+            <div id="search-box">
+                <input style="width: 55%" type="text" id="my-search" placeholder="Search..." class="searchQueryInput">
+                <span style="margin-top: 4%; margin-left: 15%;font-size:130%"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
         </div>
         <table class="styled-table">
             <thead>
             <tr>
-                <th>Emer</th>
-                <th>Mbiemer</th>
+                <th>Emër</th>
+                <th>Mbiemër</th>
                 <th>Email</th>
-                <th>Numer Telefoni</th>
+                <th>Numër Telefoni</th>
                 <th>Adresa</th>
                 <th colspan="2">ACTIONS</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="user">
             <?php
             $sql = "select * from `Users` WHERE `role`='user' ORDER BY first_name,surname ASC;";
             $result = mysqli_query($conn, $sql);
@@ -68,7 +83,10 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'>Fshi</a>
+                            <a style='color: coral' href='../front-end/user-bookings.php?userID=$row[user_id]'><i class='fa-solid fa-ticket' title='Shiko rezervimet e Perdoruesit'></i></a>
+                        </td>
+                        <td>
+                            <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'><i class='fa-solid fa-trash' title='Fshi Perdorues'></i></a>
                         </td>
                       </tr>
                      ";

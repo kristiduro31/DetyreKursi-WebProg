@@ -18,51 +18,55 @@
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-	<h1>Privacy Policy</h1>
-	<br>
-	<br>
-	<h3>Last updated: December 2022</h3>
-	<br>
-	<h3>Our Privacy Promise</h3>
-	<br>
-	<ul>
-		<li class="privacy">We promise to collect, use and store your personal data in a safe and secure way.</li>
-		<li class="privacy">We promise to only use your personal data for the specific purposes stated.</li>
-		<li class="privacy">We promise to keep you informed about how we use your information and who we give it to.</li>
-	</ul>
-	<br>
-	<p>This privacy notice tells you what to expect when TIA collects personal
-		information about you when you use Heathrow.com or Heathrow’s social media channels.
-		Heathrow is committed to protecting your personal information when you use Heathrow services.
-		Whenever you provide such information, we are legally obliged to use your information in line with all
-		applicable laws concerning personal data protection, including the General Data Protection Regulation (GDPR).
-		Your information will be kept in a secure environment and access
-		to it will be restricted according to the 'need to know' principle</p>
-	<br>
-	<p>Your personal data for TIA will be retained for a period of 60 days from the date of the draw at which point all of your personal details are removed from our systems.
-		<br>
-		Your personal data for marketing communications will be retained for a period of three years from the date of your last interaction with the marketing communication (i.e. opening an email or clicking on a link within the email) at which point all of your personal details is removed from our systems.
-		Your personal data for Social Media will be retained for a period of two years and then delete it after the retention period has passed.
-		<br>
-		Where you tell us that you no longer wish to receive marketing messages about Heathrow products and services, we will keep this information about you until you tell us otherwise. This is to ensure that we don’t send you any further marketing communications in error.</p>
-	<br>
-	<p>When you use TiranaInternationalAirport.com, we will collect the following information about you:</p>
-	<br>
-	<ul>
-		<li class="privacy">Name</li>
-		<li class="privacy">Gender</li>
-		<li class="privacy">Date of birth</li>
-		<li class="privacy">Home address</li>
-		<li class="privacy">Email address</li>
-		<li class="privacy">Phone number</li>
-		<li class="privacy">Flight number</li>
-		<li class="privacy">Personal Identification</li>
-		<li class="privacy">Location</li>
-	</ul>
-	<br>
-	<p>TIA collects information about how you use Heathrow.com via our website and the device(s) that
-		you use to access the service. This includes collecting unique online identifiers such as IP addresses,
-		which are numbers that uniquely identify a specific computer or other network device on the internet. </p>
+    <div class="reg-container-main">
+        <div class="table-title" style="margin-top: 0px">
+            <h1>Mbrojtja e te dhenave personale</h1>
+        </div>
+        <div class="main-paragraph">
+            <ul>
+                <li class="privacy">Ne premtojmë të mbledhim, përdorim dhe ruajmë të dhënat tuaja personale në një mënyrë të sigurt dhe të sigurt.</li>
+                <li class="privacy">Ne premtojmë të përdorim të dhënat tuaja personale vetëm për qëllimet specifike të deklaruara.</li>
+                <li class="privacy">Ne premtojmë t'ju mbajmë të informuar se si i përdorim informacionet tuaja dhe kujt ia japim.</li>
+            </ul>
+        </div>
+        <div class="main-paragraph">
+            <p>Ky njoftim privatësie ju tregon se çfarë të prisni kur TIA mbledh personal
+                informacion rreth jush kur përdorni kanalet e rrjeteve sociale TIA.com ose të Tirana International Airport.
+                TIA është e përkushtuar të mbrojë informacionin tuaj personal kur përdorni shërbimet e Heathrow.
+                Sa herë që jepni një informacion të tillë, ne jemi ligjërisht të detyruar t'i përdorim informacionet tuaja në përputhje me të gjitha
+                ligjet e zbatueshme në lidhje me mbrojtjen e të dhënave personale, duke përfshirë Rregulloren e Përgjithshme të Mbrojtjes së të Dhënave (GDPR).
+                Informacioni juaj do të ruhet në një mjedis dhe akses të sigurt
+                do të kufizohet sipas parimit 'nevoja për të ditur'</p>
+        </div>
+        <div class="main-paragraph">
+	        <p>Të dhënat tuaja personale për TIA do të ruhen për një periudhë prej 60 ditësh nga data e shortit, në të cilën të gjitha të dhënat tuaja personale hiqen nga sistemet tona.
+            <br>
+                Të dhënat tuaja personale për komunikimet e marketingut do të ruhen për një periudhë prej tre vjetësh nga data e ndërveprimit tuaj të fundit me komunikimin e marketingut (d.m.th. hapja e një emaili ose klikimi në një lidhje brenda emailit) në të cilën moment të gjitha të dhënat tuaja personale hiqen nga sistemet tona.
+                Të dhënat tuaja personale për mediat sociale do të ruhen për një periudhë prej dy vjetësh dhe më pas do t'i fshini pasi të ketë kaluar periudha e ruajtjes.
+            <br>
+                Kur na thoni se nuk dëshironi të merrni më mesazhe marketingu për produktet dhe shërbimet e TIA, ne do ta mbajmë këtë informacion për ju derisa të na tregoni të kundërtën. Kjo është për t'u siguruar që ne të mos ju dërgojmë gabimisht ndonjë komunikim tjetër marketingu.</p>
+        </div>
+	    <br>
+	<p>Kur përdorni Tirana-InternationalAirport.com, ne do të mbledhim informacionin e mëposhtëm rreth jush:</p>
+        <div class="main-paragraph">
+            <ul style="text-align: center">
+                <li class="privacy">Emer</li>
+                <li class="privacy">Gjini</li>
+                <li class="privacy">Ditelindje</li>
+                <li class="privacy">Adresa e shtepise</li>
+                <li class="privacy">Email</li>
+                <li class="privacy">Numer Telefoni</li>
+                <li class="privacy">Numer Fluturimi</li>
+                <li class="privacy">Identifikim Personal</li>
+                <li class="privacy">Vendndodhje</li>
+            </ul>
+        </div>
+        <div class="main-paragraph" style="margin-bottom: 30px">
+            <p>TIA mbledh informacione rreth mënyrës se si e përdorni TIA.com nëpërmjet faqes sonë të internetit dhe pajisjes(ve) të saj
+                ju përdorni për të hyrë në shërbim. Kjo përfshin mbledhjen e identifikuesve unik në internet si adresat IP,
+                të cilët janë numra që identifikojnë në mënyrë unike një kompjuter specifik ose pajisje tjetër rrjeti në internet. </p>
+        </div>
+    </div>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>
