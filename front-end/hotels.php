@@ -14,7 +14,6 @@
 <?php include "../components/navbar.php" ?>
 <main>
     <h1>Hotele dhe Akomodimi</h1>
-
     <div class="reg-container-main">
         <div class="row">
             <div class="row">
@@ -76,9 +75,6 @@
             </div>
         </div>
     </div
-    </div>
-
-
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>

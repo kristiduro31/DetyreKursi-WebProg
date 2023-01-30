@@ -645,7 +645,7 @@ ul {
 .hotels .row{
     width: 100%;
     height: 50%;
-    padding-bottom: 5%;
+    padding: 3% 5% 2% 2%;
 }
 
 
@@ -668,5 +668,7 @@ ul {
     height: 20%;
     width: 100%;
     border: 3px solid lightgray;
-
+}
+.hotels{
+    background-image: url("../images/hotels/bcg-hotels.png");
 }
