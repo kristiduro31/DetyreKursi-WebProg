@@ -610,3 +610,6 @@ ul {
 .profile:hover{
     background-color: #23dbdb;
 }
+.health em{
+    font-weight: bold;
+}
