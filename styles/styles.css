@@ -439,13 +439,14 @@ ul {
     float: left;
     width: 50%;
 }
+
 .row-inside:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.rental-image{
+.rental-image {
     display: flex;
     justify-content: left;
     object-fit: cover;
@@ -456,22 +457,23 @@ ul {
     border: 1px solid black;
 }
 
-.row{
+.row {
     height: 20%;
 }
 
-.company-img-in{
+.company-img-in {
     width: 20%;
 
 }
-.company-img-out{
+
+.company-img-out {
     width: 10%;
     float: left;
     height: 10%;
 }
 
-#car-rental-body{
-    background-image: url("../images/car-rentals/imageedit_1_9851293430.png") ;
+#car-rental-body {
+    background-image: url("../images/car-rentals/imageedit_1_9851293430.png");
 }
 
 /*admin*/
@@ -493,7 +495,7 @@ ul {
     transition: transform .2s;
 }
 
-.admin-panel .admin-option:hover{
+.admin-panel .admin-option:hover {
     transform: scale(1.05);
     /*transform: scale(1.1);*/
 }
@@ -511,7 +513,7 @@ ul {
     margin: 1rem;
 }
 
-.admin-container{
+.admin-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -542,29 +544,29 @@ ul {
     margin-bottom: 2rem;
 }
 
-.admin-container .image-right{
+.admin-container .image-right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.admin-container .image-right img{
+.admin-container .image-right img {
     height: 280px;
 }
 
-#add-airport-button{
+#add-airport-button {
     width: 200px;
 }
 
-#add-flight-company-button{
+#add-flight-company-button {
     width: 200px;
 }
 
-#add-admin-button{
+#add-admin-button {
     width: 150px;
 }
 
-.table-title{
+.table-title {
     display: flex;
     padding-left: 8rem;
     padding-right: 8rem;
@@ -572,30 +574,30 @@ ul {
     justify-content: space-between;
 }
 
-.table-title button{
+.table-title button {
     background-color: #042331;
     width: 100px;
     height: 40px;
     color: white;
 }
 
-.table-title button:hover{
+.table-title button:hover {
     background-color: #e91e63;
     transition: background-color .2s;
 }
 
-.profile{
+.profile {
     background-color: white;
     display: flex;
     justify-content: center;
     width: 120px;
     height: 120px;
-    border: 3.5px solid #063247;
+    border: 4px solid #063247;
     border-radius: 50%;
     margin: 0 auto 1rem;
 }
 
-.profile label{
+.profile label {
     margin-top: 42%;
     color: white;
 }
@@ -607,34 +609,57 @@ ul {
     margin: 0;
 }
 
-.profile:hover{
+.profile:hover {
     background-color: #23dbdb;
 }
-<<<<<<< HEAD
-.restaurant-main{
+
+.space-main {
     background-image: url("../images/restaurant/restaurant.png");
 }
 
-.restaurant .column{
-    width: 33%;
-    text-align: left;
+.space {
+    text-align: center;
 }
-.restaurant .row{
+
+.space .column {
+    width: 30%;
+    text-align: left;
+    margin-right: 2rem;
+}
+
+.space .img-column {
+    width: 30%;
+}
+
+.space .contact-column {
+    width: 30%;
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.space .row {
     padding-top: 4%;
     padding-bottom: 2%;
+    margin: 3rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   align-items: center;
 }
 
-.restaurant .reg-container-main :hover {
-    background-color: #6f6f6f;
+.space .reg-container-main :hover {
+    background-color: #8c8c8c;
+    color: white;
 }
-.restaurant .rest-img{
+
+.space .rest-img {
     width: 40%;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
-=======
-
-.payment-container{
+.payment-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -642,7 +667,7 @@ ul {
     width: 400px;
 }
 
-.payment-container .form-input{
+.payment-container .form-input {
     flex: 1;
     width: 87%;
     padding: 0.5rem;
@@ -650,7 +675,7 @@ ul {
     margin: 1rem;
 }
 
-.price-container{
+.price-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -659,10 +684,9 @@ ul {
     width: 180px;
 }
 
-.separator{
+.separator {
     width: 2px;
     background-color: #042331;
     margin-left: 3rem;
 }
->>>>>>> master
 

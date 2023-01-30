@@ -10,14 +10,14 @@
 	<script src="https://kit.fontawesome.com/1e579789f0.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="restaurant-main" onload="realtimeClock(),getRouting()">
+<body class="space-main" onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
-<mai>
-    <div class="restaurant">
-        <h1>Bar & Restorante</h1>
+<main>
+    <div class="space">
+        <h1 >Bar & Restorante</h1>
         <div class="reg-container-main">
             <div class="row">
-                <div class="column">
+                <div class="img-column">
                     <img class="rest-img" src="../images/restaurant/1.png" alt="Image could not be loaded">
                 </div>
                 <div class="column">
@@ -27,7 +27,7 @@
                         përzierjes së çokollatës më të mirë në botë me akullore, pastë dhe kafe.</p>
                 </div>
 
-                <div class="column">
+                <div class="contact-column">
                     <h3>Kontakt</h3>
                     <p>Faqja e internetit:
                         <a href="www.cioccolatitaliani.it">www.cioccolatitaliani.it</a><br>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="column">
+                <div class="img-column">
                     <img class="rest-img" src="../images/restaurant/3.png" alt="Image could not be loaded">
                 </div>
                 <div class="column">
@@ -46,7 +46,7 @@
                         Me një hapsirë të dedikuar për gjithë grupmoshat, KFC Rinas ofron një eksperiencë të shkëlqyer për gjithë adhuruesit e produkteve të saj me cilësi dhe cmim konkurues.</p>
                 </div>
 
-                <div class="column">
+                <div class="contact-column">
                     <h3>Kontakt</h3>
                     <p>Faqja e internetit:
                         <a href="marketing@kfc.com.al">marketing@kfc.com.al</a><br>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="column">
+                <div class="img-column">
                     <img class="rest-img" src="../images/restaurant/2.png" alt="Image could not be loaded">
                 </div>
                 <div class="column">
@@ -64,7 +64,7 @@
                     <p>Mbi re, me kafe dhe çdo produkt tjetër të zgjedhur në pikën Mulliri në aeroportin e Rinasit. Ju mirëpresim! ✈️</p>
                 </div>
 
-                <div class="column">
+                <div class="contact-column">
                     <h3>Kontakt</h3>
                     <p>Faqja e internetit:
                         <a href="https://mullirivjeter.al/">mullirivjeter.al/</a><br>
@@ -75,12 +75,7 @@
             </div>
         </div>
     </div>
-</mai>
-=======
-<main>
-	<h1>Bare & Restorante</h1>
 </main>
->>>>>>> a98c5b9b2224076c6f638b84e81ac0a9c3802ee5
 <?php include "../components/footer-bar.php" ?>
 </body>
 </html>
