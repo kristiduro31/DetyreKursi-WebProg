@@ -18,51 +18,55 @@
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar.php" ?>
 <main>
-	<h1>Privacy Policy</h1>
-	<br>
-	<br>
-	<h3>Last updated: December 2022</h3>
-	<br>
-	<h3>Our Privacy Promise</h3>
-	<br>
-	<ul>
-		<li class="privacy">We promise to collect, use and store your personal data in a safe and secure way.</li>
-		<li class="privacy">We promise to only use your personal data for the specific purposes stated.</li>
-		<li class="privacy">We promise to keep you informed about how we use your information and who we give it to.</li>
-	</ul>
-	<br>
-	<p>This privacy notice tells you what to expect when TIA collects personal
-		information about you when you use Heathrow.com or Heathrow’s social media channels.
-		Heathrow is committed to protecting your personal information when you use Heathrow services.
-		Whenever you provide such information, we are legally obliged to use your information in line with all
-		applicable laws concerning personal data protection, including the General Data Protection Regulation (GDPR).
-		Your information will be kept in a secure environment and access
-		to it will be restricted according to the 'need to know' principle</p>
-	<br>
-	<p>Your personal data for TIA will be retained for a period of 60 days from the date of the draw at which point all of your personal details are removed from our systems.
-		<br>
-		Your personal data for marketing communications will be retained for a period of three years from the date of your last interaction with the marketing communication (i.e. opening an email or clicking on a link within the email) at which point all of your personal details is removed from our systems.
-		Your personal data for Social Media will be retained for a period of two years and then delete it after the retention period has passed.
-		<br>
-		Where you tell us that you no longer wish to receive marketing messages about Heathrow products and services, we will keep this information about you until you tell us otherwise. This is to ensure that we don’t send you any further marketing communications in error.</p>
-	<br>
-	<p>When you use TiranaInternationalAirport.com, we will collect the following information about you:</p>
-	<br>
-	<ul>
-		<li class="privacy">Name</li>
-		<li class="privacy">Gender</li>
-		<li class="privacy">Date of birth</li>
-		<li class="privacy">Home address</li>
-		<li class="privacy">Email address</li>
-		<li class="privacy">Phone number</li>
-		<li class="privacy">Flight number</li>
-		<li class="privacy">Personal Identification</li>
-		<li class="privacy">Location</li>
-	</ul>
-	<br>
-	<p>TIA collects information about how you use Heathrow.com via our website and the device(s) that
-		you use to access the service. This includes collecting unique online identifiers such as IP addresses,
-		which are numbers that uniquely identify a specific computer or other network device on the internet. </p>
+    <div class="reg-container-main">
+        <div class="table-title" style="margin-top: 0px">
+            <h1>Our Privacy Promise</h1>
+        </div>
+        <div class="main-paragraph">
+            <ul>
+                <li class="privacy">We promise to collect, use and store your personal data in a safe and secure way.</li>
+                <li class="privacy">We promise to only use your personal data for the specific purposes stated.</li>
+                <li class="privacy">We promise to keep you informed about how we use your information and who we give it to.</li>
+            </ul>
+        </div>
+        <div class="main-paragraph">
+            <p>This privacy notice tells you what to expect when TIA collects personal
+                information about you when you use Heathrow.com or Heathrow’s social media channels.
+                Heathrow is committed to protecting your personal information when you use Heathrow services.
+                Whenever you provide such information, we are legally obliged to use your information in line with all
+                applicable laws concerning personal data protection, including the General Data Protection Regulation (GDPR).
+                Your information will be kept in a secure environment and access
+                to it will be restricted according to the 'need to know' principle</p>
+        </div>
+        <div class="main-paragraph">
+	        <p>Your personal data for TIA will be retained for a period of 60 days from the date of the draw at which point all of your personal details are removed from our systems.
+            <br>
+            Your personal data for marketing communications will be retained for a period of three years from the date of your last interaction with the marketing communication (i.e. opening an email or clicking on a link within the email) at which point all of your personal details is removed from our systems.
+            Your personal data for Social Media will be retained for a period of two years and then delete it after the retention period has passed.
+            <br>
+            Where you tell us that you no longer wish to receive marketing messages about Heathrow products and services, we will keep this information about you until you tell us otherwise. This is to ensure that we don’t send you any further marketing communications in error.</p>
+        </div>
+	    <br>
+	<p>When you use Tirana-InternationalAirport.com, we will collect the following information about you:</p>
+        <div class="main-paragraph">
+            <ul style="text-align: center">
+                <li class="privacy">Name</li>
+                <li class="privacy">Gender</li>
+                <li class="privacy">Date of birth</li>
+                <li class="privacy">Home address</li>
+                <li class="privacy">Email address</li>
+                <li class="privacy">Phone number</li>
+                <li class="privacy">Flight number</li>
+                <li class="privacy">Personal Identification</li>
+                <li class="privacy">Location</li>
+            </ul>
+        </div>
+        <div class="main-paragraph" style="margin-bottom: 30px">
+            <p>TIA collects information about how you use Heathrow.com via our website and the device(s) that
+                you use to access the service. This includes collecting unique online identifiers such as IP addresses,
+                which are numbers that uniquely identify a specific computer or other network device on the internet. </p>
+        </div>
+    </div>
 </main>
 <?php include "../components/footer-bar.php" ?>
 </body>
