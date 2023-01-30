@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Reading all flight bookings of a user, both admin and client side.">
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Privacy Policy done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/privacy-policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/privacy-policy.php" afterDir="false" />
     </list>
@@ -343,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675104604505</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Privacy Policy done">
+      <created>1675105202717</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1675105202717</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login/logout button dynamic change if user is logged or not" />
     <MESSAGE value="Adapting signup form to user table." />
     <MESSAGE value="Small changes at admin landing page" />
     <MESSAGE value="Adding countries and cities insertion sql commands." />
@@ -467,7 +473,8 @@
     <MESSAGE value="Modifying db-diagram.png" />
     <MESSAGE value="Adding search bar" />
     <MESSAGE value="Reading all flight bookings of a user, both admin and client side." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reading all flight bookings of a user, both admin and client side." />
+    <MESSAGE value="Privacy Policy done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Privacy Policy done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
