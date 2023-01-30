@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Privacy Policy done">
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Translation Privacy Policy done">
+      <change afterPath="$PROJECT_DIR$/back-end/deleteFlightBooking.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/privacy-policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/privacy-policy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/user-bookings.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/user-bookings.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675105202717</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Translation Privacy Policy done">
+      <created>1675105544466</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1675105544466</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +457,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adapting signup form to user table." />
     <MESSAGE value="Small changes at admin landing page" />
     <MESSAGE value="Adding countries and cities insertion sql commands." />
     <MESSAGE value="Refactoring code" />
@@ -474,7 +481,8 @@
     <MESSAGE value="Adding search bar" />
     <MESSAGE value="Reading all flight bookings of a user, both admin and client side." />
     <MESSAGE value="Privacy Policy done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Privacy Policy done" />
+    <MESSAGE value="Translation Privacy Policy done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Translation Privacy Policy done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

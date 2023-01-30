@@ -6,6 +6,7 @@ include '../db-config.php';
 global $userID;
 global $searchedUser;
 global $loggedUser;
+$isAdmin = false;
 
 if(!isset($_SESSION["user_id"])){
     header("location: login.php");
@@ -15,6 +16,9 @@ if(!isset($_SESSION["user_id"])){
     $sql1 = "SELECT * FROM `Users` WHERE `user_id` = '$useroo';";
     $result = mysqli_query($conn, $sql1);
     $loggedUser = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    if($loggedUser["role"]==="admin"){
+        $isAdmin=true;
+    }
     if(isset($_GET["userID"])){
         $userID=$_GET["userID"];
         $sql2 = "SELECT * FROM `Users` WHERE `user_id` = '$userID';";
@@ -61,7 +65,7 @@ if(!isset($_SESSION["user_id"])){
 </head>
 <body onload="realtimeClock(),getRouting()">
 <?php
-if($loggedUser["role"]==="admin"){
+if($isAdmin===true){
     include "../components/navbar-admin.php";
 }else include "../components/navbar.php";
 ?>
@@ -84,11 +88,16 @@ if($loggedUser["role"]==="admin"){
                 <th>Paguar</th>
                 <th>Menyra Pageses</th>
                 <th>Numri i biletave</th>
+                <?php
+                if($isAdmin===false){
+                    echo "<th>ACTIONS</th>";
+                }
+                ?>
             </tr>
             </thead>
             <tbody id="admin">
             <?php
-            $sql = "SELECT deptC.city_name as DeptCity, arrC.city_name as ArrivalCity, fc.logo, b.booking_date, b.paid, b.payment_form, b.tickets, f.departure
+            $sql = "SELECT b.booking_id,deptC.city_name as DeptCity, arrC.city_name as ArrivalCity, fc.logo, b.booking_date, b.paid, b.payment_form, b.tickets, f.departure
                      FROM Booking as b INNER JOIN Flight as f ON b.flight=f.flight_id
                      INNER JOIN Flight_Company as fc ON f.company=fc.flight_company_id
                      INNER JOIN Airport as deptAir ON f.departure_airport=deptAir.airport_id
@@ -113,8 +122,13 @@ if($loggedUser["role"]==="admin"){
                         <td>$row[booking_date]</td>    
                         <td>$paguar</td>       
                         <td>$row[payment_form]</td>                                              
-                        <td>$row[tickets]</td>                                              
-                      </tr>
+                        <td>$row[tickets]</td>";
+                if($isAdmin===false){
+                    echo "<td style='margin: 0 5px;'>
+                            <a style='color: red' href='../back-end/deleteFlightBooking.php?bookingID=$row[booking_id]'><i class='fa-solid fa-trash' title='Fshi Rezervim'></i></a>
+                         </td>";
+                }
+                echo"</tr>
                      ";
             }
             ?>
