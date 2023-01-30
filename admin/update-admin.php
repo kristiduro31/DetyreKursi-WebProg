@@ -38,7 +38,7 @@ if(!isset($_SESSION["user_id"])){
 <main>
     <div class="reg-container">
         <div>
-            <h1>Perditeso Admin</h1>
+            <h1>Përditeso Admin</h1>
         </div>
         <form class="sign-up-form" method="post" action="../back-end/update.php" onsubmit="return (checkPasswordUpdate() && validateConfirmPassword())">
             <?php

@@ -14,7 +14,7 @@ if(!isset($_SESSION["user_id"])){
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
-    <title>Kompanitë e fluturimeve</title>
+    <title>Rezervimet e fluturimit</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
@@ -25,12 +25,15 @@ if(!isset($_SESSION["user_id"])){
         a {
             color: white;
         }
+        .table-title button{
+            width: 150px;
+        }
     </style>
     <script>
         $(document).ready(function(){
             $("#my-search").on("keyup", function (){
                 var value = $(this).val().toLowerCase();
-                $("#kompani tr").filter(function (){
+                $("#admin tr").filter(function (){
                     $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
                 });
             });
@@ -40,49 +43,48 @@ if(!isset($_SESSION["user_id"])){
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main>
-    <h1 style="margin-left: 12.5%">Kompanitë e fluturimeve</h1>
-    <br>
     <div class="reg-container-main">
         <div class="table-title">
+            <h1>Rezervimet e fluturimit Nr.<?php echo $_GET["flight_id"] ?></h1>
             <div id="search-box">
                 <input style="width: 55%" type="text" id="my-search" placeholder="Search..." class="searchQueryInput">
                 <span style="margin-top: 4%; margin-left: 15%;font-size:130%"><i class="fa-solid fa-magnifying-glass"></i></span>
             </div>
-            <button onclick="location.href = 'add-flight-company.php'" id="add-flight-company-button"><i class="fa-solid fa-plus" style="color: white;"></i> Shto Kompani Fluturimi</button>
         </div>
-
         <table class="styled-table">
             <thead>
             <tr>
-                <th>Logo</th>
-                <th>Emërtim</th>
+                <th>Emër</th>
                 <th>Email</th>
-                <th>Numër Telefoni</th>
-                <th>Adresa</th>
-                <th colspan="2">ACTIONS</th>
+                <th>Data e rezervimit</th>
+                <th>Paguar</th>
+                <th>Menyra Pageses</th>
+                <th>Numri i biletave</th>
             </tr>
             </thead>
-            <tbody id="kompani">
+            <tbody id="admin">
             <?php
-            $sql = "select * from `flight_company` ORDER BY logo ASC;";
+            $flightId=$_GET["flight_id"];
+            $sql = "SELECT b.booking_id, b.booking_date, u.user_id, u.first_name, 
+                    u.surname, u.email, b.paid, b.payment_form, b.tickets 
+                    FROM `Booking` as b INNER JOIN `Users` u ON b.buyer=u.user_id  
+                    WHERE `flight`='$flightId';";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
             }
             while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
+                if($row['paid']==1){
+                    $paguar='PO';
+                }else $paguar='JO';
                 echo "
-                      <tr style='height: 40px'>
-                        <td><img src='../images/companies/$row[logo]' style='height: 40px'></td>
-                        <td>$row[label]</td>
-                        <td>$row[email_company]</td>
-                        <td>$row[telephone]</td>
-                        <td>$row[address]</td>
-                        <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='update-flight-company.php?id=$row[flight_company_id]'><i class='fa-solid fa-pen-to-square' title='Perditeso Kompani'></i></a>
-                        </td>
-                        <td>
-                            <a style='color: red' href='../back-end/deleteCompany.php?id=$row[flight_company_id]'><i class='fa-solid fa-trash' title='Fshi Kompani'></i></a>
-                        </td>
+                      <tr>
+                        <td>$row[first_name] $row[surname]</td> 
+                        <td>$row[email]</td>
+                        <td>$row[booking_date]</td>    
+                        <td>$paguar</td>       
+                        <td>$row[payment_form]</td>                                              
+                        <td>$row[tickets]</td>                                              
                       </tr>
                      ";
             }

@@ -20,7 +20,7 @@ require '../db-config.php';
 <body onload="realtimeClock(),getRouting()">
 <?php include "../components/navbar-admin.php" ?>
 <main class="admin-panel">
-    <h1>Perditeso Kompanine</h1>
+    <h1>Përditeso Kompaninë</h1>
 
     <div class="admin-container">
         <form method="post" class="field-left" action="../back-end/update.php" enctype="multipart/form-data">

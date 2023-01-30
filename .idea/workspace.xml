@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Inserting Albania, Tirana and TIA with a final airport_id of 31.">
+      <change afterPath="$PROJECT_DIR$/admin/flight-bookings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/user-bookings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/airports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/airports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-company-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-airport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-flight-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-flight-company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

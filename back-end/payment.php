@@ -22,35 +22,35 @@ if (isset($_POST['makeBooking'])) {
         $result = mysqli_query($conn, $card_sql);
 
         if (mysqli_num_rows($result) == 0) {
-            echo "<script>alert('Numri i kartes eshte i pasakte'); window.location = history.go(-1);</script>";
+            echo "<script>alert('Numri i kartes eshte i pasakte'); window.history.go(-1);</script>";
             exit();
         }
 
         $card = mysqli_fetch_array($result, MYSQLI_ASSOC);
         if ($card["holder"] != $holder) {
-            echo "<script>alert('Ju nuk jeni mbajtesi i kesaj karte!'); window.location = history.go(-1);</script>";
+            echo "<script>alert('Ju nuk jeni mbajtesi i kesaj karte!'); window.history.go(-1);</script>";
             exit();
         }
         if ($card["expiration_date"] != $exp) {
-            echo "<script>alert('Afati vlefshmerise i pasakte!'); window.location = history.go(-1);</script>";
+            echo "<script>alert('Afati vlefshmerise i pasakte!'); window.history.go(-1);</script>";
             exit();
         }
 
         if ($card["cvc"] != $cvc) {
-            echo "<script>alert('Numer sigurie i pasakte!'); window.location = history.go(-1);</script>";
+            echo "<script>alert('Numer sigurie i pasakte!'); window.history.go(-1);</script>";
             exit();
         }
 
         $date_exp = explode("/", $exp);
 
-        $today = date('y-m-d');
+        $today = date('y-m-d H:i:s');
         $currentMonth = date('m', strtotime($today));
         $currentYear = date('y', strtotime($today));
 
         $valid_until_booking = date('y-m-d', strtotime('+1 week'));
 
         if ($date_exp[1] < $currentYear || $date_exp[1] == $currentYear && $date_exp[0] < $currentMonth) {
-            echo "<script>alert('Karta juaj ka kaluar afatin e vlefshmerise!'); window.location = history.go(-1);</script>";
+            echo "<script>alert('Karta juaj ka kaluar afatin e vlefshmerise!'); window.history.go(-1);</script>";
             exit();
         }
 

@@ -83,7 +83,10 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'>Fshi</a>
+                            <a style='color: coral' href='../front-end/user-bookings.php?userID=$row[user_id]'><i class='fa-solid fa-ticket' title='Shiko rezervimet e Perdoruesit'></i></a>
+                        </td>
+                        <td>
+                            <a style='color: red' href='../back-end/deleteUser.php?id=$row[user_id]'><i class='fa-solid fa-trash' title='Fshi Perdorues'></i></a>
                         </td>
                       </tr>
                      ";

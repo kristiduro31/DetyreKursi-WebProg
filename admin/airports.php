@@ -77,10 +77,10 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[tel]</td>
                         <td>$row[city_name]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='editAirport.php?id=$row[airport_id]'>Përditëso</a>
+                           <a style='margin: 0 5px; color: darkgreen' href='editAirport.php?id=$row[airport_id]'><i class='fa-solid fa-pen-to-square' title='Perditeso Aeroport'></i></a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteAirport.php?id=$row[airport_id]'>Fshi</a>
+                            <a style='color: red' href='../back-end/deleteAirport.php?id=$row[airport_id]'><i class='fa-solid fa-trash' title='Fshi Aeroport'></i></a>
                         </td>
                       </tr>
                      ";

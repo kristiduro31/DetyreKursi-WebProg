@@ -88,10 +88,10 @@ if(!isset($_SESSION["user_id"])){
                         <td>$row[telephone]</td>
                         <td>$row[address]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='update-admin.php?id=$row[user_id]'>Edito</a>
+                           <a style='color: darkgreen' href='update-admin.php?id=$row[user_id]'><i class='fa-solid fa-pen-to-square' title='Perditeso Administrator'></i></a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteAdmin.php?id=$row[user_id]'>Fshi</a>
+                            <a style='color: red' href='../back-end/deleteAdmin.php?id=$row[user_id]'><i class='fa-solid fa-trash' title='Fshi administrator'></i></a>
                         </td>
                       </tr>
                      ";

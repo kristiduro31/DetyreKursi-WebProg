@@ -66,7 +66,7 @@ if(!isset($_SESSION["user_id"])){
                 <th>Destinacioni</th>
                 <th>Vende te mbetura</th>
                 <th>Cmimi i biletes</th>
-                <th colspan="2">ACTIONS</th>
+                <th colspan="3">ACTIONS</th>
             </tr>
             </thead>
             <tbody id="fluturime">
@@ -96,10 +96,13 @@ if(!isset($_SESSION["user_id"])){
                         <td style='display: none'>$row[City_Arrival]</td>
                         <td style='display: none'>$row[City_Depart]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='editFlight.php?id=$row[flight_id]'>Përditëso</a>
+                            <a style='color: coral' href='flight-bookings.php?flight_id=$row[flight_id]'><i class='fa-solid fa-ticket' title='Shiko Rezervimet'></i></a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteFlight.php?id=$row[flight_id]'>Fshi</a>
+                           <a style='color: darkgreen' href='editFlight.php?id=$row[flight_id]'><i class='fa-solid fa-pen-to-square' title='Perditeso fluturim'></i></a>
+                        </td>
+                        <td>
+                            <a style='color: red' href='../back-end/deleteFlight.php?id=$row[flight_id]'><i class='fa-solid fa-trash' title='Fshi fluturim'></i></a>
                         </td>
                       </tr>
                      ";
