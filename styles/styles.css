@@ -437,13 +437,10 @@ ul {
 
 .column-inside {
     float: left;
-    width: 50%;
+    width: 33%;
+    padding-right: 5%;
 }
-.row-inside:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 .rental-image{
     display: flex;
@@ -642,3 +639,34 @@ ul {
     margin-left: 3rem;
 }
 
+.hotels .column{
+    padding-right: 10%
+}
+.hotels .row{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 5%;
+}
+
+
+.hotels .hotel-name{
+    align-self: center;
+    width: 100%;
+}
+
+.hotels .hotel-img{
+    width: 40%;
+    height: 50%;
+}
+
+.hotels p{
+    text-align: left;
+    padding-bottom: 5%;
+}
+.row-inside {
+    padding-left: 5%;
+    height: 20%;
+    width: 100%;
+    border: 3px solid lightgray;
+
+}
