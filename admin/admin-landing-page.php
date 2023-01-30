@@ -46,7 +46,7 @@ if(!isset($_SESSION["user_id"])){
                 <h2>Fluturime</h2>
             </div>
         </a>
-        <a href="">
+        <a href="space-manage.php">
             <div class="admin-option">
                 <img src="../images/add-space.PNG" alt="">
                 <h2>Hapësira Aeroporti</h2>
