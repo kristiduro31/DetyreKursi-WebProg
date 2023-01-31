@@ -24,6 +24,7 @@
                 <ul>
                     <li><a href="../front-end/faqs.php">Pyetje të shpeshta</a></li>
                     <li><a href="../front-end/privacy-policy.php">Mbrojtja e të dhënave personale</a></li>
+                    <li><a href="../front-end/health.php">Qendra Shendetesore</a></li>
                 </ul>
             </div>
             <div class="footer-col" style="padding-left: 5px">

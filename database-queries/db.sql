@@ -83,7 +83,7 @@ CREATE TABLE Airport_Space(
     label varchar(20) NOT NULL,
     space_type varchar(20) NOT NULL,
     logo varchar(250) NOT NULL,
-    space_description varchar(255),
+    space_description text(350),
     tel varchar(13) NOT NULL,
     email varchar(50) NOT NULL,
     web varchar(100),
