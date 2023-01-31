@@ -1,2 +1,3 @@
 <?php
-    echo "Test";
+    header("location: front-end/landing-page.php");
+    die();

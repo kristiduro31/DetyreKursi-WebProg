@@ -21,7 +21,7 @@
     <div class="reg-container-main">
         <div class="table-title" style="margin-top: 0px;margin-bottom: 35px">
             <h1>Mbrojtja e të dhënave personale</h1>
-            <i class="fa-sharp fa-solid fa-shield-halved" style="color: #042331"></i>
+            <i class="fa-sharp fa-solid fa-shield-halved" style="color: #042331; font-size: 300%"></i>
         </div>
         <div class="main-paragraph">
             <ul>

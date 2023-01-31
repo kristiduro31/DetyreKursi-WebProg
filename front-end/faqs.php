@@ -16,7 +16,7 @@
     <div class="reg-container-main">
         <div class="table-title" style="margin-top: 0px">
             <h1>Pyetje të shpeshta</h1>
-            <i class="fa-solid fa-question"></i>
+            <i class="fa-solid fa-question" style="font-size: 300%"></i>
         </div>
         <div class="table-title" style="margin-top: 0px">
             <h3>Cfarë duhet të bëj kur fluturimi im vonohet ose anulohet?</h3>

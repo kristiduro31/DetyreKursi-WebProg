@@ -16,7 +16,7 @@
     <div class="reg-container-main">
         <div class="table-title" style="margin-top: 0px">
             <h1>Qendra shendetesore</h1>
-            <i class="fa-solid fa-suitcase-medical" style="color: red"></i>
+            <i class="fa-solid fa-suitcase-medical" style="color: red;font-size: 300%"></i>
         </div>
         <br>
         <div class="main-paragraph">
