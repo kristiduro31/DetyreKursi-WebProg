@@ -145,4 +145,27 @@ if(isset($_POST["updateFlight"])){
     exit();
 }
 
+if(isset($_POST["updateSpace"])){
+    $space_id=mysqli_real_escape_string($conn, $_POST["airport_space_id"]);
+    $label = mysqli_real_escape_string($conn, $_POST["label"]);
+    $tel = mysqli_real_escape_string($conn, $_POST["tel"]);
+    $web = mysqli_real_escape_string($conn, $_POST["web"]);
+    $email = mysqli_real_escape_string($conn, $_POST["email"]);
+    $logo = $_FILES["logo"]["name"];
+    $space_type = mysqli_real_escape_string($conn, $_POST["space-type"]);
+    $description = mysqli_real_escape_string($conn, $_POST["description"]);
+
+    $update = "UPDATE airport_space SET label='$label', logo='$logo', tel='$tel', 
+                         email='$email', space_description='$description', space_type='$space_type',
+                         web='$web' WHERE airport_space_id='$space_id'";
+
+    if (mysqli_query($conn, $update)) {
+        header("Location: ../admin/space-manage.php");
+    } else {
+        echo "Something went wrong. Please try again later.";
+    }
+    exit();
+
+}
+
 

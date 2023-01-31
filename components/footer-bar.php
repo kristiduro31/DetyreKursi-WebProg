@@ -15,7 +15,6 @@
                     <li><a href="../front-end/transport.php">Transporti</a></li>
                     <li><a href="../front-end/restaurant.php">Bare & restorante</a></li>
                     <li><a href="../front-end/shops.php">Dyqane</a></li>
-                    <li><a href="../front-end/health.php">Qendër shëndetësore</a></li>
                     <li><a href="../front-end/car-renting.php">Makina me qera</a></li>
                     <li><a href="../front-end/hotels.php">Hotele & akomodimi</a></li>
                 </ul>
@@ -24,7 +23,6 @@
                 <br><br><br>
                 <ul>
                     <li><a href="../front-end/faqs.php">Pyetje të shpeshta</a></li>
-                    <li><a href="../front-end/luggage.php">Bagazhe</a></li>
                     <li><a href="../front-end/privacy-policy.php">Mbrojtja e të dhënave personale</a></li>
                 </ul>
             </div>

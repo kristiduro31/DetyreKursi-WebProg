@@ -18,7 +18,7 @@ if (isset($_POST["add-flight-company"])) {
                 VALUES ( '$label', '$logo', '$descr', '$phone','$addr','$email')";
 
     if (mysqli_query($conn, $insert)) {
-        move_uploaded_file($_FILES["logo"]["tmp_name"], "../images/companies/".$_FILES["logo"]["name"]);
+        move_uploaded_file($_FILES["logo"]["tmp_name"], "../images/companies/" . $_FILES["logo"]["name"]);
         header("Location: flight-company-manage.php");
         exit();
     } else {
@@ -45,11 +45,14 @@ if (isset($_POST["add-flight-company"])) {
     <h1>Kompani fluturimesh</h1>
 
     <div class="admin-container">
-        <form method="post" class="field-left" style="margin-top: 1rem" onsubmit="return checkEmail()" enctype="multipart/form-data">
+        <form method="post" class="field-left" style="margin-top: 1rem" onsubmit="return checkEmail()"
+              enctype="multipart/form-data">
             <div class="profile">
                 <img src="../images/airline-logo-default.png" id="img-profile">
             </div>
-            <label for="logo" id="label-logo" title="Logo duhet te jete te pakten 120x120"><i class="fa-solid fa-plus" style="margin-top: 0;margin-bottom: 10px "></i> Vendosni logo-n tuaj</label>
+            <label for="logo" id="label-logo" title="Logo duhet te jete te pakten 120x120"><i class="fa-solid fa-plus"
+                                                                                              style="margin-top: 0;margin-bottom: 10px "></i>
+                Vendosni logo-n tuaj</label>
 
             <input type="text" id="label" name="label" class="form-input" placeholder="Emertimi">
             <input type="email" id="email" name="email" class="form-input" placeholder="Email">
@@ -70,13 +73,14 @@ if (isset($_POST["add-flight-company"])) {
         </div>
     </div>
 </main>
-<script>function checkEmail(){
-            var em = document.getElementById("email");
-            if(em.value.length===0){
-                alert("Email NUK duhet te jete bosh");
-                return false;
-            }else return true;
-        }
+<script>
+    function checkEmail() {
+        var em = document.getElementById("email");
+        if (em.value.length === 0) {
+            alert("Email NUK duhet te jete bosh");
+            return false;
+        } else return true;
+    }
 </script>
 <script src="../scripts/scripts.js"></script>
 <?php include "../components/footer-bar.php" ?>

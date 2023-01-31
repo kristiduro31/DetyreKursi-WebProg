@@ -4,10 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Clearing .idea cache">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/restaurant.png" beforeDir="false" />
+=======
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Inserting Albania, Tirana and TIA with a final airport_id of 31.">
+      <change afterPath="$PROJECT_DIR$/front-end/book-ticket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-airport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-arrival.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-arrival.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-departure.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-departure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-flight-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-flight-company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-flight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-flight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/airports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/airports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editAirport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editFlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editFlight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-company-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-company-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/flight-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/flight-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-airport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/update-flight-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update-flight-company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user-manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer-bar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/car-renting.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/car-renting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/faqs.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/faqs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/health.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/health.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/hotels.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/hotels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/landing-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/luggage.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/luggage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/myProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/myProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/privacy-policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/privacy-policy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/shops.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/shops.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/transport.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/transport.php" afterDir="false" />
+>>>>>>> a98c5b9b2224076c6f638b84e81ac0a9c3802ee5
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
+=======
     <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Translation Privacy Policy done">
       <change afterPath="$PROJECT_DIR$/back-end/deleteFlightBooking.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/user-bookings.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/user-bookings.php" afterDir="false" />
+>>>>>>> master
+=======
+    <list default="true" id="20657949-c4e5-401d-a91e-511617309c04" name="Changes" comment="Inserting Albania, Tirana and TIA with a final airport_id of 31.">
+      <change afterPath="$PROJECT_DIR$/admin/add-space.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/space-manage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-landing-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-landing-page.php" afterDir="false" />
+>>>>>>> spaces
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +113,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2KNYATBmATBWKdbSK8pIZPAM2Mh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,9 +148,16 @@
       <recent name="$PROJECT_DIR$/queries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <recent name="C:\Users\User\Desktop\DkWeb\DetyreKursi-WebProg\images\restaurant" />
+=======
+=======
       <recent name="C:\Users\User\Documents\web\DetyreKursi-WebProg\back-end" />
       <recent name="$PROJECT_DIR$/images/companies" />
+>>>>>>> master
       <recent name="$PROJECT_DIR$/images" />
+>>>>>>> a98c5b9b2224076c6f638b84e81ac0a9c3802ee5
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/admin" />
     </key>
@@ -120,8 +183,14 @@
       <workItem from="1673995662832" duration="3578000" />
       <workItem from="1674023919939" duration="24109000" />
       <workItem from="1674425092142" duration="760000" />
+<<<<<<< HEAD
+      <workItem from="1674591956207" duration="2570000" />
+=======
       <workItem from="1674507184457" duration="5701000" />
       <workItem from="1674584736069" duration="2434000" />
+<<<<<<< HEAD
+>>>>>>> a98c5b9b2224076c6f638b84e81ac0a9c3802ee5
+=======
       <workItem from="1674602473732" duration="302000" />
       <workItem from="1674602845095" duration="3924000" />
       <workItem from="1674607365939" duration="21000" />
@@ -132,7 +201,12 @@
       <workItem from="1674815958422" duration="246000" />
       <workItem from="1674817797078" duration="1280000" />
       <workItem from="1674911268377" duration="2340000" />
+<<<<<<< HEAD
       <workItem from="1674935612198" duration="1884000" />
+>>>>>>> master
+=======
+      <workItem from="1674935612198" duration="7143000" />
+>>>>>>> spaces
     </task>
     <task id="LOCAL-00001" summary="No idea what I am doing">
       <created>1673891848136</created>

@@ -82,19 +82,14 @@ CREATE TABLE Airport_Space(
 	airport_space_id int NOT NULL AUTO_INCREMENT,
     label varchar(20) NOT NULL,
     space_type varchar(20) NOT NULL,
-    opening_hours varchar(10),
     logo longblob NOT NULL,
-    space_description varchar(100),
+    space_description varchar(255),
+    tel varchar(13) NOT NULL,
+    email varchar(50) NOT NULL,
+    web varchar(100),
     PRIMARY KEY (airport_space_id)
 );
 
-CREATE TABLE Space_Service(
-	space_service_id int NOT NULL AUTO_INCREMENT,
-    service_label varchar(20) NOT NULL,
-    space int NOT NULL,
-    FOREIGN KEY (space) REFERENCES Airport_Space(airport_space_id),
-    PRIMARY KEY (space_service_id)
-);
 
 CREATE TABLE Bank(
     card_id int NOT NULL AUTO_INCREMENT,
