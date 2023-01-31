@@ -3,7 +3,7 @@ session_start();
 global $conn;
 include '../db-config.php';
 
-if (isset($_POST["add-flight"])) {
+if (isset($_POST["add-space"])) {
     $label = mysqli_real_escape_string($conn, $_POST["label"]);
     $tel = mysqli_real_escape_string($conn, $_POST["tel"]);
     $web = mysqli_real_escape_string($conn, $_POST["web"]);
@@ -12,10 +12,10 @@ if (isset($_POST["add-flight"])) {
     $space_type = mysqli_real_escape_string($conn, $_POST["space-type"]);
     $description = mysqli_real_escape_string($conn, $_POST["description"]);
 
-    $insert = "INSERT INTO `airport_space` (label, space_type, logo, space_description, tel, email, web) 
+    $insert = "INSERT INTO Airport_Space (label, space_type, logo, space_description, tel, email, web) 
                         VALUES ('$label', '$space_type', '$logo', '$description', '$tel', '$email', '$web')";
     if (mysqli_query($conn, $insert)) {
-        move_uploaded_file($_FILES["logo"]["tmp_name"], "../images/companies/" . $_FILES["logo"]["name"]);
+        move_uploaded_file($_FILES["logo"]["tmp_name"], "../images/airport-spaces/" . $_FILES["logo"]["name"]);
         header("Location: space-manage.php");
         exit();
     } else {
@@ -29,7 +29,7 @@ if (isset($_POST["add-flight"])) {
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
-    <title>Shto Hapsire</title>
+    <title>Shto Hapesire</title>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -62,7 +62,7 @@ if (isset($_POST["add-flight"])) {
                 <option value="Transport">Transport</option>
                 <option value="Dyqan">Dyqan</option>
             </select>
-            <input type="text" id="description" name="description" class="form-input" placeholder="Pershrkimi">
+            <input type="text" id="description" name="description" class="form-input" placeholder="Pershkrimi">
 
             <button type="submit" class="login-button" name="add-space" id="add-space-button"
                     style="margin-top: 40px">
@@ -71,7 +71,6 @@ if (isset($_POST["add-flight"])) {
         </form>
 
         <div class="image-right">
-
             <img src="../images/add-space.PNG" alt="">
         </div>
     </div>

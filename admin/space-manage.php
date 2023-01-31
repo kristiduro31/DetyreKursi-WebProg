@@ -16,7 +16,7 @@ if(!isset($_SESSION["user_id"])){
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/icon.jpg">
-    <title>Fluturime</title>
+    <title>Hapesira aeroportuale</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../scripts/components.js"></script>
     <script src="../scripts/scripts.js"></script>
@@ -72,15 +72,15 @@ if(!isset($_SESSION["user_id"])){
             while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
                 echo "
                       <tr>
-                        <td><img src='../images/companies/$row[logo]' style='height: 40px; border-radius: 50%'></td>               
+                        <td><img src='../images/airport-spaces/$row[logo]' style='height: 40px; border-radius: 50%'></td>               
                         <td>$row[label]</td>
                         <td>$row[space_type]</td>
                         <td>$row[email]</td>
                         <td>
-                           <a style='margin: 0 5px; color: darkgreen' href='editSpace.php?id=$row[airport_space_id]'>Përditëso</a>
+                           <a style='color: darkgreen' href='editSpace.php?id=$row[airport_space_id]'><i class='fa-solid fa-pen-to-square' title='Perditeso Hapesire'></i></a>
                         </td>
                         <td>
-                            <a style='color: red' href='../back-end/deleteSpace.php?id=$row[airport_space_id]'>Fshi</a>
+                            <a style='color: red' href='../back-end/deleteSpace.php?id=$row[airport_space_id]'><i class='fa-solid fa-trash' title='Fshi Hapesire'></i></a>
                         </td>
                       </tr>
                      ";

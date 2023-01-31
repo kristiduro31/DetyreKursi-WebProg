@@ -25,12 +25,12 @@ include '../db-config.php';
             <?php
             if (isset($_GET['id'])) {
                 $id = $_GET['id'];
-                $sql = "SELECT * FROM `airport_space` WHERE airport_space_id='$id'";
+                $sql = "SELECT * FROM Airport_Space WHERE airport_space_id='$id'";
                 $result = mysqli_query($conn, $sql);
                 $row = mysqli_fetch_array($result);
                 ?>
                 <div class="profile">
-                    <img src="../images/companies/<?php echo $row['logo'] ?>" id="img-profile">
+                    <img src="../images/airport-spaces/<?php echo $row['logo'] ?>" id="img-profile">
                 </div>
                 <label for="logo" id="label-logo" title="Logo duhet te jete te pakten 120x120"><i
                             class="fa-solid fa-plus"

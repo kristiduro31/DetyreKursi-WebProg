@@ -29,7 +29,7 @@ include '../db-config.php';
                 echo "
                 <div class='row'>
                 <div class='img-column'>
-                    <img class='rest-img' src='../images/companies/$row[logo]' alt='Image could not be loaded'>
+                    <img class='rest-img' src='../images/airport-spaces/$row[logo]' alt='Image could not be loaded'>
                 </div>
                 <div class='column'>
                     <h3>$row[label]</h3>

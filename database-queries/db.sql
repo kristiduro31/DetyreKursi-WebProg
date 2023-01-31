@@ -82,7 +82,7 @@ CREATE TABLE Airport_Space(
 	airport_space_id int NOT NULL AUTO_INCREMENT,
     label varchar(20) NOT NULL,
     space_type varchar(20) NOT NULL,
-    logo longblob NOT NULL,
+    logo varchar(250) NOT NULL,
     space_description varchar(255),
     tel varchar(13) NOT NULL,
     email varchar(50) NOT NULL,

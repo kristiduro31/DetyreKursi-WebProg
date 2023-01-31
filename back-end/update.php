@@ -160,6 +160,7 @@ if(isset($_POST["updateSpace"])){
                          web='$web' WHERE airport_space_id='$space_id'";
 
     if (mysqli_query($conn, $update)) {
+        move_uploaded_file($_FILES["logo"]["tmp_name"], "../images/airport-spaces/" . $_FILES["logo"]["name"]);
         header("Location: ../admin/space-manage.php");
     } else {
         echo "Something went wrong. Please try again later.";
