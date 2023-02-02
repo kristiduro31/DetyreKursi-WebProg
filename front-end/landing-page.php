@@ -69,7 +69,7 @@ include '../db-config.php';
                     INNER JOIN airport a2 on f.departure_airport = a2.airport_id
                     INNER JOIN city c1 on a.city = c1.city_id
                     INNER JOIN city c2 on a2.city = c2.city_id
-                    ORDER BY f.departure DESC";
+                    ORDER BY f.departure ASC";
             $result1 = mysqli_query($conn, $sql1);
             if(!$result1){
                 die("Invalid query!");

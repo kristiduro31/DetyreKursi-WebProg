@@ -21,7 +21,6 @@
                 <li><a id="profile" href="../front-end/myProfile.php" target="_self">Profili im</a></li>
                 <li><a id="rezervime" href="../front-end/user-bookings.php" target="_self">Rezervimet e mia</a></li>
                 <li><a id="loggedUser" href="../front-end/login.php" target="_self">Login</a></li>
-<!--                <li><a id="signup" href="../front-end/sign-up.php" target="_self">Krijo llogari</a></li> -->
             </ul>
         </li>
     </ul>
@@ -41,6 +40,5 @@ if(!empty($_SESSION["user_id"])) {
                 const link = document.getElementById('loggedUser').href='../back-end/logout.php';
                 const label = document.getElementById('loggedUser').innerHTML = 'Logout';
           </script>";
-//    echo "<script>const profile = document.getElementById('signup').style.display='none';</script>";
 }
 ?>

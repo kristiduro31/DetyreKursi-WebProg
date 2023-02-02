@@ -77,7 +77,7 @@ if(!isset($_SESSION["user_id"])){
                     INNER JOIN airport a2 on f.departure_airport = a2.airport_id
                     INNER JOIN city c1 on a.city = c1.city_id
                     INNER JOIN city c2 on a2.city = c2.city_id
-                    ORDER BY f.departure DESC";
+                    ORDER BY f.departure ASC";
             $result = mysqli_query($conn, $sql);
             if(!$result){
                 die("Invalid query!");
